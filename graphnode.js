@@ -208,7 +208,7 @@ export default class Node extends Component {
       width: LayoutStyle.CardWidth/0.3,
       height: LayoutStyle.CardHeight/0.3,
       background: 'white',
-      boxShadow: ((this.props.isRoot) ? '-1px 1px #25a56a, -2px 2px #25a56a, -3px 3px #25a56a' : '-1px 1px #d9d7d2, -2px 2px #d9d7d2, -3px 3px #d9d7d2' )/* + (this.props.viewing ? ', 0px 440px 5px 15px #f4f5f0' : '')*/,
+      boxShadow: ((this.props.isRoot) ? '-1px 1px #0033a0, -2px 2px #0033a0, -3px 3px #0033a0' : '-1px 1px #d9d7d2, -2px 2px #d9d7d2, -3px 3px #d9d7d2' )/* + (this.props.viewing ? ', 0px 440px 5px 15px #f4f5f0' : '')*/,
       padding: '40px 40px 0 40px',
       zIndex: (this.props.viewing) ? 2 : 1,
       overflow: (this.props.isRoot) ? 'visible' : 'hidden',

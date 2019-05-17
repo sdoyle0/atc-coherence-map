@@ -14,7 +14,7 @@ export class Pin extends Component {
 <svg viewBox="0 0 15.833375 23.955875" height="23.955875" width="15.833375" version="1.1" className="svg-icon">
   <g transform="matrix(1.25,0,0,-1.25,0,23.955875)">
     <g transform="translate(6.3333,10.9279)">
-      <path style={{fill:'#25a56a',/*fill-opacity:1;fill-rule:nonzero;stroke:none*/ }}
+      <path style={{fill:'#0033a0',/*fill-opacity:1;fill-rule:nonzero;stroke:none*/ }}
       d="m 0,0 c -1.221,0 -2.211,0.99 -2.211,2.211 0,1.221 0.99,2.211 2.211,2.211 1.221,0 2.211,-0.99 2.211,-2.211 C 2.211,0.99 1.221,0 0,0 M 0,8.237 C -4.666,8.237 -7.457,4.064 -5.899,0.028 -4.474,-3.666 -1.361,-4.901 0,-10.928 1.167,-4.901 4.474,-3.666 5.899,0.028 7.457,4.064 4.666,8.237 0,8.237" />
     </g>
   </g>
