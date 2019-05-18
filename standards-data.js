@@ -1784,9 +1784,720 @@ const standards_2 = {
 	}
 }
 
-const all_domains = {...domains_k, ...domains_1, ...domains_2 };
-const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2 };
-const all_standards = {...standards_k, ...standards_1, ...standards_2 };
+const domains_3 = {
+	"KY_3_OA": {
+		"id": "KY_3_OA",
+		"grade": "KY.3",
+		"ordinal": "OA",
+		"name": "Operations and Algebraic Thinking",
+		"ordering": "1"
+	},
+	"KY_3_NBT": {
+		"id": "KY_3_NBT",
+		"grade": "KY.3",
+		"ordinal": "NBT",
+		"name": "Number and Operations in Base Ten",
+		"ordering": "2"
+	},
+	"KY_3_NF": {
+		"id": "KY_3_NF",
+		"grade": "KY.3",
+		"ordinal": "NF",
+		"name": "Number and Operations Fractions",
+		"ordering": "3"
+	},
+	"KY_3_MD": {
+		"id": "KY_3_MD",
+		"grade": "KY.3",
+		"ordinal": "MD",
+		"name": "Measurement and Data",
+		"ordering": "4"
+	},
+	"KY_3_G": {
+		"id": "KY_3_G",
+		"grade": "KY.3",
+		"ordinal": "G",
+		"name": "Geometry",
+		"ordering": "5"
+	}
+};
+
+const clusters_3 = {
+	"KY_3_OA_a": {
+		"id": "KY_3_OA_a",
+		"ccmathdomain_id": "KY_3_OA",
+		"name": "Represent and solve problems involving multiplication and division.",
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_OA_b": {
+		"id": "KY_3_OA_b",
+		"ccmathdomain_id": "KY_3_OA",
+		"name": "Understand properties of multiplication and the relationship between multiplication and division.",
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_OA_c": {
+		"id": "KY_3_OA_c",
+		"ccmathdomain_id": "KY_3_OA",
+		"name": "Multiply and divide within 100.",
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_OA_d": {
+		"id": "KY_3_OA_d",
+		"ccmathdomain_id": "KY_3_OA",
+		"name": "Solve problems involving the four operations and identify and explain patterns in arithmetic.",
+		"ordinal": "4",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_NBT_a": {
+		"id": "KY_3_NBT_a",
+		"ccmathdomain_id": "KY_3_NBT",
+		"name": "Use place value understanding and properties of operations to perform multi-digit arithmetic. Note: A range of algorithms may be used.",
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_NF_a": {
+		"id": "KY_3_NF_a",
+		"ccmathdomain_id": "KY_3_NF",
+		"name": "Develop understanding of fractions as numbers. Note: grade 3 expectations in this domain are limited to fractions with denominators 2, 3, 4, 6, 8.",
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_MD_a": {
+		"id": "KY_3_MD_a",
+		"ccmathdomain_id": "KY_3_MD",
+		"name": "Solve problems involving measurement and estimation of intervals of time, liquid volumes and masses of objects.",
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_MD_b": {
+		"id": "KY_3_MD_b",
+		"ccmathdomain_id": "KY_3_MD",
+		"name": "Understand and apply the statistics process.",
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_MD_c": {
+		"id": "KY_3_MD_c",
+		"ccmathdomain_id": "KY_3_MD",
+		"name": "Geometric measurement: understand concepts of area and relate area to multiplication and to addition.",
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_MD_d": {
+		"id": "KY_3_MD_d",
+		"ccmathdomain_id": "KY_3_MD",
+		"name": "Geometric measurement: recognize perimeter as an attribute of plane figures and distinguish between linear and area measures.",
+		"ordinal": "4",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_3_G_a": {
+		"id": "KY_3_G_a",
+		"ccmathdomain_id": "KY_3_G",
+		"name": "Reason with shapes and their attributes.",
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	}
+};
+
+const standards_3 = {
+	"KY_3_OA_1": {
+		"id": "KY_3_OA_1",
+		"ccmathcluster_id": "KY_3_OA_a",
+		"ordinal": "1",
+		"desc": "<p>Interpret and demonstrate products of whole numbers.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_2": {
+		"id": "KY_3_OA_2",
+		"ccmathcluster_id": "KY_3_OA_a",
+		"ordinal": "2",
+		"desc": "<p>Interpret and demonstrate whole-number quotients of whole numbers, where objects are partitioned into equal shares.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_3": {
+		"id": "KY_3_OA_3",
+		"ccmathcluster_id": "KY_3_OA_a",
+		"ordinal": "3",
+		"desc": "<p>Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays and measurement quantities, by using drawings and equations with a symbol for the unknown number to represent the problem.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_4": {
+		"id": "KY_3_OA_4",
+		"ccmathcluster_id": "KY_3_OA_a",
+		"ordinal": "4",
+		"desc": "<p>Determine the unknown whole number in a multiplication or division equation relating three whole numbers.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_5": {
+		"id": "KY_3_OA_5",
+		"ccmathcluster_id": "KY_3_OA_b",
+		"ordinal": "5",
+		"desc": "<p>Apply properties of operations as strategies to multiply and divide.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_6": {
+		"id": "KY_3_OA_6",
+		"ccmathcluster_id": "KY_3_OA_b",
+		"ordinal": "6",
+		"desc": "<p>Understand division as an unknown-factor problem.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_7": {
+		"id": "KY_3_OA_7",
+		"ccmathcluster_id": "KY_3_OA_c",
+		"ordinal": "7",
+		"desc": "<p>Fluently multiply and divide within 100, using strategies such as the relationship between multiplication and division or properties of operations.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_8": {
+		"id": "KY_3_OA_8",
+		"ccmathcluster_id": "KY_3_OA_d",
+		"ordinal": "8",
+		"desc": "<p>Use various strategies to solve two-step word problems using the four operations (involving only whole numbers with whole number answers). Represent these problems using equations with a letter standing for the unknown quantity. Assess the reasonableness of answers using mental computation and estimation strategies including rounding.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_OA_9": {
+		"id": "KY_3_OA_9",
+		"ccmathcluster_id": "KY_3_OA_d",
+		"ordinal": "9",
+		"desc": "<p>Identify arithmetic patterns (including patterns in the addition table or multiplication table) and explain them using properties of operations.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_NBT_1": {
+		"id": "KY_3_NBT_1",
+		"ccmathcluster_id": "KY_3_NBT_a",
+		"ordinal": "1",
+		"desc": "<p>Use place value understanding to round whole numbers to the nearest 10 or 100.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_NBT_2": {
+		"id": "KY_3_NBT_2",
+		"ccmathcluster_id": "KY_3_NBT_a",
+		"ordinal": "2",
+		"desc": "<p>Fluently add and subtract within 1000 using strategies and algorithms based on place value, properties of operations and/or the relationship between addition and subtraction.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_NBT_3": {
+		"id": "KY_3_NBT_3",
+		"ccmathcluster_id": "KY_3_NBT_a",
+		"ordinal": "3",
+		"desc": "<p>Multiply one-digit whole numbers by multiples of 10 in the range of 10–90 using strategies based on place value and properties of operations.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_NF_1": {
+		"id": "KY_3_NF_1",
+		"ccmathcluster_id": "KY_3_NF_a",
+		"ordinal": "1",
+		"desc": "<p>Understand a fraction 1/𝑏 as the quantity formed by 1 part when a whole is partitioned into b equal parts; understand a fraction 𝑎/𝑏 as the quantity formed by a parts of size 1/𝑏.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_NF_2": {
+		"id": "KY_3_NF_2",
+		"ccmathcluster_id": "KY_3_NF_a",
+		"ordinal": "2",
+		"desc": `<p>Understand a fraction as a number on the number line; represent fractions on a number line.<\/p>\r\n
+					<p>a. Represent a fraction 1/𝑏 (unit fraction) on a number line by defining the interval from 0 to 1 as the 
+					whole and partitioning it into b equal parts.<br>
+					• Recognize each part has size 1/𝑏.<br>
+					• a unit fraction, 1/𝑏 is located 1/𝑏 of a whole unit from 0 on the number line.<\/p>\r\n
+					<p>b. Represent a non-unit fraction 𝑎/𝑏 on a number line by marking off lengths of 1/𝑏 (unit fractions) from 0. 
+					Recognize that the resulting interval has size 𝑎/𝑏 and that its endpoint locates the non-unit fraction 𝑎/𝑏 on the number line.
+					<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_NF_3": {
+		"id": "KY_3_NF_3",
+		"ccmathcluster_id": "KY_3_NF_a",
+		"ordinal": "3",
+		"desc": "<p>Explain equivalence of fractions in special cases and compare fractions by reasoning about their size.<\/p>\r\n<p>a. Understand two fractions as equivalent (equal) if they are the same size, or same point on a number line.<\/p>\r\n<p>b. Recognize and generate simple equivalent fractions. Explain why the fractions are equivalent through writing or drawing.<\/p>\r\n<p>c. Express whole numbers as fractions and recognize fractions that are equivalent to whole numbers.<\/p>\r\n<p>d. Compare two fractions with the same numerator or the same denominator by reasoning about their size. Recognize that comparisons are valid only when the two fractions refer to the same whole. Record the results of comparisons with the symbols >, =, or <, and justify the conclusions.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_1": {
+		"id": "KY_3_MD_1",
+		"ccmathcluster_id": "KY_3_MD_a",
+		"ordinal": "1",
+		"desc": "<p>Tell and write time to the nearest minute and measure elapsed time intervals in minutes. Solve word problems involving addition and subtraction of time intervals within and across the hour in minutes.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_2": {
+		"id": "KY_3_MD_2",
+		"ccmathcluster_id": "KY_3_MD_a",
+		"ordinal": "2",
+		"desc": "<p>Measure and solve problems involving mass and liquid volume.<\/p>\r\n<p>a. Measure and estimate masses and liquid volumes of objects using standard units of grams (g), kilograms (kg) and liters (L).<\/p>\r\n<p>b. Add, subtract, multiply, or divide to solve one-step word problems involving masses or volumes that are given in the same units.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_3": {
+		"id": "KY_3_MD_3",
+		"ccmathcluster_id": "KY_3_MD_b",
+		"ordinal": "3",
+		"desc": "<p>Investigate questions involving categorical data.<\/p>\r\n<p>a. Identify a statistical question focused on categorical data and gather data;<\/p>\r\n<p>b. Create a scaled pictograph and a scaled bar graph to represent a data set (using technology or by hand);<\/p>\r\n<p>c. Make observations from the graph about the question posed, including “how many more” and “how many less” questions.<\/p>\r\n",
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_4": {
+		"id": "KY_3_MD_4",
+		"ccmathcluster_id": "KY_3_MD_b",
+		"ordinal": "4",
+		"desc": `<p>Investigate questions involving numerical data.<br>
+					a. Identify a statistical question focused on numerical data;<br>
+					b. Generate measurement data by measuring lengths using rulers
+					marked with halves and fourths of an inch.<br>
+					c. Show the data by making a dot plot where the horizontal scale
+					is marked off in appropriate units – whole numbers, halves, or
+					quarters.<br>
+					d. Make observations from the graph about the question posed,
+					including questions about the shape of the data and compare
+					responses.
+					<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_5": {
+		"id": "KY_3_MD_5",
+		"ccmathcluster_id": "KY_3_MD_c",
+		"ordinal": "5",
+		"desc": `<p>Recognize area as an attribute of plane figures and
+					understand concepts of area measurement.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_6": {
+		"id": "KY_3_MD_6",
+		"ccmathcluster_id": "KY_3_MD_c",
+		"ordinal": "6",
+		"desc": `<p>Measure areas by counting unit squares (square cm, square
+					m, square in, square ft. and improvised units).<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_7": {
+		"id": "KY_3_MD_7",
+		"ccmathcluster_id": "KY_3_MD_c",
+		"ordinal": "7",
+		"desc": `<p> Relate area to the operations of multiplication and addition.<br>
+					a. Find the area of a rectangle with whole-number side lengths by
+					tiling it and show the area is the same as would be found by
+					multiplying the side lengths.<br>
+					b. Multiply side lengths to find areas of rectangles with wholenumber side lengths in the context of solving real world and
+					mathematical problems and represent whole-number products
+					as rectangular areas in mathematical reasoning.<br>
+					c. Use tiling to show in a concrete case the area of a rectangle
+					with whole-number side lengths a and b + c is the sum of a × b<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_7": {
+		"id": "KY_3_MD_7",
+		"ccmathcluster_id": "KY_3_MD_c",
+		"ordinal": "7",
+		"desc": `<p>Relate area to the operations of multiplication and addition.<br>
+					a. Find the area of a rectangle with whole-number side lengths by
+					tiling it and show the area is the same as would be found by
+					multiplying the side lengths.<br>
+					b. Multiply side lengths to find areas of rectangles with wholenumber side lengths in the context of solving real world and
+					mathematical problems and represent whole-number products
+					as rectangular areas in mathematical reasoning.<br>
+					c. Use tiling to show in a concrete case the area of a rectangle
+					with whole-number side lengths a and b + c is the sum of a × b
+					and a × c. Use area models to represent the distributive
+					property in mathematical reasoning.<br>
+					d. Recognize area as additive. Find areas of figures that can be
+					decomposed into non-overlapping rectangles by adding the
+					areas of the non-overlapping parts, applying this technique to
+					solve real world problems. <\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_MD_8": {
+		"id": "KY_3_MD_8",
+		"ccmathcluster_id": "KY_3_MD_d",
+		"ordinal": "8",
+		"desc": `<p>Solve real world and mathematical problems involving
+					perimeters of polygons.<br>
+					a. Find the perimeter given the side lengths of a polygon.<br>
+					b. Find an unknown side length, given the perimeter and some
+					lengths.<br>
+					c. Draw rectangles with the same perimeter and different areas
+					or with the same area and different perimeters.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_G_1": {
+		"id": "KY_3_G_1",
+		"ccmathcluster_id": "KY_3_G_a",
+		"ordinal": "1",
+		"desc": `<p>Classify polygons by attributes.<br>
+					a. Recognize and classify polygons based on the number of sides
+					and vertices (triangles, quadrilaterals, pentagons and
+					hexagons).<br>
+					b. Recognize and classify quadrilaterals (rectangles, squares,
+					parallelograms, rhombuses, trapezoids) by side lengths and
+					understanding shapes in different categories may share
+					attributes and the shared attributes can define a larger
+					category.<br>
+					c. Identify shapes that do not belong to a given category or
+					subcategory.
+					<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_3_G_2": {
+		"id": "KY_3_G_2",
+		"ccmathcluster_id": "KY_3_G_a",
+		"ordinal": "2",
+		"desc": `<p>Partition shapes into parts with equal areas. Express the area
+						of each part as a unit fraction of the whole.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	}
+}
+
+const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3 };
+const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3 };
+const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3 };
 
 window.cc = {
 	"standards": all_standards,
