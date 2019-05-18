@@ -134,6 +134,8 @@ class Domain extends React.Component {
 
     var gradeName = ['Kindergarten', '1st Grade', '2nd Grade', '3rd Grade'].concat([4,5,6,7,8].map((n)=> n+'th Grade'));
     gradeName.push('High School');
+    var gradeMap = {"KY.K": "Kindergarten", "KY.1": "1st Grade", "KY.2": "2nd Grade"/*, 2: "2nd Grade", 3: "3rd Grade", 4: "4th Grade", 5: "5th Grade", 6: "6th Grade", 7: "7th Grade",
+  8: "8th Grade", "HS": "High School"*/};
     var classNameCard = 'card';
     if (this.props.domain.grade === 'HS') {
       classNameCard += ' card-hs';
@@ -150,10 +152,11 @@ class Domain extends React.Component {
         (this.props.depth === 0 && i === 0) ?
           <div className="caption-container">
             <div className="grade-caption">
-              { this.props.domain.grade !== 'HS' ? 
-                gradeName[parseInt(this.props.domain.grade)||0]
-              : gradeName[9]
-              }
+              {/* { this.props.domain.grade !== 'HS' ?
+                gradeName[parseInt(this.props.domain.grade)||0]	
+              : gradeName[9]	
+              } */}
+              { gradeMap[this.props.domain.grade]}
             </div>
             <div className="standard-caption">
               { this.props.grade !== 'HS' ?
@@ -379,7 +382,9 @@ export class Deck extends React.Component {x
     return <div className='deck'>
       {(!this.props.domain || !this.props.grade) && <ReactMeta />}
       {
-        ['K',1,2,3,4,5,6,7,8,'HS'].map((g, i) =>
+        ['KY.K',"KY.1","KY.2"].map((g, i) =>
+        // ['KY.K',"KY.1",2,3,4,5,6,7,8,'HS'].map((g, i) =>
+        // ['K',1,2,3,4,5,6,7,8,'HS'].map((g, i) =>
           <Grade 
             {...layouts[i]} 
             category={this.props.category} 

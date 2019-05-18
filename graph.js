@@ -262,7 +262,7 @@ export default class Graph extends Component {
     if(c === null) return [Math.floor(subgraph.length / 2), Math.floor(subgraph[Math.floor(subgraph.length / 2)].length / 2)]; // return center node by default
     for(var i=0;i<subgraph.length;i++)
       for(var j=0;j<subgraph[i].length;j++) {
-        if(parseInt(subgraph[i][j]) === parseInt(standard)) c--;
+        if(subgraph[i][j] === standard) c--;
         if(c === 0) { return [i,j]; }
       }
     return [-1, -1];
@@ -509,7 +509,7 @@ export default class Graph extends Component {
       return j - (subgraph[i].length-1)/2;
     };
     let _checkOverlap = false;
-    if (parseInt(this.props.standard) !== parseInt(this.props.root)
+    if (this.props.standard !== this.props.root
       && this.props.detailLayout && subgraphOriginal && subgraphOriginal[3] && subgraphOriginal[3].length > 4) {
       _checkOverlap = true;
     }

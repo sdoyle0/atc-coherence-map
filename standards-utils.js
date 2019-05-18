@@ -2,7 +2,7 @@ export function standardCode(sid) {
     var s = window.cc.standards[sid];
     var c = window.cc.clusters[s.ccmathcluster_id];
     var d = window.cc.domains[c.ccmathdomain_id];
-    return [domainCode(d), c.ordinal, s.ordinal].join('.');
+    return [domainCode(d), s.ordinal].join('.');
 }
 
 function domainCode(d) {

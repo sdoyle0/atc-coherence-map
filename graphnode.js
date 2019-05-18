@@ -264,7 +264,7 @@ export default class Node extends Component {
             </div> : 
             // domain.grade !== 'HS' && 
               <button key='mapstandard'
-                className={classNames({'btn-mapstandard' : parseInt(this.props.onViewStandardId) !== parseInt(standard.id)})}
+                className={classNames({'btn-mapstandard' : this.props.onViewStandardId !== standard.id})}
                 onClick={(e) => {e.stopPropagation(); this.props.onMapStandard(this.props.id);}}>
                 Map Standard <Icons.Boxes/>
               </button>
