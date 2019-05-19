@@ -37,80 +37,80 @@ const domains_k = {
 };
 
 const clusters_k = {
-	"KY_K_CCa": {
-		"id": "KY_K_CCa",
+	"KY_K_CC_a": {
+		"id": "KY_K_CC_a",
 		"ccmathdomain_id": "KY_K_CC",
 		"ordinal": "1",
 		"name": "Know number names and the count sequence.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_CCb": {
-		"id": "KY_K_CCb",
+	"KY_K_CC_b": {
+		"id": "KY_K_CC_b",
 		"ccmathdomain_id": "KY_K_CC",
 		"ordinal": "2",
 		"name": "Count to tell the number of objects.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_CCc": {
-		"id": "KY_K_CCc",
+	"KY_K_CC_c": {
+		"id": "KY_K_CC_c",
 		"ccmathdomain_id": "KY_K_CC",
 		"ordinal": "3",
 		"name": "Compare numbers.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_OAa": {
-		"id": "KY_K_OAa",
+	"KY_K_OA_a": {
+		"id": "KY_K_OA_a",
 		"ccmathdomain_id": "KY_K_OA",
 		"ordinal": "1",
 		"name": "Understand addition as putting together and adding to, and understand subtraction as taking apart and taking from.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_NBTa": {
-		"id": "KY_K_NBTa",
+	"KY_K_NBT_a": {
+		"id": "KY_K_NBT_a",
 		"ccmathdomain_id": "KY_K_NBT",
 		"ordinal": "1",
 		"name": "Working with numbers 11-19 to gain foundations for place value.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_MDa": {
-		"id": "KY_K_MDa",
+	"KY_K_MD_a": {
+		"id": "KY_K_MD_a",
 		"ccmathdomain_id": "KY_K_MD",
 		"ordinal": "1",
 		"name": "Describe and compare measurable attributes.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_MDb": {
-		"id": "KY_K_MDb",
+	"KY_K_MD_b": {
+		"id": "KY_K_MD_b",
 		"ccmathdomain_id": "KY_K_MD",
 		"ordinal": "2",
 		"name": "Classify objects and count the number of objects in each category.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_MDc": {
-		"id": "KY_K_MDc",
+	"KY_K_MD_c": {
+		"id": "KY_K_MD_c",
 		"ccmathdomain_id": "KY_K_MD",
 		"ordinal": "3",
 		"name": "Identify coins by name.",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_Ga": {
-		"id": "KY_K_Ga",
+	"KY_K_G_a": {
+		"id": "KY_K_G_a",
 		"ccmathdomain_id": "KY_K_G",
 		"ordinal": "1",
 		"name": "Identify and describe shapes (squares, circles, triangles, rectangles, hexagons, cubes, cones, cylinders and spheres).",
 		"msa": "0",
 		"wap": "0"
 	},
-	"KY_K_Gb": {
-		"id": "KY_K_Gb",
+	"KY_K_G_b": {
+		"id": "KY_K_G_b",
 		"ccmathdomain_id": "KY_K_G",
 		"ordinal": "1",
 		"name": "Analyze, compare, create and compose shapes.",
@@ -122,7 +122,7 @@ const clusters_k = {
 const standards_k = {
 	"KY_K_CC_1": {
 		"id": "KY_K_CC_1",
-		"ccmathcluster_id": "KY_K_CCa",
+		"ccmathcluster_id": "KY_K_CC_a",
 		"ordinal": "1",
 		"desc": "<p>Count<\/p>\r\n<p>a. Count to 100 by ones and by tens.<\/p>\r\n<p>b. Count backwards from 30 by ones.<\/p>\r\n",
 		"example_problem": "",
@@ -142,7 +142,7 @@ const standards_k = {
 	},
 	"KY_K_CC_2": {
 		"id": "KY_K_CC_2",
-		"ccmathcluster_id": "KY_K_CCa",
+		"ccmathcluster_id": "KY_K_CC_a",
 		"ordinal": "2",
 		"desc": "<p>Count forward beginning from a given number within the known sequence within 100 (instead of having to begin at 1).<\/p>\r\n",
 		"example_problem": "",
@@ -162,7 +162,7 @@ const standards_k = {
 	},
 	"KY_K_CC_3": {
 		"id": "KY_K_CC_3",
-		"ccmathcluster_id": "KY_K_CCa",
+		"ccmathcluster_id": "KY_K_CC_a",
 		"ordinal": "3",
 		"desc": "<p>Represent numbers.<\/p>>\r\n<p>a. Write numbers from 0 to 20.<\/p>>\r\n<p>b. Represent a number of objects with a written numeral 0-20 (with 0 representing a count of no objects).<\/p>>\r\n",
 		"example_problem": "",
@@ -182,7 +182,7 @@ const standards_k = {
 	},
 	"KY_K_CC_4": {
 		"id": "KY_K_CC_4",
-		"ccmathcluster_id": "KY_K_CCb",
+		"ccmathcluster_id": "KY_K_CC_b",
 		"ordinal": "4",
 		"desc": "<p>Understand the relationship between numbers and quantities; connect counting to cardinality.<\/p>\r\n<p>a. When counting objects, say the number names in the standard order, pairing each object with one and only one number name and each number name with one and only one object.<\/p>\r\n<p>b. Understand that the last number name said tells the number of objects counted. The number of objects is the same regardless of their arrangement or the order in which they were counted.<\/p>\r\n<p>c. Understand that each successive number name refers to a quantity that is one larger.<\/p>\r\n",
 		"example_problem": "",
@@ -202,7 +202,7 @@ const standards_k = {
 	},
 	"KY_K_CC_5": {
 		"id": "KY_K_CC_5",
-		"ccmathcluster_id": "KY_K_CCb",
+		"ccmathcluster_id": "KY_K_CC_b",
 		"ordinal": "5",
 		"desc": "<p>Given a number from 1-20, count out that many objects.<\/p>\r\n<p>a. Count to answer “how many?” questions with as many as 20 things arranged in a line, a rectangular array, or a circle.<\/p>\r\n<p>b. Count to answer “how many?” questions with as many as 10 things in a scattered configuration.<\/p>\r\n",
 		"example_problem": "",
@@ -222,7 +222,7 @@ const standards_k = {
 	},
 	"KY_K_CC_6": {
 		"id": "KY_K_CC_6",
-		"ccmathcluster_id": "KY_K_CCc",
+		"ccmathcluster_id": "KY_K_CC_c",
 		"ordinal": "6",
 		"desc": "<p>Identiy whether the number of objects in one group is greater than, less than, or equal to the number of objects in another group.<\/p>\r\n",
 		"example_problem": "",
@@ -242,7 +242,7 @@ const standards_k = {
 	},
 	"KY_K_CC_7": {
 		"id": "KY_K_CC_7",
-		"ccmathcluster_id": "KY_K_CCc",
+		"ccmathcluster_id": "KY_K_CC_c",
 		"ordinal": "6",
 		"desc": "<p>Compare two numbers between 1 and 10 presented as written numerals.<\/p>\r\n",
 		"example_problem": "",
@@ -262,7 +262,7 @@ const standards_k = {
 	},
 	"KY_K_OA_1": {
 		"id": "KY_K_OA_1",
-		"ccmathcluster_id": "KY_K_OAa",
+		"ccmathcluster_id": "KY_K_OA_a",
 		"ordinal": "1",
 		"desc": "<p>Represent addition and subtraction with objects, fingers, mental images, drawings, sounds, acting out situations, verbal explanations, expressions, or equations.<\/p>\r\n",
 		"example_problem": "",
@@ -282,7 +282,7 @@ const standards_k = {
 	},
 	"KY_K_OA_2": {
 		"id": "KY_K_OA_2",
-		"ccmathcluster_id": "KY_K_OAa",
+		"ccmathcluster_id": "KY_K_OA_a",
 		"ordinal": "2",
 		"desc": "<p>Solve addition and subtraction word problems and add and subtract within 10 by using objects or drawings to represent the problem.<\/p>\r\n",
 		"example_problem": "",
@@ -302,7 +302,7 @@ const standards_k = {
 	},
 	"KY_K_OA_3": {
 		"id": "KY_K_OA_3",
-		"ccmathcluster_id": "KY_K_OAa",
+		"ccmathcluster_id": "KY_K_OA_a",
 		"ordinal": "3",
 		"desc": "<p>Decompose numbers less than or equal to 10.<\/p>\r\n<p>a. Decompose numbers into two groups in more than one way by using objects or drawings and record each decomposition by a drawing or equation.<\/p>\r\n<p>b. Use objects or drawings to demonstrate equality as the balancing of quantities.<\/p>\r\n",
 		"example_problem": "",
@@ -322,7 +322,7 @@ const standards_k = {
 	},
 	"KY_K_OA_4": {
 		"id": "KY_K_OA_4",
-		"ccmathcluster_id": "KY_K_OAa",
+		"ccmathcluster_id": "KY_K_OA_a",
 		"ordinal": "4",
 		"desc": "<p>For any number from 1 to 9, find the number that makes 10 when added to the given number by using objects or drawings and record the answer with a drawing or equation.<\/p>\r\n",
 		"example_problem": "",
@@ -342,7 +342,7 @@ const standards_k = {
 	},
 	"KY_K_OA_5": {
 		"id": "KY_K_OA_5",
-		"ccmathcluster_id": "KY_K_OAa",
+		"ccmathcluster_id": "KY_K_OA_a",
 		"ordinal": "5",
 		"desc": "<p>Fluently add and subtract within 5.<\/p>\r\n",
 		"example_problem": "",
@@ -362,7 +362,7 @@ const standards_k = {
 	},
 	"KY_K_NBT_1": {
 		"id": "KY_K_NBT_1",
-		"ccmathcluster_id": "KY_K_NBTa",
+		"ccmathcluster_id": "KY_K_NBT_a",
 		"ordinal": "1",
 		"desc": "<p>Compose and decompose numbers from 11 to 19 using quantities (numbers with units) of ten ones and some further ones. Understand that these numbers are composed of ten ones and one, two, three, four, five, six, seven, eight, or nine ones.<\/p>\r\n",
 		"example_problem": "",
@@ -382,7 +382,7 @@ const standards_k = {
 	},
 	"KY_K_MD_1": {
 		"id": "KY_K_MD_1",
-		"ccmathcluster_id": "KY_K_MDa",
+		"ccmathcluster_id": "KY_K_MD_a",
 		"ordinal": "1",
 		"desc": "<p>Describe measurable attributes (length, height, weight, width, depth) of an object or a set of objects using appropriate vocabulary.<\/p>\r\n",
 		"example_problem": "",
@@ -402,7 +402,7 @@ const standards_k = {
 	},
 	"KY_K_MD_2": {
 		"id": "KY_K_MD_2",
-		"ccmathcluster_id": "KY_K_MDa",
+		"ccmathcluster_id": "KY_K_MD_a",
 		"ordinal": "2",
 		"desc": "<p>Directly compare two objects with a measurable attribute in common, to see which object has “more of”/ “less of” the attribute and describe the difference.<\/p>\r\n",
 		"example_problem": "",
@@ -422,7 +422,7 @@ const standards_k = {
 	},
 	"KY_K_MD_3": {
 		"id": "KY_K_MD_3",
-		"ccmathcluster_id": "KY_K_MDb",
+		"ccmathcluster_id": "KY_K_MD_b",
 		"ordinal": "3",
 		"desc": "<p>Classify and sort objects or people by attributes. Limit objects or people in each category to be less than or equal to 10.<\/p>\r\n",
 		"example_problem": "",
@@ -442,7 +442,7 @@ const standards_k = {
 	},
 	"KY_K_MD_4": {
 		"id": "KY_K_MD_4",
-		"ccmathcluster_id": "KY_K_MDc",
+		"ccmathcluster_id": "KY_K_MD_c",
 		"ordinal": "4",
 		"desc": "<p>Recognize and identify coins by name (penny, nickel, dime, quarter).<\/p>\r\n",
 		"example_problem": "",
@@ -462,7 +462,7 @@ const standards_k = {
 	},
 	"KY_K_G_1": {
 		"id": "KY_K_G_1",
-		"ccmathcluster_id": "KY_K_Ga",
+		"ccmathcluster_id": "KY_K_G_a",
 		"ordinal": "1",
 		"desc": "<p>Name and describe shapes in the environment.<\/p>\r\n<p>a. Describe objects in the environment using names of shapes.<\/p>\r\n<p>b. Describe the relative positions of these objects using terms above, below, in front of, behind and next to.<\/p>\r\n",
 		"example_problem": "",
@@ -482,7 +482,7 @@ const standards_k = {
 	},
 	"KY_K_G_2": {
 		"id": "KY_K_G_2",
-		"ccmathcluster_id": "KY_K_Ga",
+		"ccmathcluster_id": "KY_K_G_a",
 		"ordinal": "2",
 		"desc": "<p>Correctly name shapes regardless of orientations or overall size.<\/p>\r\n",
 		"example_problem": "",
@@ -502,7 +502,7 @@ const standards_k = {
 	},
 	"KY_K_G_3": {
 		"id": "KY_K_G_3",
-		"ccmathcluster_id": "KY_K_Ga",
+		"ccmathcluster_id": "KY_K_G_a",
 		"ordinal": "3",
 		"desc": "<p>Identify shapes as two-dimensional or three-dimensional.<\/p>\r\n",
 		"example_problem": "",
@@ -522,7 +522,7 @@ const standards_k = {
 	},
 	"KY_K_G_4": {
 		"id": "KY_K_G_4",
-		"ccmathcluster_id": "KY_K_Gb",
+		"ccmathcluster_id": "KY_K_G_b",
 		"ordinal": "4",
 		"desc": "<p>Describe the similarities, differences and attributes of two and three dimensional shapes using different sizes and orientations.<\/p>\r\n",
 		"example_problem": "",
@@ -542,7 +542,7 @@ const standards_k = {
 	},
 	"KY_K_G_5": {
 		"id": "KY_K_G_5",
-		"ccmathcluster_id": "KY_K_Gb",
+		"ccmathcluster_id": "KY_K_G_b",
 		"ordinal": "5",
 		"desc": "<p>Model shapes in the world by building figures from components and drawing shapes.<\/p>\r\n",
 		"example_problem": "",
@@ -562,7 +562,7 @@ const standards_k = {
 	},
 	"KY_K_G_6": {
 		"id": "KY_K_G_6",
-		"ccmathcluster_id": "KY_K_Gb",
+		"ccmathcluster_id": "KY_K_G_b",
 		"ordinal": "6",
 		"desc": "<p>Compose simple shapes to form larger shapes.<\/p>\r\n",
 		"example_problem": "",
@@ -2495,14 +2495,857 @@ const standards_3 = {
 	}
 }
 
-const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3 };
-const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3 };
-const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3 };
+const domains_4 = {
+	"KY_4_OA": {
+		"id": "KY_4_OA",
+		"grade": "KY.4",
+		"ordinal": "OA",
+		"name": "Operations and Algebraic Thinking",
+		"ordering": "1"
+	},
+	"KY_4_NBT": {
+		"id": "KY_4_NBT",
+		"grade": "KY.4",
+		"ordinal": "NBT",
+		"name": "Number and Operations in Base Ten",
+		"ordering": "2"
+	},
+	"KY_4_NF": {
+		"id": "KY_4_NF",
+		"grade": "KY.4",
+		"ordinal": "NF",
+		"name": "Number and Operations Fractions",
+		"ordering": "3"
+	},
+	"KY_4_MD": {
+		"id": "KY_4_MD",
+		"grade": "KY.4",
+		"ordinal": "MD",
+		"name": "Measurement and Data",
+		"ordering": "4"
+	},
+	"KY_4_G": {
+		"id": "KY_4_G",
+		"grade": "KY.4",
+		"ordinal": "G",
+		"name": "Geometry",
+		"ordering": "5"
+	}
+};
+
+const clusters_4 = {
+	"KY_4_OA_a": {
+		"id": "KY_4_OA_a",
+		"ccmathdomain_id": "KY_4_OA",
+		"name": `Use the four operations
+					with whole numbers to
+					solve problems.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_OA_b": {
+		"id": "KY_4_OA_b",
+		"ccmathdomain_id": "KY_4_OA",
+		"name": `Gain familiarity with
+					fractions and multiples.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_OA_c": {
+		"id": "KY_4_OA_c",
+		"ccmathdomain_id": "KY_4_OA",
+		"name": `Generate and analyze patterns.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_NBT_a": {
+		"id": "KY_4_NBT_a",
+		"ccmathdomain_id": "KY_4_NBT",
+		"name": `Generalize place value
+					understanding for
+					multi-digit whole
+					numbers.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_NBT_b": {
+		"id": "KY_4_NBT_b",
+		"ccmathdomain_id": "KY_4_NBT",
+		"name": `Use place value
+					understanding and
+					properties of
+					operations to perform
+					multi-digit arithmetic.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_NF_a": {
+		"id": "KY_4_NF_a",
+		"ccmathdomain_id": "KY_4_NF",
+		"name": `Extend understanding of
+					fraction equivalence and
+					ordering.
+					`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_NF_b": {
+		"id": "KY_4_NF_b",
+		"ccmathdomain_id": "KY_4_NF",
+		"name": `Build fractions from unit
+					fractions by applying and
+					extending previous
+					understandings of operations
+					on whole numbers.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_NF_c": {
+		"id": "KY_4_NF_c",
+		"ccmathdomain_id": "KY_4_NF",
+		"name": `Understand decimal notation
+					for fractions and compare
+					decimal fractions.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_MD_a": {
+		"id": "KY_4_MD_a",
+		"ccmathdomain_id": "KY_4_MD",
+		"name": `Solve problems involving
+					measurement and
+					conversion of
+					measurements from a
+					larger unit to a smaller
+					unit.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_MD_b": {
+		"id": "KY_4_MD_b",
+		"ccmathdomain_id": "KY_4_MD",
+		"name": `Understand and apply
+					the statistics process.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_MD_c": {
+		"id": "KY_4_MD_c",
+		"ccmathdomain_id": "KY_4_MD",
+		"name": `Geometric measurement:
+					understand concepts of
+					angle and angle
+					measurements.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY_4_G_a": {
+		"id": "KY_4_G_a",
+		"ccmathdomain_id": "KY_4_G",
+		"name": `Draw and identify lines
+					and angles and classify
+					shapes by properties of
+					their lines and angles.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	}
+};
+
+const standards_4 = {
+	"KY_4_OA_1": {
+		"id": "KY_4_OA_1",
+		"ccmathcluster_id": "KY_4_OA_a",
+		"ordinal": "1",
+		"desc": `<p>Interpret a multiplication equation as a comparison. Represent
+					verbal statements of multiplicative comparisons as multiplication
+					equations.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_OA_2": {
+		"id": "KY_4_OA_2",
+		"ccmathcluster_id": "KY_4_OA_a",
+		"ordinal": "2",
+		"desc": `<p>Multiply or divide to solve word problems involving
+					multiplicative comparisons by using drawings and equations with a
+					symbol for the unknown number to represent the problem,
+					distinguishing multiplicative comparison from additive comparison.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_OA_3": {
+		"id": "KY_4_OA_3",
+		"ccmathcluster_id": "KY_4_OA_a",
+		"ordinal": "3",
+		"desc": `<p>Solve multistep problems.<br>
+					a. Perform operations in the conventional order when there are no
+					parentheses to specify a particular order.<br>
+					b. Solve multistep word problems posed with whole numbers and
+					having whole number answers using the four operations,
+					including problems in which remainders must be interpreted.
+					Represent these problems using equations with a letter standing
+					for the unknown quantity. Assess the reasonableness of answers
+					using mental computations and estimation strategies including
+					rounding.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_OA_4": {
+		"id": "KY_4_OA_4",
+		"ccmathcluster_id": "KY_4_OA_b",
+		"ordinal": "4",
+		"desc": `<p>Find factors and multiples of numbers in the range 1-100.<br>
+					a. Find all factor pairs for a given whole number.<br>
+					b. Recognize that a whole number is a multiple of each of its
+					factors.<br>
+					c. Determine whether a given whole number is a multiple of a
+					given one-digit number.<br>
+					d. Determine whether a given whole number is prime or
+					composite.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_OA_5": {
+		"id": "KY_4_OA_5",
+		"ccmathcluster_id": "KY_4_OA_c",
+		"ordinal": "5",
+		"desc": `<p>Generate a number or shape pattern that follows a given
+					rule. Identify apparent features of the pattern not explicit in the rule
+					itself.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NBT_1": {
+		"id": "KY_4_NBT_1",
+		"ccmathcluster_id": "KY_4_NBT_a",
+		"ordinal": "1",
+		"desc": `<p>Recognize in a multi-digit whole number, a digit in one
+					place represents ten times what it represents in the place to its right.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NBT_2": {
+		"id": "KY_4_NBT_2",
+		"ccmathcluster_id": "KY_4_NBT_a",
+		"ordinal": "2",
+		"desc": `<p>Represent and compare multi-digit whole numbers.<br>
+					a. Read and write multi-digit whole numbers using base-ten
+					numerals, number names and expanded form.<br>
+					b. Compare two multi-digit numbers based on meanings of the
+					digit in each place, using >, =, and < symbols to record the
+					results of comparisons.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NBT_3": {
+		"id": "KY_4_NBT_3",
+		"ccmathcluster_id": "KY_4_NBT_a",
+		"ordinal": "3",
+		"desc": `<p>Use place value understanding to round multi-digit whole
+					numbers to any place.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NBT_4": {
+		"id": "KY_4_NBT_4",
+		"ccmathcluster_id": "KY_4_NBT_b",
+		"ordinal": "4",
+		"desc": `<p>Fluently add and subtract multi-digit whole numbers using
+					an algorithm.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NBT_5": {
+		"id": "KY_4_NBT_5",
+		"ccmathcluster_id": "KY_4_NBT_b",
+		"ordinal": "5",
+		"desc": `<p>Multiply whole numbers<br>
+					● Up to four digit number by a one-digit number<br>
+					● Two-digit number by two-digit number<br>
+					Multiply using strategies based on place value and the properties of
+					operations. Illustrate and explain the calculation by using equations,
+					rectangular arrays and/or area models.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NBT_6": {
+		"id": "KY_4_NBT_6",
+		"ccmathcluster_id": "KY_4_NBT_b",
+		"ordinal": "6",
+		"desc": `<p>Divide up to four-digit dividends by one-digit divisors. Find
+					whole number quotients and remainders using<br>
+					● strategies based on place value<br>
+					● the properties of operations<br>
+					● the relationship between multiplication and division<br>
+					Illustrate and explain the calculation by using equations, rectangular
+					arrays and/or area models.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_1": {
+		"id": "KY_4_NF_1",
+		"ccmathcluster_id": "KY_4_NF_a",
+		"ordinal": "1",
+		"desc": `<p>Understand and generate equivalent fractions.<br>
+					a. Use visual fraction models to recognize and generate equivalent
+					fractions that have different numerators/denominators even
+					though they are the same size.<br>
+					b. Explain why a fraction <sup>𝑎<\/sup>&frasl;<sub>𝑏<\/sub> is equivalent 
+					to a fraction <sup>(𝑛 × 𝑎)<\/sup>&frasl;<sub>(𝑛 × 𝑏)<\/sub>.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_2": {
+		"id": "KY_4_NF_2",
+		"ccmathcluster_id": "KY_4_NF_a",
+		"ordinal": "2",
+		"desc": `<p>Compare two fractions with different numerators and
+					different denominators using the symbols <, =, or >. Recognize
+					comparisons are valid only when the two fractions refer to the same
+					whole. Justify the conclusions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_3": {
+		"id": "KY_4_NF_3",
+		"ccmathcluster_id": "KY_4_NF_b",
+		"ordinal": "3",
+		"desc": `<p>Understand a fraction <sup>𝑎<\/sup>/<sub>𝑏<\/sub>
+					with a > 1 as a sum of fractions <sup>1<\/sup>/<sub>𝑏<\/sub>.<br>
+					a. Understand addition and subtraction of fractions as joining and
+					separating parts referring to the same whole.<br>
+					b. Decomposing a fraction into a sum of fractions with the same
+					denominator in more than one way, recording each
+					decomposition by an equation. Justify decompositions.
+					c. Add and subtract mixed numbers with like denominators.<br>
+					d. Solve word problems involving addition and subtraction of
+					fractions referring to the same whole and having like
+					denominators.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_4": {
+		"id": "KY_4_NF_4",
+		"ccmathcluster_id": "KY_4_NF_b",
+		"ordinal": "4",
+		"desc": `<p>Apply and extend previous understandings of multiplication
+					to multiply a fraction by a whole number.<br>
+					a. Understand a fraction <sup>𝑎<\/sup>/<sub>𝑏<\/sub>
+					as a multiple of <sup>1<\/sup>/<sub>𝑏<\/sub> <br>
+					b. Understand a multiple of <sup>𝑎<\/sup>/<sub>𝑏<\/sub> as a multiple of <sup>1<\/sup>/<sub>𝑏<\/sub>
+						and use this understanding to multiply a fraction by a whole number.<br>
+					c. Solve word problems involving multiplication of a fraction by a whole number.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_5": {
+		"id": "KY_4_NF_5",
+		"ccmathcluster_id": "KY_4_NF_c",
+		"ordinal": "5",
+		"desc": `<p>Convert and add fractions with denominators of 10 and 100.<br>
+					a. Convert a fraction with a denominator of 10 to an equivalent
+					fraction with a denominator of 100.<br>
+					b. Add two fractions with respective denominators 10 and 100.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_6": {
+		"id": "KY_4_NF_6",
+		"ccmathcluster_id": "KY_4_NF_c",
+		"ordinal": "6",
+		"desc": `<p>Use decimal notation for fractions with denominators 10 or 100.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_NF_7": {
+		"id": "KY_4_NF_7",
+		"ccmathcluster_id": "KY_4_NF_c",
+		"ordinal": "7",
+		"desc": `<p> Compare two decimals to hundredths.<br>
+					a. Compare two decimals to hundredths by reasoning about their
+					size.<br>
+					b. Recognize that comparisons are valid only when the two
+					decimals refer to the same whole.<br>
+					c. Record the results of comparisons with the symbols >, =, or <
+					and justify the conclusions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_1": {
+		"id": "KY_4_MD_1",
+		"ccmathcluster_id": "KY_4_MD_a",
+		"ordinal": "1",
+		"desc": `<p>Know relative size of measurement units (mass, weight,
+					liquid volume, length, time) within one system of units (metric system,
+					U.S. standard system and time).<br>
+					a. Understand the relationship of measurement units within any
+					given measurement system.<br>
+					b. Within any given measurement system, express measurements
+					in a larger unit in terms of a smaller unit.<br>
+					c. Record measurement equivalents in a two-column table.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_2": {
+		"id": "KY_4_MD_2",
+		"ccmathcluster_id": "KY_4_MD_a",
+		"ordinal": "2",
+		"desc": `<p>Use the four operations to solve word problems involving
+					distances, intervals of time, liquid volumes, masses of objects and
+					money.<br>
+					a. Solve measurement problems involving whole number, simple
+					fractions or decimals.<br>
+					b. Solve problems that require converting a given measurement
+					from a larger unit to a smaller unit within a common
+					measurement system, such as 2 km = 2,000 m.<br>
+					c. Visually display measurement quantities using representations
+					such as number lines that feature a measurement scale.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_3": {
+		"id": "KY_4_MD_3",
+		"ccmathcluster_id": "KY_4_MD_a",
+		"ordinal": "3",
+		"desc": `<p>Apply the area and perimeter formulas for rectangles in real
+					world and mathematical problems. <\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_4": {
+		"id": "KY_4_MD_4",
+		"ccmathcluster_id": "KY_4_MD_b",
+		"ordinal": "4",
+		"desc": `<p>Use dot plots to analyze data to a statistical question.<br>
+					a. Identify a statistical question focused on numerical data.<br>
+					b. Make a dot plot to display a data set of measurements in
+					fractions of a unit (<sup>1<\/sup>/<sub>2<\/sub>,
+					<sup>1<\/sup>/<sub>4<\/sub>,
+					<sup>1<\/sup>/<sub>8<\/sub>).<br>
+					c. Solve problems involving addition and subtraction of fractions
+					by using information presented in dot plots. <\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_5": {
+		"id": "KY_4_MD_5",
+		"ccmathcluster_id": "KY_4_MD_c",
+		"ordinal": "5",
+		"desc": `<p>Recognize angles as geometric shapes that are formed
+					wherever two rays share a common endpoint and understand concepts
+					of angle measurement.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_6": {
+		"id": "KY_4_MD_6",
+		"ccmathcluster_id": "KY_4_MD_c",
+		"ordinal": "6",
+		"desc": `<p>Measure angles in whole-number degrees using a
+					protractor. Sketch angles of specified measure.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_MD_7": {
+		"id": "KY_4_MD_7",
+		"ccmathcluster_id": "KY_4_MD_c",
+		"ordinal": "7",
+		"desc": `<p>Recognize angle measure as additive. When an angle is
+					into non-overlapping parts, the angle measure of the whole is the sum
+					of the angle measures of the parts. Solve addition and subtraction
+					problems to find unknown angles on a diagram in real world and
+					mathematical problems.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_G_1": {
+		"id": "KY_4_G_1",
+		"ccmathcluster_id": "KY_4_G_a",
+		"ordinal": "1",
+		"desc": `<p>Draw points, lines, line segments, rays, angles (right, acute,
+					obtuse) and perpendicular and parallel lines. Identify these in twodimensional figures.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_G_2": {
+		"id": "KY_4_G_2",
+		"ccmathcluster_id": "KY_4_G_a",
+		"ordinal": "2",
+		"desc": `<p>Classify two-dimensional figures based on the presence or
+					absence of parallel or perpendicular lines, or the presence of absence
+					of angles of a specified size. Recognize right triangles as a category and
+					identify right triangles.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY_4_G_3": {
+		"id": "KY_4_G_3",
+		"ccmathcluster_id": "KY_4_G_a",
+		"ordinal": "3",
+		"desc": `<p>Identify lines of symmetry.<br>
+					a. Recognize a line of symmetry for a two-dimensional figure.<br>
+					b. Identify line-symmetric figures and draw lines of symmetry.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	}
+};
+
+const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3, ...domains_4 };
+const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3, ...clusters_4 };
+const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3, ...standards_4 };
 
 window.cc = {
 	"standards": all_standards,
 	"clusters": all_clusters,
 	"domains": all_domains,
-	"edges": [ ],
+	"edges": [],
 	"nd_edges": []
 };
