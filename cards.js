@@ -135,7 +135,7 @@ class Domain extends React.Component {
     var gradeName = ['Kindergarten', '1st Grade', '2nd Grade', '3rd Grade'].concat([4,5,6,7,8].map((n)=> n+'th Grade'));
     gradeName.push('High School');
     var gradeMap = {"KY.K": "Kindergarten", "KY.1": "1st Grade", "KY.2": "2nd Grade", "KY.3": "3rd Grade",
-                    "KY.4": "4th Grade"/*, 2: "2nd Grade", 3: "3rd Grade", 4: "4th Grade", 5: "5th Grade", 6: "6th Grade", 7: "7th Grade",
+                    "KY.4": "4th Grade", "KY.5": "5th Grade"/*, 2: "2nd Grade", 3: "3rd Grade", 4: "4th Grade", 5: "5th Grade", 6: "6th Grade", 7: "7th Grade",
   8: "8th Grade", "HS": "High School"*/};
     var classNameCard = 'card';
     if (this.props.domain.grade === 'HS') {
@@ -383,7 +383,7 @@ export class Deck extends React.Component {x
     return <div className='deck'>
       {(!this.props.domain || !this.props.grade) && <ReactMeta />}
       {
-        ['KY.K',"KY.1","KY.2","KY.3","KY.4"].map((g, i) =>
+        ['KY.K',"KY.1","KY.2","KY.3","KY.4","KY.5"].map((g, i) =>
         // ['KY.K',"KY.1",2,3,4,5,6,7,8,'HS'].map((g, i) =>
         // ['K',1,2,3,4,5,6,7,8,'HS'].map((g, i) =>
           <Grade 
