@@ -4127,12 +4127,883 @@ const standards_5 = {
 	}
 };
 
+const domains_6 = {
+	"KY.6.OA": {
+		"id": "KY.6.RP",
+		"grade": "KY.6",
+		"ordinal": "RP",
+		"name": "Ratios and Proportional Relationships (RP)",
+		"ordering": "1"
+	},
+	"KY.6.NS": {
+		"id": "KY.6.NS",
+		"grade": "KY.6",
+		"ordinal": "NS",
+		"name": "The Number System",
+		"ordering": "2"
+	},
+	"KY.6.EE": {
+		"id": "KY.6.EE",
+		"grade": "KY.6",
+		"ordinal": "EE",
+		"name": "Expressions and Equations",
+		"ordering": "3"
+	},
+	"KY.6.G": {
+		"id": "KY.6.G",
+		"grade": "KY.6",
+		"ordinal": "G",
+		"name": "Geometry",
+		"ordering": "4"
+	},
+	"KY.6.SP": {
+		"id": "KY.6.SP",
+		"grade": "KY.6",
+		"ordinal": "SP",
+		"name": "Statistics and Probability",
+		"ordering": "5"
+	}
+};
+
+const clusters_6 = {
+	"KY.6.RP_c1": {
+		"id": "KY.6.RP_c1",
+		"ccmathdomain_id": "KY.6.RP",
+		"name": `Understand ratio concepts and use ratio reasoning.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.NS_c1": {
+		"id": "KY.6.NS_c1",
+		"ccmathdomain_id": "KY.6.NS",
+		"name": `Apply and extend previous
+					understandings of multiplication and
+					division to divide fractions by fractions.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.NS_c2": {
+		"id": "KY.6.NS_c2",
+		"ccmathdomain_id": "KY.6.NS",
+		"name": `Multiply and divide multi-digit numbers
+					and find common factors and multiples.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.NS_c3": {
+		"id": "KY.6.NS_c3",
+		"ccmathdomain_id": "KY.6.NS",
+		"name": `Apply and extend previous
+					understanding of numbers to the system
+					of rational numbers.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.EE_c1": {
+		"id": "KY.6.EE_c1",
+		"ccmathdomain_id": "KY.6.EE",
+		"name": `Apply and extend previous
+					understandings of arithmetic to
+					algebraic expressions.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.EE_c2": {
+		"id": "KY.6.EE_c2",
+		"ccmathdomain_id": "KY.6.EE",
+		"name": `Reason about and solve onevariable equations and inequalities.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.EE_c3": {
+		"id": "KY.6.EE_c3",
+		"ccmathdomain_id": "KY.6.EE",
+		"name": `Represent and analyze quantitative
+					relationships between dependent
+					and independent variables.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.G_c1": {
+		"id": "KY.6.G_c1",
+		"ccmathdomain_id": "KY.6.G",
+		"name": `Solve realworld and mathematical problems involving area, surface area and volume.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.SP_c1": {
+		"id": "KY.6.SP_c1",
+		"ccmathdomain_id": "KY.6.SP",
+		"name": `Develop understanding of the process of statistical reasoning.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.SP_c2": {
+		"id": "KY.6.SP_c2",
+		"ccmathdomain_id": "KY.6.SP",
+		"name": `Develop understanding of statistical variability.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.6.SP_c3": {
+		"id": "KY.6.SP_c3",
+		"ccmathdomain_id": "KY.6.SP",
+		"name": `Summarize and describe distributions.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	}
+};
+
+const standards_6 = {
+	"KY.6.RP.1": {
+		"id": "KY.6.RP.1",
+		"ccmathcluster_id": "KY.6.RP_c1",
+		"ordinal": "1",
+		"desc": `<p>Understand the concept of a ratio and use ratio language to
+					describe a ratio relationship between two quantities.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.RP.2": {
+		"id": "KY.6.RP.2",
+		"ccmathcluster_id": "KY.6.RP_c1",
+		"ordinal": "2",
+		"desc": `<p>Understand the concept of a unit rate a/b associated with a
+					ratio a:b with B ≠ 0 and use rate language in the context of a ratio
+					relationship.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.RP.3": {
+		"id": "KY.6.RP.3",
+		"ccmathcluster_id": "KY.6.RP_c1",
+		"ordinal": "3",
+		"desc": `<p>Use ratio and rate reasoning to solve real-world and
+					mathematical problems.<br>
+					a. Make tables of equivalent ratios relating quantities with wholenumber measurements, find missing values in the tables and plot
+					the pairs of values on the coordinate plane. Use tables to
+					compare ratios.<br>
+					b. Solve rate problems including those involving unit pricing and
+					constant speed.<br>
+					c. Use ratio reasoning to convert measurement units; manipulate
+					and transform units appropriately when multiplying or dividing
+					quantities.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.1": {
+		"id": "KY.6.NS.1",
+		"ccmathcluster_id": "KY.6.NS_c1",
+		"ordinal": "1",
+		"desc": `<p>Interpret and compute quotients of fractions and solve word
+					problems involving division of fractions by fractions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.2": {
+		"id": "KY.6.NS.2",
+		"ccmathcluster_id": "KY.6.NS_c2",
+		"ordinal": "2",
+		"desc": `<p>Fluently divide multi-digit numbers using an algorithm.<br>
+					a. Convert a rational number to a decimal using long division.<br>
+					b. Know that the decimal form of a rational number terminates in
+					0s or eventually repeats.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.3": {
+		"id": "KY.6.NS.3",
+		"ccmathcluster_id": "KY.6.NS_c2",
+		"ordinal": "3",
+		"desc": `<p>Fluently add, subtract, multiply and divide multi-digit
+					decimals using an algorithm for each operation.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.4": {
+		"id": "KY.6.NS.4",
+		"ccmathcluster_id": "KY.6.NS_c2",
+		"ordinal": "4",
+		"desc": `<p>Use the distributive property to express a sum of two whole
+					numbers 1 – 100 with a common factor as a multiple of a sum of two
+					whole numbers with no common factor.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.5": {
+		"id": "KY.6.NS.5",
+		"ccmathcluster_id": "KY.6.NS_c3",
+		"ordinal": "5",
+		"desc": `<p>Understand that positive and negative numbers are used
+			together to describe quantities having opposite directions or values;
+			use positive and negative numbers to represent quantities in real-world
+			contexts, explaining the meaning of 0 in each situation.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.6": {
+		"id": "KY.6.NS.6",
+		"ccmathcluster_id": "KY.6.NS_c3",
+		"ordinal": "6",
+		"desc": `<p>Understand a rational number as a point on the number line.
+					Extend number line diagrams and coordinate axes, using appropriate
+					range and intervals, to represent points on the line and in the plane,
+					that include negative numbers and coordinates.<br>
+					a. Recognize opposite signs of numbers as indicating locations on
+					opposite sides of 0 on the number line; recognize 0 is its own
+					opposite and the opposite of a negative number is a positive,
+					and the opposite of a negative number is a positive, such
+					as−(−3) = 3.<br>
+					b. Find and position integers and other rational numbers on a
+					horizontal or vertical number line diagram; find and position
+					pairs of integers and other rational numbers on a coordinate
+					plane.<br>
+					c. Understand signs of numbers in ordered pairs as indicating
+					locations in quadrants of the coordinate plane; recognize the
+					similarity between whole numbers, their negative opposites
+					and their positions on a number line, ordered pairs differ only
+					by signs and their locations on one or both axes.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.7": {
+		"id": "KY.6.NS.7",
+		"ccmathcluster_id": "KY.6.NS_c3",
+		"ordinal": "7",
+		"desc": `<p>Understand ordering and absolute value of rational numbers.<br>
+					a. Interpret statements of inequality as statements about the
+					relative position of two numbers on a number line diagram.<br>
+					b. Write, interpret and explain statements of order for rational
+					numbers in real-world contexts.<br>
+					c. Understand the absolute value of a rational number as its
+					distance from 0 on the number line; interpret absolute value as
+					magnitude for a positive or negative quantity in a real-world
+					situation.<br>
+					d. Distinguish comparisons of absolute value from statements
+					about order.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.NS.8": {
+		"id": "KY.6.NS.8",
+		"ccmathcluster_id": "KY.6.NS_c3",
+		"ordinal": "8",
+		"desc": `<p>Solve real-world and mathematical problems by graphing
+					points in all four quadrants of the coordinate plane. Include use of
+					coordinates and absolute value to find distances between points with
+					the same first coordinate or the same second coordinate.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.1": {
+		"id": "KY.6.EE.1",
+		"ccmathcluster_id": "KY.6.EE_c1",
+		"ordinal": "1",
+		"desc": `<p>Write and evaluate numerical expressions involving whole-number exponents.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.2": {
+		"id": "KY.6.EE.2",
+		"ccmathcluster_id": "KY.6.EE_c1",
+		"ordinal": "2",
+		"desc": `<p>Write, read and evaluate expressions in which letters stand
+					for numbers.<br>
+					a. Write expressions that record operations with numbers and with
+					letters standing for numbers.<br>
+					b. Identify parts of an expression using mathematical terms (sums,
+					term, product, factor, quotient, coefficient); view one or more
+					parts of an expression in a single entity.<br>
+					c. Evaluate expressions for specific values of their variables,
+					including values that are non-negative rational numbers. Include
+					expressions that arise from formulas used in real-world problems.
+					Perform arithmetic operations, including whole-number
+					exponents, in the conventional order when there are no
+					parentheses to specify a particular order (Order of Operations).<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.3": {
+		"id": "KY.6.EE.3",
+		"ccmathcluster_id": "KY.6.EE_c1",
+		"ordinal": "3",
+		"desc": `<p>Apply the properties of operations to generate equivalent expressions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.4": {
+		"id": "KY.6.EE.4",
+		"ccmathcluster_id": "KY.6.EE_c1",
+		"ordinal": "4",
+		"desc": `<p>Identify when two expressions are equivalent when the two
+					expressions name the same number regardless of which value is
+					substituted into them.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.5": {
+		"id": "KY.6.EE.5",
+		"ccmathcluster_id": "KY.6.EE_c2",
+		"ordinal": "5",
+		"desc": `<p>Understand solving an equation or inequality as a process of
+					answering a question: which values from a specified set, if any, make
+					the equation or inequality true? Use substitution to determine whether
+					a given number in a specified set makes an equation or inequality true.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.6": {
+		"id": "KY.6.EE.6",
+		"ccmathcluster_id": "KY.6.EE_c2",
+		"ordinal": "6",
+		"desc": `<p>Use variables to represent numbers and write expressions
+					when solving a real-world or mathematical problem; understand that a
+					variable can represent an unknown number, or depending on the
+					purpose at hand, any number in a specified set.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.7": {
+		"id": "KY.6.EE.7",
+		"ccmathcluster_id": "KY.6.EE_c2",
+		"ordinal": "7",
+		"desc": `<p>Solve real-world and mathematical problems by writing and
+					solving equations of the form x + p = q and px = q for cases in which p,
+					q and x are all nonnegative rational numbers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.8": {
+		"id": "KY.6.EE.8",
+		"ccmathcluster_id": "KY.6.EE_c2",
+		"ordinal": "8",
+		"desc": `<p>Write an inequality of the form 𝑥 > 𝑐, 𝑥 < 𝑐, 𝑥 ≥ 𝑐, or 𝑥 ≤ 𝑐
+					to represent a constraint or condition in a real-world or mathematical
+					problem. Recognize that inequalities of these forms have infinitely
+					many solutions; represent solutions of such inequalities on vertical and
+					horizontal number lines.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.EE.9": {
+		"id": "KY.6.EE.9",
+		"ccmathcluster_id": "KY.6.EE_c3",
+		"ordinal": "9",
+		"desc": `<p>Use variables to represent two quantities in a real-world
+					problem that changes in relationship to one another;<br>
+					a. Appropriately recognize one quantity as the dependent variable
+					and the other as the independent variable.<br>
+					b. Write an equation to express one quantity, thought of as the
+					dependent variable, in terms of the other quantity, thought of
+					as the independent variable.<br>
+					c. Analyze the relationship between the dependent and
+					independent variables using graphs and tables and relate these
+					to the question.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.G.1": {
+		"id": "KY.6.G.1",
+		"ccmathcluster_id": "KY.6.G_c1",
+		"ordinal": "1",
+		"desc": `<p>Find the area of right triangles, other triangles, special
+					quadrilaterals and polygons by composing into rectangles or
+					decomposing into triangles and quadrilaterals; apply these techniques
+					in the context of solving real-world and mathematical problems.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.G.2": {
+		"id": "KY.6.G.2",
+		"ccmathcluster_id": "KY.6.G_c1",
+		"ordinal": "2",
+		"desc": `<p>Find the volume of a right rectangular prism with rational
+					number edge lengths. Apply the formulas V = lwh and V = Bh to find
+					volumes of right rectangular prisms with rational number edge lengths
+					in the context of solving real-world and mathematical problems.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.G.3": {
+		"id": "KY.6.G.3",
+		"ccmathcluster_id": "KY.6.G_c1",
+		"ordinal": "3",
+		"desc": `<p>Draw polygons in the coordinate plane given coordinates for
+					the vertices; use coordinates to find the length of a side joining points
+					with the same first coordinate or the same second coordinate. Apply
+					these techniques in the context of solving real-world and mathematical
+					problems.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.G.4": {
+		"id": "KY.6.G.4",
+		"ccmathcluster_id": "KY.6.G_c1",
+		"ordinal": "4",
+		"desc": `<p>Classify three-dimensional figures including cubes, prisms,
+					pyramids, cones and spheres.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.SP.0": {
+		"id": "KY.6.SP.0",
+		"ccmathcluster_id": "KY.6.SP_c1",
+		"ordinal": "0",
+		"desc": `<p>Apply the four-step investigative process for statistical
+					reasoning.<br>
+					a. Formulate Questions: Formulate a statistical question as one
+					that anticipates variability and can be answered with data.<br>
+					b. Collect Data: Design and use a plan to collect appropriate data
+					to answer a statistical question.<br>
+					c. Analyze Data: Select appropriate graphical methods and
+					numerical measures to analyze data by displaying variability
+					within a group, comparing individual to individual and
+					comparing individual to group.<br>
+					d. Interpret Results: Draw logical conclusions and make
+					generalizations from the data based on the original question.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.SP.1": {
+		"id": "KY.6.SP.1",
+		"ccmathcluster_id": "KY.6.SP_c2",
+		"ordinal": "1",
+		"desc": `<p>Recognize a statistical question as one that anticipates
+					variability in the data related to the question and accounts for it in the
+					answers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.SP.2": {
+		"id": "KY.6.SP.2",
+		"ccmathcluster_id": "KY.6.SP_c2",
+		"ordinal": "2",
+		"desc": `<p>Understand that a set of numerical data collected to answer
+					a statistical question has a distribution which can be described by its
+					center, spread and overall shape.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.SP.3": {
+		"id": "KY.6.SP.3",
+		"ccmathcluster_id": "KY.6.SP_c2",
+		"ordinal": "3",
+		"desc": `<p>Recognize that a measure of center for a numerical data set
+					summarizes all of its values with a single number to describe a typical
+					value, while a measure of variation describes how the values in the
+					distribution vary.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.SP.4": {
+		"id": "KY.6.SP.4",
+		"ccmathcluster_id": "KY.6.SP_c3",
+		"ordinal": "4",
+		"desc": `<p>Display the distribution of numerical data in plots on a
+					number line, including dot plots, histograms and box plots.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.6.SP.5": {
+		"id": "KY.6.SP.5",
+		"ccmathcluster_id": "KY.6.SP_c3",
+		"ordinal": "5",
+		"desc": `<p>Summarize numerical data sets in relation to their context,
+					such as by:<br>
+					a. Reporting the number of observations.<br>
+					b. Describing the nature of the attribute under investigation,
+					including how it was measured and its units of measurement.<br>
+					c. Determining quantitative measures of center (median and/or
+					mean) to describe distribution of numerical data.<br>
+					d. Describing distributions of numerical data qualitatively relating to
+					shape (using terms such as cluster, mode(s), gap, symmetric,
+					uniform, skewed-left, skewed-right and the presence of outliers)
+					and quantitatively relating to spread/variability (using terms such
+					as range and interquartile range).<br>
+					e. Relating the choice of measures of center and variability to the
+					shape of the data distribution.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	}
+};
+
 const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3, ...domains_4,
-					 ...domains_5 };
+					 ...domains_5, ...domains_6 };
 const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3, ...clusters_4,
-					  ...clusters_5 };
+					  ...clusters_5, ...clusters_6 };
 const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3, ...standards_4,
-					   ...standards_5 };
+					   ...standards_5, ...standards_6 };
 
 window.cc = {
 	"standards": all_standards,
