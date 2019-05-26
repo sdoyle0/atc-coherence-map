@@ -4128,11 +4128,11 @@ const standards_5 = {
 };
 
 const domains_6 = {
-	"KY.6.OA": {
+	"KY.6.RP": {
 		"id": "KY.6.RP",
 		"grade": "KY.6",
 		"ordinal": "RP",
-		"name": "Ratios and Proportional Relationships (RP)",
+		"name": "Ratios and Proportional Relationships",
 		"ordering": "1"
 	},
 	"KY.6.NS": {
@@ -4999,11 +4999,11 @@ const standards_6 = {
 };
 
 const domains_7 = {
-	"KY.7.OA": {
+	"KY.7.RP": {
 		"id": "KY.7.RP",
 		"grade": "KY.7",
 		"ordinal": "RP",
-		"name": "Ratios and Proportional Relationships (RP)",
+		"name": "Ratios and Proportional Relationships",
 		"ordering": "1"
 	},
 	"KY.7.NS": {
@@ -5780,12 +5780,780 @@ const standards_7 = {
 	}
 };
 
+const domains_8 = {
+	"KY.8.NS": {
+		"id": "KY.8.NS",
+		"grade": "KY.8",
+		"ordinal": "NS",
+		"name": "The Number System",
+		"ordering": "1"
+	},
+	"KY.8.EE": {
+		"id": "KY.8.EE",
+		"grade": "KY.8",
+		"ordinal": "EE",
+		"name": "Expressions and Equations",
+		"ordering": "2"
+	},
+	"KY.8.F": {
+		"id": "KY.8.F",
+		"grade": "KY.8",
+		"ordinal": "F",
+		"name": "Functions",
+		"ordering": "3"
+	},
+	"KY.8.G": {
+		"id": "KY.8.G",
+		"grade": "KY.8",
+		"ordinal": "G",
+		"name": "Geometry",
+		"ordering": "4"
+	},
+	"KY.8.SP": {
+		"id": "KY.8.SP",
+		"grade": "KY.8",
+		"ordinal": "SP",
+		"name": "Statistics and Probability",
+		"ordering": "5"
+	}
+};
+
+const clusters_8 = {
+	"KY.8.NS_c1": {
+		"id": "KY.8.NS_c1",
+		"ccmathdomain_id": "KY.8.NS",
+		"name": `Know that there
+					are numbers that
+					are not rational
+					and approximate
+					them by rational
+					numbers.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.EE_c1": {
+		"id": "KY.8.EE_c1",
+		"ccmathdomain_id": "KY.8.EE",
+		"name": `Work with radicals and integer exponents.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.EE_c2": {
+		"id": "KY.8.EE_c2",
+		"ccmathdomain_id": "KY.8.EE",
+		"name": `Understand the connections between
+					proportional relationships, lines and
+					linear equations.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.EE_c3": {
+		"id": "KY.8.EE_c3",
+		"ccmathdomain_id": "KY.8.EE",
+		"name": `Analyze and solve linear equations and
+					pairs of simultaneous linear equations.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.F_c1": {
+		"id": "KY.8.F_c1",
+		"ccmathdomain_id": "KY.8.F",
+		"name": `Define, evaluate and compare functions.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.F_c2": {
+		"id": "KY.8.F_c2",
+		"ccmathdomain_id": "KY.8.F",
+		"name": `Use functions to model relationships between quantities.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.G_c1": {
+		"id": "KY.8.G_c1",
+		"ccmathdomain_id": "KY.8.G",
+		"name": `Understand congruence and
+					similarity using physical models,
+					transparencies, or geometry
+					software.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.G_c2": {
+		"id": "KY.8.G_c2",
+		"ccmathdomain_id": "KY.8.G",
+		"name": `Understand and apply the Pythagorean Theorem.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.G_c3": {
+		"id": "KY.8.G_c3",
+		"ccmathdomain_id": "KY.8.G",
+		"name": `Solve real-world and mathematical
+					problems involving volume of
+					cylinders, cones and spheres.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.8.SP_c1": {
+		"id": "KY.8.SP_c1",
+		"ccmathdomain_id": "KY.8.SP",
+		"name": `Investigate patterns of association in bivariate data.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	}
+};
+
+const standards_8 = {
+	"KY.8.NS.1": {
+		"id": "KY.8.NS.1",
+		"ordinal": "1",
+		"ccmathcluster_id": "KY.8.NS_c1",
+		"desc": `<p>Understand informally that every number has a decimal
+					expansion; the rational numbers are those with decimal expansions
+					that terminate in 0s or eventually repeat. Know that other numbers are
+					called irrational.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.NS.2": {
+		"id": "KY.8.NS.2",
+		"ordinal": "2",
+		"ccmathcluster_id": "KY.8.NS_c1",
+		"desc": `<p>Use rational approximations of irrational numbers to
+					compare the size of irrational numbers, locate them approximately on
+					a number line diagram and estimate the value of expressions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.1": {
+		"id": "KY.8.EE.1",
+		"ordinal": "1",
+		"ccmathcluster_id": "KY.8.EE_c1",
+		"desc": `<p>Know and apply the properties of integer exponents to
+					generate equivalent numerical expressions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.2": {
+		"id": "KY.8.EE.2",
+		"ordinal": "2",
+		"ccmathcluster_id": "KY.8.EE_c1",
+		"desc": `<p>Use square root and cube root symbols to represent
+					solutions to equations of the form x<sup>2<\/sup> = p and x<sup>3<\/sup> = p, where p is a
+					positive rational number. Evaluate square roots of small perfect
+					squares and cube roots of small perfect cubes. Know that perfect
+					squares and perfect cubes are rational.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.3": {
+		"id": "KY.8.EE.3",
+		"ordinal": "3",
+		"ccmathcluster_id": "KY.8.EE_c1",
+		"desc": `<p>Use numbers expressed in the form of a single digit times an
+					integer power of 10 (Scientific Notation) to estimate very large or very
+					small quantities and express how many times larger or smaller one is
+					than the other.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.4": {
+		"id": "KY.8.EE.4",
+		"ordinal": "4",
+		"ccmathcluster_id": "KY.8.EE_c1",
+		"desc": `<p>Perform operations with numbers expressed in scientific
+					notation, including problems where both decimal and scientific
+					notation are used. Use scientific notation and choose units of
+					appropriate size for measurements of very large or very small
+					quantities. Interpret scientific notation that has been generated by
+					technology.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.5": {
+		"id": "KY.8.EE.5",
+		"ordinal": "5",
+		"ccmathcluster_id": "KY.8.EE_c2",
+		"desc": `<p>Graph proportional relationships, interpreting the unit rate as
+					the slope of the graph. Compare two different proportional
+					relationships represented in different ways.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.6": {
+		"id": "KY.8.EE.6",
+		"ordinal": "6",
+		"ccmathcluster_id": "KY.8.EE_c2",
+		"desc": `<p>Use similar triangles to explain why the slope, m, is the same
+					between any two distinct points on a non-vertical line in the coordinate
+					plane; know the equation y = mx for a line through the origin and the
+					equation y = mx + b for a line intercepting the vertical axis at b.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.7": {
+		"id": "KY.8.EE.7",
+		"ordinal": "7",
+		"ccmathcluster_id": "KY.8.EE_c3",
+		"desc": `<p>Solve linear equations in one variable.<br>
+					a. Give examples of linear equations in one variable with one
+					solution, infinitely many solutions, or no solutions. Show which of
+					these possibilities is the case by successively transforming the
+					given equation into simpler forms, until an equivalent equation of
+					the form 𝑥 = 𝑎, 𝑎 = 𝑎, or 𝑎 = b results (where a and b are
+					different numbers).<br>
+					b. Solve linear equations with rational number coefficients,
+					including equations whose solutions require expanding
+					expressions using the distributive property and combining like
+					terms.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.EE.8": {
+		"id": "KY.8.EE.8",
+		"ordinal": "8",
+		"ccmathcluster_id": "KY.8.EE_c3",
+		"desc": `<p>Analyze and solve a system of two linear equations.<br>
+					a. Understand that solutions to a system of two linear equations in
+					two variables correspond to points of intersection of their graphs,
+					because points of intersection satisfy both equations
+					simultaneously; understand that a system of two linear equations
+					may have one solution, no solution, or infinitely many solutions.<br>
+					b. Solve systems of two linear equations in two variables
+					algebraically by using substitution where at least one equation
+					contains at least one variable whose coefficient is 1 and by
+					inspection for simple cases<br>
+					c. Solve real-world and mathematical problems leading to two
+					linear equations in two variables.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.F.1": {
+		"id": "KY.8.F.1",
+		"ordinal": "1",
+		"ccmathcluster_id": "KY.8.F_c1",
+		"desc": `<p>Understand that a function is a rule that assigns to each input
+					exactly one output. The graph of a function is the set of ordered pairs
+					consisting of an input and the corresponding output.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.F.2": {
+		"id": "KY.8.F.2",
+		"ordinal": "2",
+		"ccmathcluster_id": "KY.8.F_c1",
+		"desc": `<p>Compare properties of two functions each represented in a
+					different way (algebraically, graphically, numerically in tables, or by
+					verbal descriptions).<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.F.3": {
+		"id": "KY.8.F.3",
+		"ordinal": "3",
+		"ccmathcluster_id": "KY.8.F_c1",
+		"desc": `<p>Understand properties of linear functions.<br>
+					a. Interpret the equation y = mx + b as defining a linear function,
+					whose graph is a straight line.<br>
+					b. Identify and give examples of functions that are not linear.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.F.4": {
+		"id": "KY.8.F.4",
+		"ordinal": "4",
+		"ccmathcluster_id": "KY.8.F_c2",
+		"desc": `<p>Construct a function to model a linear relationship between
+					two quantities.<br>
+					a. Determine the rate of change and initial value of the function
+					from a description of a relationship or from two (x, y) values,
+					including reading these from a table or from a graph.<br>
+					b. Interpret the rate of change and initial value of a linear function
+					in terms of the situation it models and in terms of its graph or a
+					table of values.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.F.5": {
+		"id": "KY.8.F.5",
+		"ordinal": "5",
+		"ccmathcluster_id": "KY.8.F_c2",
+		"desc": `<p>Use graphs to represent functions.<br>
+					a. Describe qualitatively the functional relationship between two
+					quantities by analyzing a graph.<br>
+					b. Sketch a graph that exhibits the qualitative features of a
+					function that has been described verbally.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.1": {
+		"id": "KY.8.G.1",
+		"ordinal": "1",
+		"ccmathcluster_id": "KY.8.G_c1",
+		"desc": `<p>Verify experimentally the properties of rotations, reflections
+					and translations:<br>
+					● Lines are congruent to lines.<br>
+					● Line segments are congruent to line segments of the same
+					length.<br>
+					● Angles are congruent to angles of the same measure.<br>
+					● Parallel lines are congruent to parallel lines.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.2": {
+		"id": "KY.8.G.2",
+		"ordinal": "2",
+		"ccmathcluster_id": "KY.8.G_c1",
+		"desc": `<p>Understand that a two-dimensional figure is congruent to
+					another if the second can be obtained from the first by a sequence of
+					rotations, reflections and translations. Given two congruent figures,
+					describe a sequence that exhibits the congruence between them.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.3": {
+		"id": "KY.8.G.3",
+		"ordinal": "3",
+		"ccmathcluster_id": "KY.8.G_c1",
+		"desc": `<p>Describe the effect of dilations, translations, rotations and
+					reflections on two-dimensional figures using coordinates.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.4": {
+		"id": "KY.8.G.4",
+		"ordinal": "4",
+		"ccmathcluster_id": "KY.8.G_c1",
+		"desc": `<p>Understand that a two-dimensional figure is similar to another
+					if the second can be obtained from the first by a sequence of rotations,
+					reflections, translations and dilations. Given two similar two-dimensional figures, 
+					describe a sequence that exhibits the similarity between them.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.5": {
+		"id": "KY.8.G.5",
+		"ordinal": "5",
+		"ccmathcluster_id": "KY.8.G_c1",
+		"desc": `<p>Use informal arguments to establish facts about the angle
+					sum and exterior angle of triangles, about the angles created when
+					parallel lines are cut by a transversal and the angle-angle criterion for
+					similarity of triangles. <\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.6": {
+		"id": "KY.8.G.6",
+		"ordinal": "6",
+		"ccmathcluster_id": "KY.8.G_c2",
+		"desc": `<p>Explain a proof of the Pythagorean Theorem and its converse.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.7": {
+		"id": "KY.8.G.7",
+		"ordinal": "7",
+		"ccmathcluster_id": "KY.8.G_c2",
+		"desc": `<p>Apply the Pythagorean Theorem to determine unknown side
+					lengths in right triangles in real-world and mathematical problems in
+					two and three dimensions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.8": {
+		"id": "KY.8.G.8",
+		"ordinal": "8",
+		"ccmathcluster_id": "KY.8.G_c2",
+		"desc": `<p>Apply the Pythagorean Theorem to find the distance between
+					two points in a coordinate system.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.G.9": {
+		"id": "KY.8.G.9",
+		"ordinal": "9",
+		"ccmathcluster_id": "KY.8.G_c3",
+		"desc": `<p>Apply the formulas for the volumes and surface areas of
+					cones, cylinders and spheres and use them to solve real-world and
+					mathematical problems.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.SP.1": {
+		"id": "KY.8.SP.1",
+		"ordinal": "1",
+		"ccmathcluster_id": "KY.8.SP_c1",
+		"desc": `<p>Construct and interpret scatter plots for bivariate numerical
+					data to investigate patterns of association between two quantities.
+					Describe patterns such as clustering, outliers, positive or negative
+					association, linear association and nonlinear association.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.SP.2": {
+		"id": "KY.8.SP.2",
+		"ordinal": "2",
+		"ccmathcluster_id": "KY.8.SP_c1",
+		"desc": `<p>Know that lines are widely used to model relationships
+					between two quantitative variables. For scatter plots that suggest a
+					linear association, informally fit a line and informally assess the model
+					fit by judging the closeness of the data points to the line.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.8.SP.3": {
+		"id": "KY.8.SP.3",
+		"ordinal": "3",
+		"ccmathcluster_id": "KY.8.SP_c1",
+		"desc": `<p>Use the equation of a linear model to solve problems in the
+					context of bivariate numerical data, interpreting the slope and
+					intercept.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	}
+};
+
 const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3, ...domains_4,
-					 ...domains_5, ...domains_6, ...domains_7 };
+					 ...domains_5, ...domains_6, ...domains_7, ...domains_8 };
 const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3, ...clusters_4,
-					  ...clusters_5, ...clusters_6, ...clusters_7 };
+					  ...clusters_5, ...clusters_6, ...clusters_7, ...clusters_8 };
 const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3, ...standards_4,
-					   ...standards_5, ...standards_6, ...standards_7 };
+					   ...standards_5, ...standards_6, ...standards_7, ...standards_8 };
 
 window.cc = {
 	"standards": all_standards,
