@@ -4998,12 +4998,794 @@ const standards_6 = {
 	}
 };
 
+const domains_7 = {
+	"KY.7.OA": {
+		"id": "KY.7.RP",
+		"grade": "KY.7",
+		"ordinal": "RP",
+		"name": "Ratios and Proportional Relationships (RP)",
+		"ordering": "1"
+	},
+	"KY.7.NS": {
+		"id": "KY.7.NS",
+		"grade": "KY.7",
+		"ordinal": "NS",
+		"name": "The Number System",
+		"ordering": "2"
+	},
+	"KY.7.EE": {
+		"id": "KY.7.EE",
+		"grade": "KY.7",
+		"ordinal": "EE",
+		"name": "Expressions and Equations",
+		"ordering": "3"
+	},
+	"KY.7.G": {
+		"id": "KY.7.G",
+		"grade": "KY.7",
+		"ordinal": "G",
+		"name": "Geometry",
+		"ordering": "4"
+	},
+	"KY.7.SP": {
+		"id": "KY.7.SP",
+		"grade": "KY.7",
+		"ordinal": "SP",
+		"name": "Statistics and Probability",
+		"ordering": "5"
+	}
+};
+
+const clusters_7 = {
+	"KY.7.RP_c1": {
+		"id": "KY.7.RP_c1",
+		"ccmathdomain_id": "KY.7.RP",
+		"name": `Analyze proportional
+					relationships and use
+					them to solve realworld and
+					mathematical
+					problems.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.NS_c1": {
+		"id": "KY.7.NS_c1",
+		"ccmathdomain_id": "KY.7.NS",
+		"name": `Apply and extend
+					previous
+					understandings of
+					operations with
+					fractions to add,
+					subtract, multiply and
+					divide rational
+					numbers.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.EE_c1": {
+		"id": "KY.7.EE_c1",
+		"ccmathdomain_id": "KY.7.EE",
+		"name": `Use properties of
+					operations to generate
+					equivalent expressions.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.EE_c2": {
+		"id": "KY.7.EE_c2",
+		"ccmathdomain_id": "KY.7.EE",
+		"name": `Solve real-life and
+					mathematical problems
+					using numerical and
+					algebraic expressions and
+					equations.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.G_c1": {
+		"id": "KY.7.G_c1",
+		"ccmathdomain_id": "KY.7.G",
+		"name": `Draw, construct and
+					describe geometrical
+					figures and describe the
+					relationships between
+					them.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.G_c2": {
+		"id": "KY.7.G_c2",
+		"ccmathdomain_id": "KY.7.G",
+		"name": `Solve real-life and
+					mathematical problems
+					involving angle measure,
+					area, surface area and
+					volume.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.SP_c1": {
+		"id": "KY.7.SP_c1",
+		"ccmathdomain_id": "KY.7.SP",
+		"name": `Use random sampling to
+					draw inferences about a
+					population.`,
+		"ordinal": "1",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.SP_c2": {
+		"id": "KY.7.SP_c2",
+		"ccmathdomain_id": "KY.7.SP",
+		"name": `Draw informal comparative
+					inferences about two
+					populations.`,
+		"ordinal": "2",
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.7.SP_c3": {
+		"id": "KY.7.SP_c3",
+		"ccmathdomain_id": "KY.7.SP",
+		"name": `Investigate chance
+					processes and develop, use
+					and evaluate probability
+					models.`,
+		"ordinal": "3",
+		"msa": "0",
+		"wap": "0"
+	}
+};
+
+const standards_7 = {
+	"KY.7.RP.1": {
+		"id": "KY.7.RP.1",
+		"ccmathcluster_id": "KY.7.RP_c1",
+		"ordinal": "1",
+		"desc": `<p>Compute unit rates associated with ratios of fractions,
+					including ratios of lengths, areas and other quantities measured in like
+					or different units.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.RP.2": {
+		"id": "KY.7.RP.2",
+		"ccmathcluster_id": "KY.7.RP_c1",
+		"ordinal": "2",
+		"desc": `<p>Recognize and represent proportional relationships between
+					quantities.<br>
+					a. Decide whether two quantities represent a proportional
+					relationship.<br>
+					b. Identify the constant of proportionality (unit rate) in tables,
+					graphs, equations, diagrams and verbal descriptions of
+					proportional relationships.<br>
+					c. Represent proportional relationships by equations.<br>
+					d. Explain what a point (x, y) on the graph of a proportional
+					relationship means in terms of the situation, with special
+					attention to the points (0, 0) and (1, r) where r is the unit rate.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.RP.3": {
+		"id": "KY.7.RP.3",
+		"ccmathcluster_id": "KY.7.RP_c1",
+		"ordinal": "3",
+		"desc": `<p>Use percents to solve mathematical and real-world problems.<br>
+					a. Find a percent of a quantity as a rate per 100; solve problems
+					involving finding the whole, a part and a percent, given two of
+					these.<br>
+					b. Use proportional relationships to solve multistep ratio and percent
+					problems.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.NS.1": {
+		"id": "KY.7.NS.1",
+		"ccmathcluster_id": "KY.7.NS_c1",
+		"ordinal": "1",
+		"desc": `<p>Apply and extend previous understandings of addition and
+					subtraction to add and subtract rational numbers; represent addition
+					and subtraction on a horizontal or vertical number line diagram.<br>
+					a. Describe situations in which opposite quantities combine to make 0.<br>
+					b. Understand 𝑝 + 𝑞 as the number located a distance |𝑞| from p,
+					in the positive or negative direction depending on whether q is
+					positive or negative. Show that a number and its opposite have a
+					sum of 0 (are additive inverses). Interpret sums of rational
+					numbers by describing real-world contexts.<br>
+					c. Understand subtraction of rational numbers as adding the
+					additive inverse, 𝑝 – 𝑞 = 𝑝 + (– 𝑞). Show that the distance
+					between two rational numbers on the number line is the absolute
+					value of their difference and apply this principle in real-world
+					contexts.<br>
+					d. Apply properties of operations as strategies to add and subtract
+					rational numbers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.NS.2": {
+		"id": "KY.7.NS.2",
+		"ccmathcluster_id": "KY.7.NS_c1",
+		"ordinal": "2",
+		"desc": `<p>Apply and extend previous understandings of multiplication
+					and division and of fractions to multiply and divide rational numbers.<br>
+					a. Understand that multiplication is extended from fractions to
+					rational numbers by requiring that operations continue to satisfy
+					the properties of operations, particularly the distributive
+					property, leading to products such as (–1)(–1) = 1 and the rules
+					for multiplying signed numbers. Interpret products of rational
+					numbers by describing real-world contexts.<br>
+					b. Understand that integers can be divided, provided that the
+					divisor is not zero and every quotient of integers (with non-zero
+					divisor) is a rational number. If p and q are integers, then –(p/q)
+					= (–p)/q = p/(–q). Interpret quotients of rational numbers by
+					describing real-world contexts.<br>
+					c. Apply properties of operations as strategies to multiply and
+					divide rational numbers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.NS.3": {
+		"id": "KY.7.NS.3",
+		"ccmathcluster_id": "KY.7.NS_c1",
+		"ordinal": "3",
+		"desc": `<p>Solve real-world and mathematical problems involving the
+					four operations with rational numbers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.EE.1": {
+		"id": "KY.7.EE.1",
+		"ccmathcluster_id": "KY.7.EE_c1",
+		"ordinal": "1",
+		"desc": `<p>Apply properties of operations as strategies to add, subtract,
+					factor and expand linear expressions with rational coefficients.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.EE.2": {
+		"id": "KY.7.EE.2",
+		"ccmathcluster_id": "KY.7.EE_c1",
+		"ordinal": "2",
+		"desc": `<p>Understand that rewriting an expression in different forms in
+					a problem context can clarify the problem and how the quantities in it
+					are related.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.EE.3": {
+		"id": "KY.7.EE.3",
+		"ccmathcluster_id": "KY.7.EE_c2",
+		"ordinal": "3",
+		"desc": `<p>Solve real-life and mathematical problems posed with
+					positive and negative rational numbers in any form, using tools
+					strategically. Apply properties of operations to calculate with numbers
+					in any form; convert between forms as appropriate; and assess the
+					reasonableness of answers using mental computation and estimation
+					strategies.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.EE.4": {
+		"id": "KY.7.EE.4",
+		"ccmathcluster_id": "KY.7.EE_c2",
+		"ordinal": "4",
+		"desc": `<p>Use variables to represent quantities in a real-world or
+					mathematical problem and construct equations and inequalities to
+					solve problems by reasoning about the quantities.<br>
+					a. Solve word problems leading to equations of the form 𝑝𝑥 + 𝑞 =
+					𝑟 and 𝑝(𝑥 + 𝑞) = 𝑟, where p, q and r are specific rational
+					numbers. Solve equations of these forms. Graph the solution set
+					of the equality and interpret it in context of the problem.<br>
+					b. Solve word problems leading to inequalities of the form 𝑝𝑥 +
+					𝑞 > 𝑟, 𝑝𝑥 + 𝑞 < 𝑟, 𝑝𝑥 + 𝑞 ≥ 𝑟, 𝑝𝑥 + 𝑞 ≤ 𝑟; where p, q and r
+					are specific rational numbers. Graph the solution set of the
+					inequality and interpret it in context of the problem.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.G.1": {
+		"id": "KY.7.G.1",
+		"ccmathcluster_id": "KY.7.G_c1",
+		"ordinal": "1",
+		"desc": `<p>Solve problems involving scale drawings of geometric figures,
+					including computing actual lengths and areas from a scale drawing and
+					reproducing a scale drawing at a different scale.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.G.2": {
+		"id": "KY.7.G.2",
+		"ccmathcluster_id": "KY.7.G_c1",
+		"ordinal": "2",
+		"desc": `<p>Draw (freehand, with ruler and protractor and with
+					technology) geometric shapes with given conditions. Focus on
+					constructing triangles from three measures of angles or sides, noticing
+					when the conditions determine a unique triangle, more than one
+					triangle, or no triangle.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.G.3": {
+		"id": "KY.7.G.3",
+		"ccmathcluster_id": "KY.7.G_c1",
+		"ordinal": "3",
+		"desc": `<p>Describe the two-dimensional figures that result from slicing
+					three-dimensional figures, as in plane sections of right rectangular
+					prisms and right rectangular pyramids.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.G.4": {
+		"id": "KY.7.G.4",
+		"ccmathcluster_id": "KY.7.G_c2",
+		"ordinal": "4",
+		"desc": `<p>Use formulas for area and circumference of circles and their
+					relationships.<br>
+					a. Apply the formulas for the area and circumference of a circle to
+					solve real-world and mathematical problems.<br>
+					b. Explore and understand the relationship between the radius,
+					diameter, circumference and area of a circle.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.G.5": {
+		"id": "KY.7.G.5",
+		"ccmathcluster_id": "KY.7.G_c2",
+		"ordinal": "5",
+		"desc": `<p>Apply properties of supplementary, complementary, vertical
+					and adjacent angles in a multi-step problem to write and solve simple
+					equations for an unknown angle in a figure.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.G.6": {
+		"id": "KY.7.G.6",
+		"ccmathcluster_id": "KY.7.G_c2",
+		"ordinal": "6",
+		"desc": `<p>Solve problems involving area of two-dimensional objects and
+					surface area and volume of three-dimensional objects.<br>
+					a. Solve real-world and mathematical problems involving area of
+					two-dimensional objects composed of triangles, quadrilaterals
+					and other polygons.<br>
+					b. Solve real-world and mathematical problems involving volume
+					and surface area, using nets as needed, of three-dimensional
+					objects including cubes, pyramids and right prisms.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.0": {
+		"id": "KY.7.SP.0",
+		"ccmathcluster_id": "KY.7.SP_c1",
+		"ordinal": "0",
+		"desc": `<p>Create displays, including circle graphs (pie charts), scaled
+					pictographs and bar graphs, to compare and analyze distributions of
+					categorical data from both matching and different-sized samples.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.1": {
+		"id": "KY.7.SP.1",
+		"ccmathcluster_id": "KY.7.SP_c1",
+		"ordinal": "1",
+		"desc": `<p>Understand that statistics can be used to gain information
+					about a population by examining a sample of the population;
+					generalizations about a population from a sample are valid only if the
+					sample is representative of that population. Understand that random
+					sampling tends to produce representative samples and support valid
+					inferences.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.2": {
+		"id": "KY.7.SP.2",
+		"ccmathcluster_id": "KY.7.SP_c1",
+		"ordinal": "2",
+		"desc": `<p>Use data from a random sample to draw inferences about a
+					population with an unknown characteristic of interest.<br>
+					a. Generate multiple samples of categorical data of the same size to
+					gauge the variation in estimates or predictions.<br>
+					b. Generate multiple samples (or simulated samples) of numerical
+					data to gauge the variation in estimates or predictions.<br>
+					c. Gauge how far off an estimate or prediction might be related to a
+					population character of interest.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.3": {
+		"id": "KY.7.SP.3",
+		"ccmathcluster_id": "KY.7.SP_c2",
+		"ordinal": "3",
+		"desc": `<p>Describe the degree of visual overlap (and separation) from
+					the graphical representations of two numerical data distributions (box
+					plots, dot plots) with similar variabilities with similar contexts (same
+					variable), measuring the difference between the centers (medians or
+					means) by expressing this difference as a multiple of a measure of
+					variability (interquartile range when comparing medians or the mean
+					absolute deviation when comparing means).<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.4": {
+		"id": "KY.7.SP.4",
+		"ccmathcluster_id": "KY.7.SP_c2",
+		"ordinal": "4",
+		"desc": `<p>Calculate and use measures of center (mean and median)
+					and measures of variability (interquartile range when comparing
+					medians and mean absolute deviation when comparing means) for
+					numerical data from random samples to draw informal comparative
+					inferences about two populations.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.5": {
+		"id": "KY.7.SP.5",
+		"ccmathcluster_id": "KY.7.SP_c3",
+		"ordinal": "5",
+		"desc": `<p>Describe the probability of a chance event is a number
+					between 0 and 1, which tells how likely the event is, from impossible
+					(0) to certain (1). A probability near 0 indicates an unlikely event, a
+					probability around 1/2 indicates an event that is neither unlikely nor
+					likely and a probability near 1 indicates a likely event.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.6": {
+		"id": "KY.7.SP.6",
+		"ccmathcluster_id": "KY.7.SP_c3",
+		"ordinal": "6",
+		"desc": `<p>Approximate the probability of a chance event by collecting
+					data on the chance process that produces it and observing its long-run
+					relative frequency and predict the approximate relative frequency
+					given the probability.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.7": {
+		"id": "KY.7.SP.7",
+		"ccmathcluster_id": "KY.7.SP_c3",
+		"ordinal": "7",
+		"desc": `<p>Develop a probability model and use it to find probabilities of
+					events. Compare probabilities from a model to observed frequencies; if
+					the agreement is not good, explain possible sources of the discrepancy.<br>
+					a. Develop a uniform probability model by assigning equal
+					probability to all outcomes and use the model to determine
+					probabilities of events.<br>
+					b. Develop a probability model (which may not be uniform) by
+					observing frequencies in data generated from a chance process. <\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.7.SP.8": {
+		"id": "KY.7.SP.8",
+		"ccmathcluster_id": "KY.7.SP_c3",
+		"ordinal": "8",
+		"desc": `<p>Find probabilities of compound events using organized lists,
+					tables, tree diagrams and simulation.<br>
+					a. Explain just as with simple events, the probability of a compound
+					event is the fraction of outcomes in the sample space for which
+					the compound event occurs.<br>
+					b. Represent sample spaces for compound events described in
+					everyday language using methods such as organized lists, tables
+					and tree diagrams.<br>
+					c. Design and use a simulation to generate frequencies for
+					compound events.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	}
+};
+
 const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3, ...domains_4,
-					 ...domains_5, ...domains_6 };
+					 ...domains_5, ...domains_6, ...domains_7 };
 const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3, ...clusters_4,
-					  ...clusters_5, ...clusters_6 };
+					  ...clusters_5, ...clusters_6, ...clusters_7 };
 const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3, ...standards_4,
-					   ...standards_5, ...standards_6 };
+					   ...standards_5, ...standards_6, ...standards_7 };
 
 window.cc = {
 	"standards": all_standards,
