@@ -11,8 +11,7 @@ module.exports = {
   devtool: 'source-map',
   output: {
     filename: 'browser-bundle.js',
-    path: path.join(__dirname, "build"), 
-    publicPath: 'https://achievethecore.org/coherence-map/',
+    path: path.join(__dirname, "build"),
   },
   devServer: {
     historyApiFallback: {
