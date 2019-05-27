@@ -6548,12 +6548,498 @@ const standards_8 = {
 	}
 };
 
+const domains_hs = {
+	"KY.HS.N": {
+		"id": "KY.HS.N",
+		"grade": "KY.HS",
+		"ordinal": "N",
+		"name": "Number and Quantity",
+		"ordering": "1"
+	},
+	"KY.HS.A": {
+		"id": "KY.HS.A",
+		"grade": "KY.HS",
+		"ordinal": "A",
+		"name": "Algebra",
+		"ordering": "2"
+	},
+	"KY.HS.F": {
+		"id": "KY.HS.F",
+		"grade": "KY.HS",
+		"ordinal": "F",
+		"name": "Functions",
+		"ordering": "3"
+	},
+	"KY.HS.G": {
+		"id": "KY.HS.G",
+		"grade": "KY.HS",
+		"ordinal": "G",
+		"name": "Geometry",
+		"ordering": "4"
+	},
+	"KY.HS.SP": {
+		"id": "KY.HS.SP",
+		"grade": "KY.HS",
+		"ordinal": "SP",
+		"name": "Statistics and Probability",
+		"ordering": "5"
+	},
+	"KY.HS.C": {
+		"id": "KY.HS.C",
+		"grade": "KY.HS",
+		"ordinal": "C",
+		"name": "Calculus",
+		"ordering": "6"
+	}
+};
+
+const clusters_hs_n = {
+	"KY.HS.N_c1": {
+		"id": "KY.HS.N_c1",
+		"ordinal": "1",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Extend the properties of exponents to rational exponents.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c2": {
+		"id": "KY.HS.N_c2",
+		"ordinal": "2",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Use properties of rational and irrational numbers.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c3": {
+		"id": "KY.HS.N_c3",
+		"ordinal": "3",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Reason quantitatively and use units to solve problems.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c4": {
+		"id": "KY.HS.N_c4",
+		"ordinal": "4",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Perform arithmetic operations with complex numbers.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c5": {
+		"id": "KY.HS.N_c5",
+		"ordinal": "5",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Represent complex numbers and their operations on the complex plane.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c6": {
+		"id": "KY.HS.N_c6",
+		"ordinal": "6",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Use complex numbers in polynomial identities and equations.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c7": {
+		"id": "KY.HS.N_c7",
+		"ordinal": "7",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Represent and model with vector quantities.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c8": {
+		"id": "KY.HS.N_c8",
+		"ordinal": "8",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Perform operations on vectors.`,
+		"msa": "0",
+		"wap": "0"
+	},
+	"KY.HS.N_c9": {
+		"id": "KY.HS.N_c9",
+		"ordinal": "9",
+		"ccmathdomain_id": "KY.HS.N",
+		"name": `Perform operations on matrices and use matrices in applications.`,
+		"msa": "0",
+		"wap": "0"
+	}
+};
+
+const standards_hs_n = {
+	"KY.HS.N.1": {
+		"id": "KY.HS.N.1",
+		"ordinal": "1",
+		"ccmathcluster_id": "KY.HS.N_c1",
+		"desc": `<p>Extend the properties of integer exponents to rational exponents, allowing for the expression of radicals in terms of rational exponents.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.2": {
+		"id": "KY.HS.N.2",
+		"ordinal": "2",
+		"ccmathcluster_id": "KY.HS.N_c1",
+		"desc": `<p>Rewrite expressions involving radicals and rational exponents using the properties of exponents.
+					<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.3": {
+		"id": "KY.HS.N.3",
+		"ordinal": "3",
+		"ccmathcluster_id": "KY.HS.N_c2",
+		"desc": `<p>Justify why the sum or product of two rational numbers is rational; that the sum of a rational number and an irrational number is irrational; and that the product of a nonzero rational number and an irrational number is irrational.
+					<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.4": {
+		"id": "KY.HS.N.4",
+		"ordinal": "4",
+		"ccmathcluster_id": "KY.HS.N_c3",
+		"desc": `<p>Use units in context as a way to understand problems and to guide the solution of multi-step problems; ★
+					<br>a. Choose and interpret units consistently in formulas;
+					<br>b. Choose and interpret the scale and the origin in graphs and data displays.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.5": {
+		"id": "KY.HS.N.5",
+		"ordinal": "5",
+		"ccmathcluster_id": "KY.HS.N_c3",
+		"desc": `<p>Define appropriate units in context for the purpose of descriptive modeling. ★<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.6": {
+		"id": "KY.HS.N.6",
+		"ordinal": "6",
+		"ccmathcluster_id": "KY.HS.N_c3",
+		"desc": `<p>Choose a level of accuracy appropriate to limitations on measurement when reporting quantities. ★<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.7": {
+		"id": "KY.HS.N.7",
+		"ordinal": "7",
+		"ccmathcluster_id": "KY.HS.N_c4",
+		"desc": `<p>Understanding properties of complex numbers.
+					<br>a. Know there is a complex number i such that i2 = –1 and every complex number has the form a + bi with a and b real.
+					<br>b. Use the relation i2 = –1 and the commutative, associative and distributive properties to add, subtract and multiply complex numbers.
+					<br>c. (+) Find the conjugate of a complex number and use it to find the quotient of complex numbers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.8": {
+		"id": "KY.HS.N.8",
+		"ordinal": "8",
+		"ccmathcluster_id": "KY.HS.N_c5",
+		"desc": `<p>Understanding representations of complex numbers using the complex plane.
+					<br>a. Represent complex numbers on the complex plane in rectangular and polar form (including real and imaginary numbers) and explain why the rectangular and polar forms of a given complex number represent the same number.
+					<br>b. Represent addition, subtraction, multiplication, modulus and conjugation of complex numbers geometrically on the complex plane; use properties of this representation for computation.
+					<br>c. Calculate the distance between numbers in the complex plane as the modulus of the difference and the midpoint of a segment as the average of the numbers at its endpoints.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.9": {
+		"id": "KY.HS.N.9",
+		"ordinal": "9",
+		"ccmathcluster_id": "KY.HS.N_c6",
+		"desc": `<p>Solve quadratic equations with real coefficients that have complex solutions.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.10": {
+		"id": "KY.HS.N.10",
+		"ordinal": "10",
+		"ccmathcluster_id": "KY.HS.N_c6",
+		"desc": `<p>Extend polynomial identities to the complex numbers.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.11": {
+		"id": "KY.HS.N.11",
+		"ordinal": "11",
+		"ccmathcluster_id": "KY.HS.N_c6",
+		"desc": `<p>Know the Fundamental Theorem of Algebra; show that it is true for quadratic polynomials.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.12": {
+		"id": "KY.HS.N.12",
+		"ordinal": "12",
+		"ccmathcluster_id": "KY.HS.N_c7",
+		"desc": `<p>Understand and apply properties of vectors.
+					<br>a. Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments and use appropriate symbols for vectors and their magnitudes.
+					<br>b. Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point.
+					<br>c. Solve problems involving velocity and other quantities that can be represented by vectors.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.13": {
+		"id": "KY.HS.N.13",
+		"ordinal": "13",
+		"ccmathcluster_id": "KY.HS.N_c8",
+		"desc": `<p>Perform operations with vectors (addition, subtraction and multiplication by a scalar).
+					<br>a. Add vectors end-to-end, component-wise and by the parallelogram rule. Understand that the magnitude of a sum of two vectors is typically not the sum of the magnitudes.
+					<br>b. Given two vectors in magnitude and direction form, determine the magnitude and direction of their sum.
+					<br>c. Understand vector subtraction v – w as v + (–w), where –w is the additive inverse of w, with the same magnitude as w and pointing in the opposite direction. Represent vector subtraction graphically by connecting the tips in the appropriate order and perform vector subtraction component-wise.
+					<br>d. Represent scalar multiplication graphically by scaling vectors and possibly reversing their direction; perform scalar multiplication component-wise.
+					<br>e. b. Compute the magnitude of a scalar multiple cv using ||cv|| = |c|v. Compute the direction of cv knowing that when |c|v ≠ 0, the direction of cv is either along v (for c > 0) or against v (for c < 0).<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.14": {
+		"id": "KY.HS.N.14",
+		"ordinal": "14",
+		"ccmathcluster_id": "KY.HS.N_c9",
+		"desc": `<p>Use matrices to represent and manipulate data.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.15": {
+		"id": "KY.HS.N.15",
+		"ordinal": "15",
+		"ccmathcluster_id": "KY.HS.N_c9",
+		"desc": `<p>Perform operations with matrices.
+					<br>a. Add, subtract and multiply matrices of appropriate dimensions.
+					<br>b. Multiply matrices by scalars to produce new matrices.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.16": {
+		"id": "KY.HS.N.16",
+		"ordinal": "16",
+		"ccmathcluster_id": "KY.HS.N_c9",
+		"desc": `<p>Understand properties of square and identity matrices.
+					<br>a. Understand that, unlike multiplication of numbers, matrix multiplication for square matrices is not a commutative operation, but still satisfies the associative and distributive properties.
+					<br>b. Understand that the zero and identity matrices play a role in matrix addition and multiplication similar to the role of 0 and 1 in the real numbers. The determinant of a square matrix is nonzero if and only if the matrix has a multiplicative inverse.
+					<br>c. Work with 2 × 2 matrices as transformations of the plane and interpret the absolute value of the determinant in terms of area.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	},
+	"KY.HS.N.17": {
+		"id": "KY.HS.N.17",
+		"ordinal": "17",
+		"ccmathcluster_id": "KY.HS.N_c9",
+		"desc": `<p>Multiply a vector (regarded as a matrix with one column) by a matrix of suitable dimensions to produce another vector. Work with matrices as transformations of vectors.<\/p>\r\n`,
+		"example_problem": "",
+		"example_problem_url": "",
+		"example_problem_attribution": "",
+		"progressions": "",
+		"links": [],
+		"modeling": "0",
+		"wap": "1",
+		"md": "0",
+		"traditional_course_frameworks_a1": "0",
+		"traditional_course_frameworks_g": "0",
+		"traditional_course_frameworks_a2": "0",
+		"integrated_course_frameworks_m1": "0",
+		"integrated_course_frameworks_m2": "0",
+		"integrated_course_frameworks_m3": "0"
+	}
+};
+
 const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3, ...domains_4,
-					 ...domains_5, ...domains_6, ...domains_7, ...domains_8 };
+					 ...domains_5, ...domains_6, ...domains_7, ...domains_8, ...domains_hs };
 const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3, ...clusters_4,
-					  ...clusters_5, ...clusters_6, ...clusters_7, ...clusters_8 };
+					  ...clusters_5, ...clusters_6, ...clusters_7, ...clusters_8, ...clusters_hs_n };
 const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3, ...standards_4,
-					   ...standards_5, ...standards_6, ...standards_7, ...standards_8 };
+					   ...standards_5, ...standards_6, ...standards_7, ...standards_8, ...standards_hs_n };
 
 const edges = [
 	{"from":"KY.K.CC.1","to":"KY.1.NBT.1"},
