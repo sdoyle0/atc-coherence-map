@@ -96,7 +96,7 @@ export default class Header extends Component {
                )
                : 
                (
-                <a href={fmtURL `http://twitter.com/intent/tweet/?text=The Coherence Map shows the connections between Common Core State Standards for Mathematics.&url=${window.location.href}&related=achievethecore` } target='_blank'><i className="fa fa-twitter"></i></a>
+                <a href={fmtURL `http://twitter.com/intent/tweet/?text=The Coherence Map shows the connections between Kentucky Academic Standards for Mathematics.&url=${window.location.href}&related=achievethecore` } target='_blank'><i className="fa fa-twitter"></i></a>
                )
               }
               
@@ -108,7 +108,7 @@ export default class Header extends Component {
                 )
                 :
                 (
-                  <a href={fmtURL `mailto:?subject=The Coherence Map shows the connections between Common Core State Standards for Mathematics.&body=${window.location.href}` }><i className="fa fa-envelope"></i></a>
+                  <a href={fmtURL `mailto:?subject=The Coherence Map shows the connections between Kentucky Academic Standards for Mathematics..&body=${window.location.href}` }><i className="fa fa-envelope"></i></a>
                 )
               }
             </span>]})

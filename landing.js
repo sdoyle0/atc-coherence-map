@@ -25,7 +25,7 @@ export default class Landing extends Component {
       <div className='scroll'><i className='fa fa-angle-down' /></div>
       <div className='landing-hero'></div>
       <div className='landing-mod-1 landing-box'>
-        <p>The Coherence Map shows the connections between Common Core State Standards for{'\xA0'}Mathematics.</p>
+        <p>The Coherence Map shows the connections between Kentucky Academic Standards for Mathematics.</p>
         <button onClick={this.props.onGetStarted}>Get Started</button>
       </div>
       <div className='landing-mod-2'>
