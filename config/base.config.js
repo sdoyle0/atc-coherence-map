@@ -10,7 +10,7 @@ export const Config = {
       {
         name: 'Number and Quantity',
         code: 'N',
-        grade: 'HS',
+        grade: 'KY.HS',
         ordinal: "N",
         ordinalPrefix: 'N',
         ordering: 1
@@ -20,7 +20,7 @@ export const Config = {
         code: 'A',
         ordinal: "A",
         ordinalPrefix: 'A',
-        grade: 'HS',
+        grade: 'KY.HS',
         ordering: 2
       },
       {
@@ -28,34 +28,34 @@ export const Config = {
         code: 'F',
         ordinal: "F",
         ordinalPrefix: 'F',
-        grade: 'HS',
+        grade: 'KY.HS',
         ordering: 3
-      },
-      {
-        name: 'Modeling',
-        code: 'M',
-        ordinal: "M",
-        ordinalPrefix: 'Modeling',
-        grade: 'HS',
-        noStandard: true,
-        ordering: 4
       },
       {
         name: 'Geometry',
         code: 'G',
         ordinal: "G",
-        ordinalPrefix: 'G',
-        grade: 'HS',
-        ordering: 5
+        ordinalPrefix: 'Geometry',
+        grade: 'KY.HS',
+        noStandard: true,
+        ordering: 4
       },
       {
         name: 'Statistics and Probability',
-        code: 'S',
-        ordinal: "S",
-        ordinalPrefix: 'S',
-        grade: 'HS',
+        code: 'SP',
+        ordinal: "SP",
+        ordinalPrefix: 'SP',
+        grade: 'KY.HS',
+        ordering: 5
+      },
+      {
+        name: 'Calculus',
+        code: 'C',
+        ordinal: "C",
+        ordinalPrefix: 'C',
+        grade: 'KY.HS',
         ordering: 6
-    }
+      }
     ]
   },
   course_results_methodology: {

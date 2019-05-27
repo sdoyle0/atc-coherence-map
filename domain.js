@@ -94,7 +94,7 @@ class StandardsDesc extends React.Component {
 
     let _desc = formatHTML(this.props.desc).trim();
     let isPlusStandard = false;
-    if (this.props.domain && this.props.domain.grade === 'HS') {
+    if (this.props.domain && this.props.domain.grade === 'KY.HS') {
       let searchString = _desc.indexOf('(+)'); // (+)
       if (searchString === 0) {
         isPlusStandard = true;
@@ -177,7 +177,7 @@ export class Cluster extends React.Component {
     return (<div className='cluster-container'>
       <ClusterName name={this.props.cluster.name} />
       <ClusterDesc msa={this.props.cluster.msa} grade={this.props.domain.grade} standards={standards}/>
-      {(this.props.domain && this.props.domain.grade === 'HS') ?
+      {(this.props.domain && this.props.domain.grade === 'KY.HS') ?
         (
           // <ChildStandardsNoParent standards={standards} childStandardsNoParent={childStandardsNoParent} />
           <div className='standards'>{
@@ -260,7 +260,9 @@ export class Domain extends React.Component {
 
     let clusters = _.pick(window.cc.clusters, (c) => c.ccmathdomain_id === this.props.domain);//  _.groupBy(standards, (s) => s.id.split('.').slice(0,3).join('.') );
 
-    let _clusters =  _.sortBy(clusters, 'ordinal');
+    let _clusters =  _.sortBy(clusters, function (cluster) {
+        return parseInt(cluster.ordinal, 10);
+    });
     return (<div className='domain-page'>
       <ReactMeta title={window.cc.domains[this.props.domain].grade + '.' + window.cc.domains[this.props.domain].ordinal + ' - ' + window.cc.domains[this.props.domain].name} />
       {

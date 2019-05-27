@@ -52,7 +52,7 @@ export class ClusterDesc extends Component {
         msa_desc += '.';
     }
 
-    if(this.props.grade === 'HS') {
+    if(this.props.grade === 'KY.HS') {
       // if(1*this.props.wap !== 0) return null;
       msa_desc = 'A Widely Applicable Prerequisite (WAP) standard is one with relatively wide applicability across a range of postsecondary work. The Widely Applicable Prerequisites are a subset of the material students must study to be college and career ready (CCSSM, pp. 57, 84). Curricular materials, instruction, and assessment must give especially careful treatment to the domains, clusters, and standards identified as a WAP, including their interconnections and their applications—amounting to a majority of students’ time.';
       msa_text = 'Widely Applicable Prerequisite';

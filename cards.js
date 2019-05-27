@@ -81,16 +81,16 @@ class Domain extends React.Component {
   onDomainClick = () => {
     if(this.props.shallow) return;
     this.setState({expanded:false});
-    if (this.props.domain.grade !== 'HS' && (this.props.grade && this.props.grade !== 'HS')) {
+    if (this.props.domain.grade !== 'KY.HS' && (this.props.grade && this.props.grade !== 'KY.HS')) {
       this.props.onSelectDomain(this.props.domain.id);
-    } else if((this.props.grade && this.props.grade === 'HS' && !this.props.category)){
+    } else if((this.props.grade && this.props.grade === 'KY.HS' && !this.props.category)){
       if (this.props.domain.ordinal === 'M') {
         this.props.onSelectModelingDomain(Config.modelingPage.landing);
       } else {
         this.props.onSelectCat(this.props.domain.ordinal);
       }
     } else {
-      if (this.props.grade === 'HS' && 
+      if (this.props.grade === 'KY.HS' && 
         this.props.domain.ordinal && this.props.domain.ordinal === 'M') {
           this.props.onSelectModelingDomain(this.props.domain.id);
       } else {
@@ -109,13 +109,13 @@ class Domain extends React.Component {
     //var standards =window.standards.filter((s) => s.id.indexOf(this.props.domain+'.')>-1);
     var standards = getAllStandardsForDomain(this.props.domain.id);
 
-    if (this.props.grade === 'HS') {
+    if (this.props.grade === 'KY.HS') {
       if (!this.props.category) {
         if (this.props.domain.noStandard)  {
           // standards.push(1);
           standards = ["1", "2", "3"];
         } else {
-          let ds = _(window.cc.domains).pick((d) => d.grade === 'HS' && d.ordinal.split('-') && 
+          let ds = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
           d.ordinal.split('-')[0] === this.props.domain.ordinalPrefix).sortBy('ordering').value();
           standards = _.map(ds, 'id');
         }
@@ -136,10 +136,9 @@ class Domain extends React.Component {
     gradeName.push('High School');
     var gradeMap = {"KY.K": "Kindergarten", "KY.1": "1st Grade", "KY.2": "2nd Grade", "KY.3": "3rd Grade",
                     "KY.4": "4th Grade", "KY.5": "5th Grade", "KY.6": "6th Grade", "KY.7": "7th Grade",
-                    "KY.8": "8th Grade", "KY.HS": "High School"/*, 2: "2nd Grade", 3: "3rd Grade", 4: "4th Grade", 5: "5th Grade", 6: "6th Grade", 7: "7th Grade",
-  8: "8th Grade", "HS": "High School"*/};
+                    "KY.8": "8th Grade", "KY.HS": "High School"};
     var classNameCard = 'card';
-    if (this.props.domain.grade === 'HS') {
+    if (this.props.domain.grade === 'KY.HS') {
       classNameCard += ' card-hs';
     }
     return <div className="domain-cards" onClick={this.onDomainClick} onMouseEnter={()=>!('ontouchstart' in document) && this._onMouseEnter()} onMouseUp={()=>this.setState({expanded:false})} onMouseLeave={()=>this.setState({expanded:false})}>{standards.map( (s,i) =>
@@ -154,14 +153,14 @@ class Domain extends React.Component {
         (this.props.depth === 0 && i === 0) ?
           <div className="caption-container">
             <div className="grade-caption">
-              {/* { this.props.domain.grade !== 'HS' ?
+              {/* { this.props.domain.grade !== 'KY.HS' ?
                 gradeName[parseInt(this.props.domain.grade)||0]	
               : gradeName[9]	
               } */}
               { gradeMap[this.props.domain.grade]}
             </div>
             <div className="standard-caption">
-              { this.props.grade !== 'HS' ?
+              { this.props.grade !== 'KY.HS' ?
                 domainCode(this.props.domain)
                 : !this.props.category ?
                   `HS.${this.props.domain.ordinal}` : domainCodeHS(this.props.domain, this.props.category)
@@ -175,7 +174,7 @@ class Domain extends React.Component {
         i === 0 ?
         <div className="caption-container">
           <div className="standard-caption">
-            { this.props.grade !== 'HS' ?
+            { this.props.grade !== 'KY.HS' ?
               domainCode(this.props.domain)
               : !this.props.category ?
                 `HS.${this.props.domain.ordinal}` : domainCodeHS(this.props.domain, this.props.category)
@@ -219,31 +218,31 @@ class Grade extends React.Component {
     if (!this.props.category) {
       domains = _(window.cc.domains).pick((d) => d.grade===''+this.props.grade).sortBy('ordering')/*.map((v) => v.grade+'.'+v.ordinal)*/.value();
     } else {
-      domains = _(window.cc.domains).pick((d) => d.grade === 'HS' && d.ordinal.split('-') && 
+      domains = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
       d.ordinal.split('-')[0] === this.props.category).sortBy('ordering').value();
     }
 
-    if (this.props.grade && this.props.grade === 'HS') {
+    if (this.props.grade && this.props.grade === 'KY.HS') {
       if (!this.props.category && Config.conceptual_categories) {
         domains = Config.conceptual_categories.items;
       }
     }
     var stacks = _(domains).map(getDepth).value();
-    if (this.props.grade === 'HS' && !this.props.category) {
+    if (this.props.grade === 'KY.HS' && !this.props.category) {
       
       stacks = [];
       Config.conceptual_categories.items.forEach(category => {
         if (category.ordinalPrefix === 'Modeling')  {
           stacks.push(1);
         } else {
-          let ds = _(window.cc.domains).pick((d) => d.grade === 'HS' && d.ordinal.split('-') && 
+          let ds = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
           d.ordinal.split('-')[0] === category.ordinalPrefix).sortBy('ordering').value();
           stacks.push(_.size(ds));
         }
       });
     } else if (this.props.category) {
       stacks = [];
-      let domainsByCategory =  _(window.cc.domains).pick((d) => d.grade === 'HS' && d.ordinal.split('-') && 
+      let domainsByCategory =  _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
       d.ordinal.split('-')[0] === this.props.category).sortBy('ordering').value();
       domains = domainsByCategory;
       domainsByCategory.forEach(domain => {
@@ -267,7 +266,7 @@ class Grade extends React.Component {
     }
     else {
       layouts = layoutStack(stacks, this.state.expanded ? 10 : 0, true).map( (p) => ({x: p.x + this.props.x, y: p.y + this.props.y }));
-      if (this.props.grade === 'HS' ) {
+      if (this.props.grade === 'KY.HS' ) {
         for (var i = 0; i < layouts.length; i++) {
           layouts[i].x = layouts[i].x - 300;
           // alert(myStringArray[i]);
@@ -283,8 +282,8 @@ class Grade extends React.Component {
     }}
     
     className={classNames('grade-cards', {'selected':selected, 
-      'onHS': (!this.props.category && this.props.selectedGrade === 'HS' && selected), 
-      'onCatHS': (this.props.selectedGrade === 'HS' && this.props.category) })} 
+      'onHS': (!this.props.category && this.props.selectedGrade === 'KY.HS' && selected), 
+      'onCatHS': (this.props.selectedGrade === 'KY.HS' && this.props.category) })} 
       onClick={this._onClick} 
       onMouseEnter={this._onMouseEnter} 
       onMouseLeave={this._onMouseLeave}>{domains.map( (d,i) =>
@@ -385,8 +384,6 @@ export class Deck extends React.Component {x
       {(!this.props.domain || !this.props.grade) && <ReactMeta />}
       {
         ['KY.K',"KY.1","KY.2","KY.3","KY.4","KY.5","KY.6","KY.7", "KY.8", "KY.HS"].map((g, i) =>
-        // ['KY.K',"KY.1",2,3,4,5,6,7,8,'HS'].map((g, i) =>
-        // ['K',1,2,3,4,5,6,7,8,'HS'].map((g, i) =>
           <Grade 
             {...layouts[i]} 
             category={this.props.category} 

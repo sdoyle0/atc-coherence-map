@@ -45,7 +45,7 @@ export function layoutSubGraph(parentNodes, _root, degrees, _overrideStandard) {
   _(columns[mid]).forEach((v) => { seenNodes[v] = 1; }).value();
 
   //var nodeSort = (n) => require('./standards-utils').standardCode(n).replace('K.', '0.');
-  if (_getDomain && _getDomain.grade && _getDomain.grade === 'HS') {
+  if (_getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS') {
     // Keep on child standards
     columns[mid - 1] = _(nodes[root].rev_edge).map((n) => n.id).filter((n) => !seenNodes[n]).value();
     columns[mid + 1] = _(nodes[root].edge).map((n) => n.id).filter((n) => !seenNodes[n]).value();
@@ -55,7 +55,7 @@ export function layoutSubGraph(parentNodes, _root, degrees, _overrideStandard) {
       if (!parentNodes[n]) {
         let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
         let grade = window.cc.domains[domain].grade;
-        if (grade && grade === 'HS') {
+        if (grade && grade === 'KY.HS') {
           isHS = true;
         }
       }
@@ -69,7 +69,7 @@ export function layoutSubGraph(parentNodes, _root, degrees, _overrideStandard) {
       if (!parentNodes[n]) {
         let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
         let grade = window.cc.domains[domain].grade;
-        if (grade && grade === 'HS') {
+        if (grade && grade === 'KY.HS') {
           isHS = true;
         }
       }
@@ -87,7 +87,7 @@ export function layoutSubGraph(parentNodes, _root, degrees, _overrideStandard) {
 
   if (degrees === 2) {
     
-    if (_getDomain && _getDomain.grade && _getDomain.grade === 'HS') {
+    if (_getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS') {
       // Keep on child standards
       columns[mid - 2] = _(columns[mid - 1]).map((n) => _(nodes[n].rev_edge).map((n) => n.id).filter((n) => !seenNodes[n]).value().slice(/*0,3*/)).flatten().unique().value();
       columns[mid + 2] = _(columns[mid + 1]).map((n) => _(nodes[n].edge).map((n) => n.id).filter((n) => !seenNodes[n]).value().slice(/*0,3*/)).flatten().unique().value();
@@ -97,7 +97,7 @@ export function layoutSubGraph(parentNodes, _root, degrees, _overrideStandard) {
         if (!parentNodes[n]) {
           let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
           let grade = window.cc.domains[domain].grade;
-          if (grade && grade === 'HS') {
+          if (grade && grade === 'KY.HS') {
             isHS = true;
           }
         }
@@ -111,7 +111,7 @@ export function layoutSubGraph(parentNodes, _root, degrees, _overrideStandard) {
         if (!parentNodes[n]) {
           let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
           let grade = window.cc.domains[domain].grade;
-          if (grade && grade === 'HS') {
+          if (grade && grade === 'KY.HS') {
             isHS = true;
           }
         }
