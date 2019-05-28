@@ -94,7 +94,7 @@ class StandardsDesc extends React.Component {
 
     let _desc = formatHTML(this.props.desc).trim();
     let isPlusStandard = false;
-    if (this.props.domain && this.props.domain.grade === 'KY.HS') {
+    if (false && this.props.domain && this.props.domain.grade === 'KY.HS') {
       let searchString = _desc.indexOf('(+)'); // (+)
       if (searchString === 0) {
         isPlusStandard = true;
@@ -177,7 +177,7 @@ export class Cluster extends React.Component {
     return (<div className='cluster-container'>
       <ClusterName name={this.props.cluster.name} />
       <ClusterDesc msa={this.props.cluster.msa} grade={this.props.domain.grade} standards={standards}/>
-      {(this.props.domain && this.props.domain.grade === 'KY.HS') ?
+      {(false && this.props.domain && this.props.domain.grade === 'KY.HS') ?
         (
           // <ChildStandardsNoParent standards={standards} childStandardsNoParent={childStandardsNoParent} />
           <div className='standards'>{

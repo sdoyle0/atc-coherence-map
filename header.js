@@ -39,7 +39,7 @@ export default class Header extends Component {
       <h1>
         <a href='/coherence-map/'>
         {
-          (grade === 'KY.HS' && (root || domain) ) ? 
+          (false && grade === 'KY.HS' && (root || domain) ) ? 
             (!root && domain ? 
               (
                 <span>
@@ -121,9 +121,7 @@ export default class Header extends Component {
         this.props.standard ? 
           (<div className='help'>
             {
-              grade && grade === 'KY.HS' ? 
-                (<a className='button' onClick={() => $(document).trigger('showHelpHS')}>?</a>)
-              : (<a className='button' onClick={() => $(document).trigger('showHelp')}>?</a>)
+              (<a className='button' onClick={() => $(document).trigger('showHelp')}>?</a>)
             }
             </div>)
         : null 

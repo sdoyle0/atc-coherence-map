@@ -36,6 +36,7 @@ var isParentStandard = (n) => {
     return _domain;
   }
   let domain = getDomainByStandard(n.id);
+  return n.ordinal.indexOf('.') === -1;
   if (domain.grade !== 'KY.HS') {
     return n.ordinal.indexOf('.') === -1;
   } else {
@@ -79,7 +80,7 @@ function augmentColumnWithNDNodes(col, seenNodes, _overrideStandard) {
       var nds = nodes[c].nd_edge.filter(n => {
         let domain = window.cc.clusters[nodes[n.id].ccmathcluster_id].ccmathdomain_id;
         let grade = window.cc.domains[domain].grade;
-        if (grade && grade === 'KY.HS') {
+        if (false && grade && grade === 'KY.HS') {
           return !seenNodes[n.id];
         } else {
           return parentNodes[n.id] && !seenNodes[n.id];
@@ -131,6 +132,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
   var mid = Math.floor(nColumns/2);
 
   var root = _root.replace(/^(.*?)\.[ABC](\..+)?$/, '$1$2');
+  root = _root;
   let getDomainByStandard = function(_standard) {
     let cluster_id = _standard ? nodes[_standard].ccmathcluster_id: null;
     let cluster = {};
@@ -151,7 +153,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
   _(columns[mid]).forEach((v) => {seenNodes[v]=1;}).value();
 
   //var nodeSort = (n) => require('./standards-utils').standardCode(n).replace('K.', '0.');
-  if (_getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS') {
+  if (false && _getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS') {
     // Keep on child standard's connection but not exists parent standard
     columns[mid - 1] = _(nodes[root].rev_edge).map( (n) => n.id ).filter((n) => !seenNodes[n]).value();
     columns[mid + 1] = _(nodes[root].edge).map( (n) => n.id ).filter((n) => !seenNodes[n]).value();
@@ -162,7 +164,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
       if (!parentNodes[n]) {
         let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
         let grade = window.cc.domains[domain].grade;
-        if (grade && grade === 'KY.HS') {
+        if (false && grade && grade === 'KY.HS') {
           isHS = true;
         }
       }
@@ -176,7 +178,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
       if (!parentNodes[n]) {
         let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
         let grade = window.cc.domains[domain].grade;
-        if (grade && grade === 'KY.HS') {
+        if (false && grade && grade === 'KY.HS') {
           isHS = true;
         }
       }
@@ -192,7 +194,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
   _(columns[mid + 1]).forEach((v) => {seenNodes[v]=1;}).value();
 
   if(degrees === 2) {
-    if (_getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS') {
+    if (false && _getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS') {
       // Keep on child standard's connection but not exists parent standard
       columns[mid - 2] = _(columns[mid - 1]).map( (n) => _(nodes[n].rev_edge).map( (n) => n.id ).filter((n) => !seenNodes[n]).value().slice(/*0,3*/) ).flatten().unique().value();
       columns[mid + 2] = _(columns[mid + 1]).map( (n) => _(nodes[n].edge).map( (n) => n.id ).filter((n) => !seenNodes[n]).value().slice(/*0,3*/) ).flatten().unique().value();
@@ -202,7 +204,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
         if (!parentNodes[n]) {
           let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
           let grade = window.cc.domains[domain].grade;
-          if (grade && grade === 'KY.HS') {
+          if (false && grade && grade === 'KY.HS') {
             isHS = true;
           }
         }
@@ -216,7 +218,7 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
         if (!parentNodes[n]) {
           let domain = window.cc.clusters[nodes[n].ccmathcluster_id].ccmathdomain_id;
           let grade = window.cc.domains[domain].grade;
-          if (grade && grade === 'KY.HS') {
+          if (false && grade && grade === 'KY.HS') {
             isHS = true;
           }
         }
@@ -426,7 +428,7 @@ export default class Graph extends Component {
         return 1;
       return 0;
     }
-    if (_getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS'
+    if (false && _getDomain && _getDomain.grade && _getDomain.grade === 'KY.HS'
       && ((this.props.root == this.props.standard) || (this.props.root && !this.props.standard))  ) {
       subgraph.forEach((element, index) => {
         let _clusters = listClusterByStandard(element);

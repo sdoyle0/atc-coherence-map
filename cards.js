@@ -81,6 +81,8 @@ class Domain extends React.Component {
   onDomainClick = () => {
     if(this.props.shallow) return;
     this.setState({expanded:false});
+    this.props.onSelectDomain(this.props.domain.id);
+    return;
     if (this.props.domain.grade !== 'KY.HS' && (this.props.grade && this.props.grade !== 'KY.HS')) {
       this.props.onSelectDomain(this.props.domain.id);
     } else if((this.props.grade && this.props.grade === 'KY.HS' && !this.props.category)){
@@ -109,20 +111,20 @@ class Domain extends React.Component {
     //var standards =window.standards.filter((s) => s.id.indexOf(this.props.domain+'.')>-1);
     var standards = getAllStandardsForDomain(this.props.domain.id);
 
-    if (this.props.grade === 'KY.HS') {
-      if (!this.props.category) {
-        if (this.props.domain.noStandard)  {
-          // standards.push(1);
-          standards = ["1", "2", "3"];
-        } else {
-          let ds = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
-          d.ordinal.split('-')[0] === this.props.domain.ordinalPrefix).sortBy('ordering').value();
-          standards = _.map(ds, 'id');
-        }
-      } else {
-        standards = getAllStandardsForDomain(this.props.domain.id);
-      }
-    }
+    // if (this.props.grade === 'KY.HS') {
+    //   if (!this.props.category) {
+    //     if (this.props.domain.noStandard)  {
+    //       // standards.push(1);
+    //       standards = ["1", "2", "3"];
+    //     } else {
+    //       let ds = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
+    //       d.ordinal.split('-')[0] === this.props.domain.ordinalPrefix).sortBy('ordering').value();
+    //       standards = _.map(ds, 'id');
+    //     }
+    //   } else {
+    //     standards = getAllStandardsForDomain(this.props.domain.id);
+    //   }
+    // }
     
     //if(this.props.shallow) standards = standards.slice(0,1);
 
@@ -160,11 +162,14 @@ class Domain extends React.Component {
               { gradeMap[this.props.domain.grade]}
             </div>
             <div className="standard-caption">
-              { this.props.grade !== 'KY.HS' ?
+              {
+                domainCode(this.props.domain)
+              }
+              {/* { this.props.grade !== 'KY.HS' ?
                 domainCode(this.props.domain)
                 : !this.props.category ?
                   `HS.${this.props.domain.ordinal}` : domainCodeHS(this.props.domain, this.props.category)
-              }
+              } */}
               <p>{this.props.domain.name}</p>
             </div>
           </div>
@@ -174,10 +179,8 @@ class Domain extends React.Component {
         i === 0 ?
         <div className="caption-container">
           <div className="standard-caption">
-            { this.props.grade !== 'KY.HS' ?
+            {
               domainCode(this.props.domain)
-              : !this.props.category ?
-                `HS.${this.props.domain.ordinal}` : domainCodeHS(this.props.domain, this.props.category)
             }
             <p>{this.props.domain.name}</p>
           </div>
@@ -222,34 +225,34 @@ class Grade extends React.Component {
       d.ordinal.split('-')[0] === this.props.category).sortBy('ordering').value();
     }
 
-    if (this.props.grade && this.props.grade === 'KY.HS') {
-      if (!this.props.category && Config.conceptual_categories) {
-        domains = Config.conceptual_categories.items;
-      }
-    }
+    // if (this.props.grade && this.props.grade === 'KY.HS') {
+    //   if (!this.props.category && Config.conceptual_categories) {
+    //     domains = Config.conceptual_categories.items;
+    //   }
+    // }
     var stacks = _(domains).map(getDepth).value();
-    if (this.props.grade === 'KY.HS' && !this.props.category) {
+    // if (this.props.grade === 'KY.HS' && !this.props.category) {
       
-      stacks = [];
-      Config.conceptual_categories.items.forEach(category => {
-        if (category.ordinalPrefix === 'Modeling')  {
-          stacks.push(1);
-        } else {
-          let ds = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
-          d.ordinal.split('-')[0] === category.ordinalPrefix).sortBy('ordering').value();
-          stacks.push(_.size(ds));
-        }
-      });
-    } else if (this.props.category) {
-      stacks = [];
-      let domainsByCategory =  _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
-      d.ordinal.split('-')[0] === this.props.category).sortBy('ordering').value();
-      domains = domainsByCategory;
-      domainsByCategory.forEach(domain => {
-        let standardsByDomain = getAllStandardsForDomain(domain.id);
-        stacks.push(_.size(standardsByDomain));
-      });
-    }
+    //   stacks = [];
+    //   Config.conceptual_categories.items.forEach(category => {
+    //     if (category.ordinalPrefix === 'Modeling')  {
+    //       stacks.push(1);
+    //     } else {
+    //       let ds = _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
+    //       d.ordinal.split('-')[0] === category.ordinalPrefix).sortBy('ordering').value();
+    //       stacks.push(_.size(ds));
+    //     }
+    //   });
+    // } else if (this.props.category) {
+    //   stacks = [];
+    //   let domainsByCategory =  _(window.cc.domains).pick((d) => d.grade === 'KY.HS' && d.ordinal.split('-') && 
+    //   d.ordinal.split('-')[0] === this.props.category).sortBy('ordering').value();
+    //   domains = domainsByCategory;
+    //   domainsByCategory.forEach(domain => {
+    //     let standardsByDomain = getAllStandardsForDomain(domain.id);
+    //     stacks.push(_.size(standardsByDomain));
+    //   });
+    // }
 
     
 

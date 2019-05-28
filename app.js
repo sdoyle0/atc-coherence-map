@@ -234,7 +234,7 @@ class App extends React.Component {
       parts[2] = parts[2] || null;
       parts[3] = parts[3] || null;
       parts[4] = 1*parts[4] || null;
-      if (parts[0] && parts[0] === 'KY.HS') {
+      if (false && parts[0] && parts[0] === 'KY.HS') {
         this.setState({grade:parts[0],
           category: parts[1],
           domain:parts[2],
@@ -578,7 +578,7 @@ class App extends React.Component {
       if (domain) {
         newHash.domain = domain;
       }
-      if (newHash.grade && newHash.grade !== 'KY.HS') {
+      if (newHash.grade) {
         newHash.category = null;
         this.setState({
           category: null, 
@@ -586,7 +586,7 @@ class App extends React.Component {
       }
 
       var url;
-      if (newHash && newHash.grade === 'KY.HS') {
+      if (false && newHash && newHash.grade === 'KY.HS') {
         if (newHash.category && newHash.category === 'M') {
           newHash.root = null;
           newHash.standard = null;
@@ -617,7 +617,7 @@ class App extends React.Component {
       let minusHeightHs = 0;
       let sub_nav_hs = this.refs.sub_nav_hs;
       // $('.sub_nav_hs').show();
-      if (grade === 'KY.HS') {
+      if (false && grade === 'KY.HS') {
         minusHeightHs = 60;
       }
       if(vp) {
@@ -677,7 +677,8 @@ class App extends React.Component {
     var domain = window.cc.clusters[nodes[s].ccmathcluster_id].ccmathdomain_id;
     let grade = window.cc.domains[domain].grade;
     let _category = window.cc.domains[domain].ordinal.split('-')[0];
-    if (grade === 'KY.HS') {
+    this._setHash({domain:domain, grade:window.cc.domains[domain].grade, root:s,standard:s, standard_index: null});
+    if (false && grade === 'KY.HS') {
       this._setHash({domain:domain, grade:window.cc.domains[domain].grade, category: _category, root:s,standard:s, standard_index: null});
     } else {
       this._setHash({domain:domain, grade:window.cc.domains[domain].grade, root:s,standard:s, standard_index: null});
@@ -797,7 +798,7 @@ class App extends React.Component {
           (this.state.root && !(this.state.showSpecialPage && (this.state.showSpecialPage.moreCourseInfo || this.state.showSpecialPage.modeling) ) ) ?
           <div>
             {
-              (this.state.grade && this.state.grade === 'KY.HS') ? 
+              (false && this.state.grade && this.state.grade === 'KY.HS') ? 
                 (<SubNavStandard />)
               : null
             }

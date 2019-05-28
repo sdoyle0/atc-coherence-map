@@ -31,7 +31,7 @@ class StandardsDesc extends Component {
     render() {
       let _desc = formatHTML(this.props.desc).trim();
       let isPlusStandard = false;
-      if (this.props.domain && this.props.domain.grade === 'KY.HS') {
+      if (false && this.props.domain && this.props.domain.grade === 'KY.HS') {
         let searchString = _desc.indexOf('(+)'); // (+)
         if (searchString === 0) {
           isPlusStandard = true;
@@ -195,7 +195,7 @@ export default class Node extends Component {
     if(domain.grade === '0')
       focus = 'http://achievethecore.org/content/upload/SAP_Focus_Math_K%2011.12.14.pdf';
 
-    if (domain.grade === 'KY.HS') {
+    if (false && domain.grade === 'KY.HS') {
       focus = 'https://achievethecore.org/content/upload/Widely%20Applicable%20Prerequisites.pdf';
     }
     //var translateString = 'translate('+this.props.x*(LayoutStyle.CardWidth + LayoutStyle.PaddingH)+'px,'+this.props.y*(LayoutStyle.CardHeight + LayoutStyle.PaddingV)+'px) ';
@@ -230,13 +230,13 @@ export default class Node extends Component {
           <h2>{domain.name}</h2>
           <ClusterName name={cluster.name} />
           <ClusterDesc msa={cluster.msa} wap={standard.wap} grade={domain.grade} />
-          {standard.modeling === '1' && domain.grade !== 'KY.HS' ?
+          {standard.modeling === '1' ?
             <p onClick={() => $(document).trigger('defineTerm', {
                 title:'Modeling Standard',
                 desc:'Modeling is best interpreted not as a collection of isolated topics but rather in relation to other standards. Making mathematical models is a Standard for Mathematical Practice, and specific modeling standards appear throughout the high school standards indicated by a star symbol ★'
               })} className='modeling'>Modeling Standard ★</p>
             : null }
-          {standard.modeling === '1' && domain.grade === 'KY.HS' ?
+          {/* {standard.modeling === '1' && domain.grade === 'KY.HS' ?
             <p onClick={() => $(document).trigger('defineLearnMoreAboutModeling', {
                 title:'Modeling Standards',
                 desc:`Modeling is the process of choosing and using appropriate mathematics and 
@@ -245,9 +245,9 @@ export default class Node extends Component {
                   Practice in all grades and a conceptual category in high school. 
                   Modeling content standards such as this one are indicated by a star symbol ★.`
               })} className='modeling'>Modeling Standard ★</p>
-            : null }
+            : null } */}
           {
-            ( domain.grade === 'KY.HS' && parent_standard) &&
+            ( false && domain.grade === 'KY.HS' && parent_standard) &&
             (
               <div>
                 <h3 className='parent-standard-name'>{standardCode(parent_standard.id)}</h3>
@@ -273,7 +273,7 @@ export default class Node extends Component {
           {this.props.viewing ?
             <div className="detail-content">
               { standard.example_problem && domain.grade === 'KY.HS' ? <hr className="mt-35"/> : '' }
-              {domain.grade === 'KY.HS' && <Course standard={standard} />}
+              {/* {domain.grade === 'KY.HS' && <Course standard={standard} />} */}
               
               <div className="child-standards">
               {child_standards.map((s) => <Collapse ref={'collapse'+s.id} disabled={false /*_.intersection(s.rev_edge.concat(s.edge).concat(s.nd_edge), standard.rev_edge.concat(standard.edge).concat(standard.nd_edge)).map((e)=>e.ordinal).filter(o=>o.indexOf('.')===-1).length === 0*/} minHeight={90} key={s.id} title={standardCode(s.id)} onAdjustParentHeight={this._fixHeight} onExpand={() => this.expandChild(s)} onCollapse={this.collapseChild}><StandardsDesc desc={s.desc} domain={domain}/></Collapse>)}
@@ -284,7 +284,7 @@ export default class Node extends Component {
                   <a href={standard.example_problem_url} target='_blank' className='example-download button'>Download Example Task <Icons.ArrowDL /></a>
                 </Collapse> : null }
              
-              { child_standards.length < 1 && domain.grade === 'KY.HS' ? <hr className="mt-35"/> : '' }
+              {/* { child_standards.length < 1 && domain.grade === 'KY.HS' ? <hr className="mt-35"/> : '' } */}
 
               { standard.example_problem ?
               <h3 className="example-problem-header">Example Task</h3> : null}
@@ -312,13 +312,8 @@ export default class Node extends Component {
               </Collapse> : null}
               {standard.links && standard.links.map((l) => <Collapse title={l.name} onAdjustParentHeight={this._fixHeight} key={l.name}>{l.links.map((l)=><a className='button linkout' key={l.url} href={l.url} target='_blank'>{l.name} <Icons.ArrowExt /></a>)}</Collapse>)}
               <Collapse title='Focus' onAdjustParentHeight={this._fixHeight} key='focus'>
-                { domain.grade !== 'KY.HS' ?
-                  <a className='button linkout' key='focus' href={focus} target='_blank'>
+                { <a className='button linkout' key='focus' href={focus} target='_blank'>
                     Focus in {domain.grade === '0' ? 'Kindergarten' : `Grade ${domain.grade}`} 
-                    <Icons.ArrowExt />
-                  </a>  :
-                  <a className='button linkout' key='focus' href={focus} target='_blank'>
-                    Widely Applicable Prerequisites – High School 
                     <Icons.ArrowExt />
                   </a>
                 }
