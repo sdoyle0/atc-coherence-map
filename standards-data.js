@@ -10477,16 +10477,18 @@ const standards_hs_c = {
 	}
 };
 
-const all_domains = {...domains_k, ...domains_1, ...domains_2, ...domains_3, ...domains_4,
-					 ...domains_5, ...domains_6, ...domains_7, ...domains_8, ...domains_hs };
-const all_clusters = {...clusters_k, ...clusters_1, ...clusters_2, ...clusters_3, ...clusters_4,
-					  ...clusters_5, ...clusters_6, ...clusters_7, ...clusters_8, ...clusters_hs_n,
-					  ...clusters_hs_a, ...clusters_hs_f, ...clusters_hs_g, ...clusters_hs_sp,
-					  ...clusters_hs_c };
-const all_standards = {...standards_k, ...standards_1, ...standards_2, ...standards_3, ...standards_4,
-					   ...standards_5, ...standards_6, ...standards_7, ...standards_8, ...standards_hs_n,
-					   ...standards_hs_a, ...standards_hs_f, ...standards_hs_g, ...standards_hs_sp,
-					   ...standards_hs_c };
+const all_domains = Object.assign(domains_k, domains_1, domains_2, domains_3, domains_4, domains_5,
+									domains_6, domains_7, domains_8, domains_hs);
+
+const all_clusters = Object.assign(clusters_k, clusters_1, clusters_2, clusters_3, clusters_4,
+									clusters_5, clusters_6, clusters_7, clusters_8, clusters_hs_n,
+									clusters_hs_a, clusters_hs_f, clusters_hs_g, clusters_hs_sp,
+									clusters_hs_c);
+
+const all_standards = Object.assign(standards_k, standards_1, standards_2, standards_3, standards_4,
+										standards_5, standards_6, standards_7, standards_8, standards_hs_n,
+										standards_hs_a, standards_hs_f, standards_hs_g, standards_hs_sp,
+										standards_hs_c );
 
 const edges = [
 	{"from":"KY.K.CC.1","to":"KY.1.NBT.1"},
