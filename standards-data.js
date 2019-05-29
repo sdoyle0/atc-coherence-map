@@ -124,7 +124,14 @@ const standards_k = {
 		"id": "KY.K.CC.1",
 		"ccmathcluster_id": "KY.K.CC_c1",
 		"ordinal": "1",
-		"desc": "<p>Count<\/p>\r\n<p>a. Count to 100 by ones and by tens.<\/p>\r\n<p>b. Count backwards from 30 by ones.<\/p>\r\n",
+		"desc": `Count
+					<ol type="a">
+						<li>Count to 100 by ones and by tens.</li>
+						<li>Count backwards from 30 by ones.</li>
+					</ol>`,
+		"clarifications": `Students verbally count forward by ones (1,2,3,4. . .) to 100.<br>
+							Students verbally count forward by tens (10, 20, 30. . .) to 100.<br>
+							Students verbally count backwards by ones (30, 29, 28, 27. . .) from 30.`,
 		"example_problem": "",
 		"example_problem_url": "",
 		"example_problem_attribution": "",
