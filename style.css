@@ -513,6 +513,10 @@ h3 { font-family: 'museo_sans500'; letter-spacing: 2px; }
     cursor: pointer;
 }
 
+.collapse-header:hover {
+    color: #2152bc;
+}
+
 .collapse-header h3 {
     margin: 0;
 }
@@ -1470,9 +1474,6 @@ p.modeling {
     margin-top: 6px;
     color: #0033a0;
     cursor: pointer;
-}
-.collapse-header:hover {
-    color: #21593f;
 }
 .viewport .collapse .collapse-header + p.standard-desc {
     margin-top: -5px;

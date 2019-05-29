@@ -303,6 +303,14 @@ export default class Node extends Component {
               <div className="example-problem" dangerouslySetInnerHTML={{__html:this.formatProblem(standard.example_problem, standard)}} /> : null}*/}
               { standard.example_problem_url ?
               <a href={standard.example_problem_url} target='_blank' className="example-download button">Download Example Task <Icons.ArrowDL /></a> : null}
+              
+              { standard.clarifications ?
+              <Collapse title="Clarifications" onAdjustParentHeight={this._fixHeight}>
+                <div className="clarifications" 
+                  dangerouslySetInnerHTML={{__html:standard.clarifications}} 
+                />
+              </Collapse> : null}
+
               { standard.progressions ?
               <Collapse title="Progressions" onAdjustParentHeight={this._fixHeight} isProgressions={true}>
                 <div className="progressions example-problem example-problem-mathjax" 
@@ -311,14 +319,7 @@ export default class Node extends Component {
                 <a href={progressions} target='_blank' className="example-download button">Download Progressions PDF <Icons.ArrowDL /></a>
               </Collapse> : null}
               {standard.links && standard.links.map((l) => <Collapse title={l.name} onAdjustParentHeight={this._fixHeight} key={l.name}>{l.links.map((l)=><a className='button linkout' key={l.url} href={l.url} target='_blank'>{l.name} <Icons.ArrowExt /></a>)}</Collapse>)}
-              <Collapse title='Focus' onAdjustParentHeight={this._fixHeight} key='focus'>
-                { <a className='button linkout' key='focus' href={focus} target='_blank'>
-                    Focus in {domain.grade === '0' ? 'Kindergarten' : `Grade ${domain.grade}`} 
-                    <Icons.ArrowExt />
-                  </a>
-                }
-                
-              </Collapse>
+              
             </div>
           : null
           }
