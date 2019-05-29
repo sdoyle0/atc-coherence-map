@@ -71,6 +71,7 @@ export class ClusterDesc extends Component {
       }
     }
 
+    return null;
     return (<div onClick={() => $(document).trigger('defineTerm', {title:msa_text,desc:msa_desc})} className={classNames('cluster-type', msa_class)}><span>{msa_text}</span></div>);
   }
 }

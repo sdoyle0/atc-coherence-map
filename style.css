@@ -54,17 +54,18 @@ h3 { font-family: 'museo_sans500'; letter-spacing: 2px; }
 }
 
 .deck {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    /* top: calc(50vh - 410px); */
+    height: 100%;
+    width: 1000px;
+    top: 0px;
+    margin-top: 60px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.deck.deck-default-top {
-    top: calc(50vh - 410px);
-}
-@media screen and (max-height: 700px) {
-	.deck { top: -30px; }
-}
+
 @media screen and (max-width: 1024px) {
 	.deck { 
 		width: 100%; 
@@ -78,36 +79,6 @@ h3 { font-family: 'museo_sans500'; letter-spacing: 2px; }
 		-webkit-transform: scale(0.633); 
 		top: calc(50vh - 388px); 
 	} 
-}
-
-.card {
-    text-align: center;
-    font-family: 'museo_sans500';
-    font-size: 18px;
-    color: white;
-
-}
-
-.card {
-    position: absolute;
-    width: 160px;
-    height: 100px;
-    margin: 140px;
-    background: #0033a0;
-    border: 1px solid #ddd;
-    border-bottom-color: #c9c7c4;
-    transition: 0.55s all cubic-bezier(0.59, 0.03, 0.43, 0.99);
-    cursor: pointer;
-}
-
-.card-hs {
-    width: 760px;
-}
-
-.selected .card {
-    width: 250px;
-    height: 160px;
-    margin: 120px;
 }
 
 .caption-container > div {
@@ -255,15 +226,6 @@ h3 { font-family: 'museo_sans500'; letter-spacing: 2px; }
     line-height: 30px;
     display: none;
 }
-
-.grade-cards.selected .card {
-    background-color: white;
-}
-
-.grade-cards.selected .card:last-child {
-    background-color: #0033a0;
-}
-
 
 .cluster-container {
     width: 640px;
@@ -1686,5 +1648,71 @@ button, input, optgroup, select, textarea {
     right: 30px;
     left: 30px;
     margin-top: 0;
+}
+
+
+.grade-container,
+.domain-container {
+    padding: 20px 40px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grade-container.hs-container {
+    flex-basis: 100%;
+    padding: 40px 80px;
+}
+
+.card {
+    background-color: #0033a0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card:hover {
+    top: -10px;
+    background-color: #2152bc;
+}
+
+.card.grade {
+    width: 160px;
+    height: 100px;
+}
+
+.grade-container.hs-container .card {
+    width: 100%;
+}
+
+.card.domain {
+    width: 250px;
+    height: 160px;
+}
+
+.grade-name,
+.domain-code,
+.domain-name {
+    font-family: museo_sans500;
+    font-size: 18px;
+    color: white;
+    height: auto;
+    text-align: center;
+}
+
+.domain-code {
+    font-size: 14px;
+    font-family: museo_sans100;
+    margin-bottom: 10px;
 }
 /* /atc-modals */
