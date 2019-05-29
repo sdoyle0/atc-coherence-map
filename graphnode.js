@@ -30,28 +30,9 @@ class StandardsDesc extends Component {
     }
     render() {
       let _desc = formatHTML(this.props.desc).trim();
-      let isPlusStandard = false;
-      if (false && this.props.domain && this.props.domain.grade === 'KY.HS') {
-        let searchString = _desc.indexOf('(+)'); // (+)
-        if (searchString === 0) {
-          isPlusStandard = true;
-        }
-        _desc = searchString === 0 ? _desc.substring(3) : _desc;
-        
-      }
-
       return (
           <div className="standard-desc-plus">
-            { isPlusStandard &&
-              <p className="plus" onClick={
-                () => $(document).trigger('defineTerm', { title: 'Plus Standards', desc: `
-                The high school standards specify the mathematics that all students should study in order 
-                to be college- and career-ready. 
-                Additional mathematics that students should learn in order to take advanced courses such as 
-                calculus, advanced statistics, or discrete mathematics is indicated by (+).
-                ` } )}>(+)</p>
-            }
-            <p className='standard-desc' dangerouslySetInnerHTML={{__html:_desc}}></p>
+            <div className='standard-desc' dangerouslySetInnerHTML={{__html:_desc}}></div>
           </div>
         );
     }

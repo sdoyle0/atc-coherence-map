@@ -91,29 +91,10 @@ class StandardsDesc extends React.Component {
     );
   }
   render() {
-
     let _desc = formatHTML(this.props.desc).trim();
-    let isPlusStandard = false;
-    if (false && this.props.domain && this.props.domain.grade === 'KY.HS') {
-      let searchString = _desc.indexOf('(+)'); // (+)
-      if (searchString === 0) {
-        isPlusStandard = true;
-      }
-      _desc = searchString === 0 ? _desc.substring(3) : _desc;
-    }
     return (
       <div className="standard-desc-plus">
-        {isPlusStandard &&
-          <p className="plus" onClick={
-            () => $(document).trigger('defineTerm', {
-              title: 'Plus Standards', desc: `
-                The high school standards specify the mathematics that all students should study in order 
-                to be college- and career-ready. 
-                Additional mathematics that students should learn in order to take advanced courses such as 
-                calculus, advanced statistics, or discrete mathematics is indicated by (+).
-                ` })}>(+)</p>
-        }
-        <p className='standard-desc' dangerouslySetInnerHTML={{ __html: _desc }}></p>
+        <div className='standard-desc' dangerouslySetInnerHTML={{ __html: _desc }}></div>
       </div>
     );
   }
@@ -177,47 +158,14 @@ export class Cluster extends React.Component {
     return (<div className='cluster-container'>
       <ClusterName name={this.props.cluster.name} />
       <ClusterDesc msa={this.props.cluster.msa} grade={this.props.domain.grade} standards={standards}/>
-      {(false && this.props.domain && this.props.domain.grade === 'KY.HS') ?
-        (
-          // <ChildStandardsNoParent standards={standards} childStandardsNoParent={childStandardsNoParent} />
-          <div className='standards'>{
-            standards.map((s) =>
-              <div key={s.id} className={classNames('standard node', {'standard-hs': (childStandardsNoParent.indexOf(window.cc.standards[s.id].id) <= -1)})} >
-                <h1>{standardCode(window.cc.standards[s.id].id)}</h1>
-                {
-                  (childStandardsNoParent.indexOf(window.cc.standards[s.id].id) > -1) &&
-                    <StandardsDesc desc={window.cc.standards[s.id].desc} domain={this.props.domain} />
-                }
-                <div>
-                  {(childStandardsNoParent.indexOf(window.cc.standards[s.id].id) > -1) ?
-                    (
-                      <ChildStandardHasSubGraph 
-                        s={s.id} standards={standards} 
-                        childStandardsNoParent={childStandardsNoParent} 
-                        domain={this.props.domain} 
-                        onSelectStandard={this.props.onSelectStandard} />
-                    )
-                    :
-                    (
-                      <ChildStandardHasNoSubGraph 
-                        s={s.id} 
-                        standards={standards} 
-                        domain={this.props.domain} 
-                        onSelectStandard={this.props.onSelectStandard} />
-                    )
-                  }
-                </div>
-              </div>
-            )
-          }</div>
-        )
-        : (
+      {(
           <div className='standards'>{
             standards.map((s) =>
               <div key={s.id} className='standard node' >
                 <h1>{standardCode(window.cc.standards[s.id].id)}</h1>
                 {window.cc.standards[s.id].desc.replace(/(<([^>]+)>)/ig, '').length > (70 * 5) || _(window.cc.standards).pick((x) => x.ccmathcluster_id === window.cc.standards[s.id].ccmathcluster_id && x.ordinal.indexOf(window.cc.standards[s.id].ordinal + '.') === 0).keys().value().length ?
-                  <Collapse title='' minHeight={collapseHeight(window.cc.standards[s.id])}><p className='standard-desc' dangerouslySetInnerHTML={{ __html: formatHTML(window.cc.standards[s.id].desc) }}></p>
+                  <Collapse title='' minHeight={collapseHeight(window.cc.standards[s.id])}>
+                    <p className='standard-desc' dangerouslySetInnerHTML={{ __html: window.cc.standards[s.id].desc }}></p>
                     <div className="child-standards">
                       {_(window.cc.standards).pick((x) => x.ccmathcluster_id === window.cc.standards[s.id].ccmathcluster_id && x.ordinal.indexOf(window.cc.standards[s.id].ordinal + '.') === 0).values().map((cs) =>
                         <Collapse disabled={true} minHeight={100} key={cs.id} title={standardCode(cs.id)}>

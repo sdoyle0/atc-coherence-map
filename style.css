@@ -1716,4 +1716,8 @@ button, input, optgroup, select, textarea {
     font-family: museo_sans100;
     margin-bottom: 10px;
 }
+
+.standard-desc ol {
+    margin: 0 0 1em 0;
+}
 /* /atc-modals */
