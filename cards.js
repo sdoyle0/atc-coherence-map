@@ -38,14 +38,22 @@ class Domain extends React.Component {
     return;
   }
 
+  _onKeyPress = () => {
+    if (event.keyCode == 32) {
+      this.onDomainClick();
+    }
+  }
+
   render() {
     return <div  
-      className='domain-container' 
-      onClick={this.onDomainClick}>
+      className='domain-container'>
 
-      <div className="card domain">        
-        <span className="domain-code">{ domainCode(this.props.domain) }</span>
-        <span className="domain-name">{ this.props.domain.name }</span>
+      <div className="card domain"      
+        onClick={this.onDomainClick}
+        tabIndex={this.props.index + 1}
+        onKeyPress={this._onKeyPress}>        
+          <span className="domain-code">{ domainCode(this.props.domain) }</span>
+          <span className="domain-name">{ this.props.domain.name }</span>
       </div>
     </div>
   }
@@ -65,6 +73,12 @@ class Grade extends React.Component {
     this.setState({expanded:false}); if(this.props.selectedGrade === null) this.props.onSelectGrade(this.props.grade);
   }
 
+  _onKeyPress = () => {
+    if (event.keyCode == 32) {
+      this._onClick();
+    }
+  }
+
   render() {
     var gradeMap = {"KY.K": "Kindergarten", "KY.1": "1st Grade", "KY.2": "2nd Grade", "KY.3": "3rd Grade",
                     "KY.4": "4th Grade", "KY.5": "5th Grade", "KY.6": "6th Grade", "KY.7": "7th Grade",
@@ -72,11 +86,13 @@ class Grade extends React.Component {
 
     return <div   
       className='grade-container'
-      className={classNames('grade-container', { 'hs-container': (this.props.grade === 'KY.HS') })} 
-      onClick={this._onClick}>
+      className={classNames('grade-container', { 'hs-container': (this.props.grade === 'KY.HS') })}>
 
-      <div className="card grade">
-        <span className="grade-name">{ gradeMap[this.props.grade]}</span>
+      <div className="card grade" 
+        onClick={this._onClick}       
+        tabIndex={this.props.index + 1}
+        onKeyPress={this._onKeyPress}>
+          <span className="grade-name">{ gradeMap[this.props.grade]}</span>
       </div>
 
     </div>;
@@ -102,6 +118,7 @@ export class Deck extends React.Component {x
               category={this.props.category} 
               selectedCategory={this.props.category} 
               grade={g.toString()} 
+              index={i}
               key={g} 
               selectedGrade={this.props.grade} 
               selectedDomain={this.props.domain} 
@@ -130,6 +147,7 @@ export class Deck extends React.Component {x
               // {...layouts[i]}
               domain={domain} grade={this.props.grade} 
               key={domainCode(domain).replace(/\./g,',')} 
+              index={i}
               depth={i} selectedDomain={this.props.selectedDomain} 
               onSelectDomain={this.props.onSelectDomain}
             />

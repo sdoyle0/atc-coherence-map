@@ -801,7 +801,8 @@ polyline.arrow.highlighted {
     background-color: #315ab3;
 }
 
-.node button:hover, .node .button:hover, .modal button:hover, .landing button:hover {
+.node button:hover, .node button:focus, .node .button:hover, .modal button:hover, 
+.landing button:hover, .landing button:focus {
     background-color: #315ab3;
 }
 
@@ -1682,9 +1683,12 @@ button, input, optgroup, select, textarea {
     transition: top ease 0.5s;
 }
 
+.card:hover, .card:focus {
+    background-color: #2152bc;
+}
+
 .card:hover {
     top: -10px;
-    background-color: #2152bc;
 }
 
 .card.grade {

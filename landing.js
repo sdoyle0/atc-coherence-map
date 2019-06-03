@@ -26,7 +26,7 @@ export default class Landing extends Component {
       <div className='landing-hero'></div>
       <div className='landing-mod-1 landing-box'>
         <p>The Coherence Map shows the connections between Kentucky Academic Standards for Mathematics.</p>
-        <button onClick={this.props.onGetStarted}>Get Started</button>
+        <button onClick={this.props.onGetStarted} tabIndex="1">Get Started</button>
       </div>
       <div className='landing-mod-2'>
         <div className='landing-triplet landing-box'>Build student understanding by linking together concepts within and across grades.</div>
@@ -44,7 +44,7 @@ export default class Landing extends Component {
         <h2>Standards are illustrated with tasks, lessons, and assessments, as well as excerpts from the Progressions documents.</h2>
       </div>
       <div className='landing-mod-6'>
-        <button onClick={this.props.onGetStarted}>Get Started</button>
+        <button onClick={this.props.onGetStarted} tabIndex="2">Get Started</button>
       </div>
       <div className='footer'>
         <div className='footer-top'>

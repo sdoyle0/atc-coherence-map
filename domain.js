@@ -156,8 +156,7 @@ export class Cluster extends React.Component {
     );
 
     return (<div className='cluster-container'>
-      <ClusterName name={this.props.cluster.name} />
-      <ClusterDesc msa={this.props.cluster.msa} grade={this.props.domain.grade} standards={standards}/>
+      <p className='cluster-desc' dangerouslySetInnerHTML={{__html:formatHTML(this.props.cluster.name)}}></p>
       {(
           <div className='standards'>{
             standards.map((s) =>
@@ -176,7 +175,7 @@ export class Cluster extends React.Component {
                   </Collapse>
                   :
                   <StandardsDesc desc={window.cc.standards[s.id].desc} domain={this.props.domain} />}
-                <button onClick={() => this.props.onSelectStandard(s.id)}>Map Standard <Icons.Boxes /></button>
+                <button onClick={() => this.props.onSelectStandard(s.id)} tabIndex={window.cc.standards[s.id].ordinal} >Map Standard <Icons.Boxes /></button>
               </div>
             )
           }</div>
