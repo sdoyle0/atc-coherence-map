@@ -1681,14 +1681,12 @@ button, input, optgroup, select, textarea {
     position: relative;
     top: 0;
     transition: top ease 0.5s;
+    border-style: inherit;
 }
 
 .card:hover, .card:focus {
-    background-color: #2152bc;
-}
-
-.card:hover {
     top: -10px;
+    background-color: #2152bc;
 }
 
 .card.grade {

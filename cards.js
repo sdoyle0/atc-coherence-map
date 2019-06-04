@@ -38,23 +38,16 @@ class Domain extends React.Component {
     return;
   }
 
-  _onKeyPress = () => {
-    if (event.keyCode == 32) {
-      this.onDomainClick();
-    }
-  }
-
   render() {
     return <div  
       className='domain-container'>
 
-      <div className="card domain"      
+      <button className="card domain"      
         onClick={this.onDomainClick}
-        tabIndex={this.props.index + 1}
-        onKeyPress={this._onKeyPress}>        
+        tabIndex={this.props.index + 1}>        
           <span className="domain-code">{ domainCode(this.props.domain) }</span>
           <span className="domain-name">{ this.props.domain.name }</span>
-      </div>
+      </button>
     </div>
   }
 }
@@ -73,12 +66,6 @@ class Grade extends React.Component {
     this.setState({expanded:false}); if(this.props.selectedGrade === null) this.props.onSelectGrade(this.props.grade);
   }
 
-  _onKeyPress = () => {
-    if (event.keyCode == 32) {
-      this._onClick();
-    }
-  }
-
   render() {
     var gradeMap = {"KY.K": "Kindergarten", "KY.1": "1st Grade", "KY.2": "2nd Grade", "KY.3": "3rd Grade",
                     "KY.4": "4th Grade", "KY.5": "5th Grade", "KY.6": "6th Grade", "KY.7": "7th Grade",
@@ -88,12 +75,11 @@ class Grade extends React.Component {
       className='grade-container'
       className={classNames('grade-container', { 'hs-container': (this.props.grade === 'KY.HS') })}>
 
-      <div className="card grade" 
+      <button className="card grade" 
         onClick={this._onClick}       
-        tabIndex={this.props.index + 1}
-        onKeyPress={this._onKeyPress}>
+        tabIndex={this.props.index + 1}>
           <span className="grade-name">{ gradeMap[this.props.grade]}</span>
-      </div>
+      </button>
 
     </div>;
 

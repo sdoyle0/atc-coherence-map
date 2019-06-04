@@ -162,19 +162,7 @@ export class Cluster extends React.Component {
             standards.map((s) =>
               <div key={s.id} className='standard node' >
                 <h1>{standardCode(window.cc.standards[s.id].id)}</h1>
-                {window.cc.standards[s.id].desc.replace(/(<([^>]+)>)/ig, '').length > (70 * 5) || _(window.cc.standards).pick((x) => x.ccmathcluster_id === window.cc.standards[s.id].ccmathcluster_id && x.ordinal.indexOf(window.cc.standards[s.id].ordinal + '.') === 0).keys().value().length ?
-                  <Collapse title='' minHeight={collapseHeight(window.cc.standards[s.id])}>
-                    <p className='standard-desc' dangerouslySetInnerHTML={{ __html: window.cc.standards[s.id].desc }}></p>
-                    <div className="child-standards">
-                      {_(window.cc.standards).pick((x) => x.ccmathcluster_id === window.cc.standards[s.id].ccmathcluster_id && x.ordinal.indexOf(window.cc.standards[s.id].ordinal + '.') === 0).values().map((cs) =>
-                        <Collapse disabled={true} minHeight={100} key={cs.id} title={standardCode(cs.id)}>
-                          <StandardsDesc desc={cs.desc} />
-                          </Collapse>).value()
-                      }
-                    </div>
-                  </Collapse>
-                  :
-                  <StandardsDesc desc={window.cc.standards[s.id].desc} domain={this.props.domain} />}
+                {<StandardsDesc desc={window.cc.standards[s.id].desc} domain={this.props.domain} />}
                 <button onClick={() => this.props.onSelectStandard(s.id)} tabIndex={window.cc.standards[s.id].ordinal} >Map Standard <Icons.Boxes /></button>
               </div>
             )
