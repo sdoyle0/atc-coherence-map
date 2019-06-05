@@ -250,7 +250,7 @@ const standards_k = {
 	"KY.K.CC.7": {
 		"id": "KY.K.CC.7",
 		"ccmathcluster_id": "KY.K.CC_c3",
-		"ordinal": "6",
+		"ordinal": "7",
 		"desc": "<p>Compare two numbers between 1 and 10 presented as written numerals.<\/p>\r\n",
 		"example_problem": "",
 		"example_problem_url": "",
