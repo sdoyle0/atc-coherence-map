@@ -59,7 +59,10 @@ class Spotlight extends Component {
   };
 
     render() {
-        return <div className='spotlight'><div className='mask' style={{left: this.props.spotlightX*0, top: this.props.spotlightY*0, backgroundPosition:`${this.props.spotlightX}px ${this.props.spotlightY}px` }} /></div>;
+        return <div className='spotlight'>
+          <div className='mask' style={{left: this.props.spotlightX*0, top: this.props.spotlightY*0, 
+                backgroundPositionX: this.props.spotlightX + 'px', backgroundPositionY: this.props.spotlightY + 'px' }} />
+        </div>;
     }
 }
 
@@ -226,7 +229,7 @@ class App extends React.Component {
         location.replace(location.href.replace('/#', '/'));
     });
     $(window).on('popstate', (event) => {
-      const path_info = location.pathname.replace(/^\/(coherence-map|connections)?\/?/, '');
+      const path_info = location.pathname.replace(/^\/(connections)?\/?/, '');
       if(window.ga) window.ga('send', 'pageview', location.pathname);
       var parts = path_info.split('/');
       parts[0] = parts[0] || null;
@@ -603,7 +606,7 @@ class App extends React.Component {
       }
       //location.hash = '#' + _.takeWhile([newHash.grade, newHash.domain, newHash.root, newHash.standard, newHash.standard_index], (c) => c!==null).join('/');
     // const url = _.takeWhile([newHash.grade, newHash.domain, newHash.root, newHash.standard, newHash.standard_index], (c) => c !== null).join('/');
-    window.history.pushState(null, null, '/coherence-map/' + url);
+    window.history.pushState(null, null, '/' + url);
     $(window).trigger('popstate');
   }
 
@@ -678,11 +681,6 @@ class App extends React.Component {
     let grade = window.cc.domains[domain].grade;
     let _category = window.cc.domains[domain].ordinal.split('-')[0];
     this._setHash({domain:domain, grade:window.cc.domains[domain].grade, root:s,standard:s, standard_index: null});
-    if (false && grade === 'KY.HS') {
-      this._setHash({domain:domain, grade:window.cc.domains[domain].grade, category: _category, root:s,standard:s, standard_index: null});
-    } else {
-      this._setHash({domain:domain, grade:window.cc.domains[domain].grade, root:s,standard:s, standard_index: null});
-    }
   }
   _onViewStandard = (s, i) => this._setHash({standard:s, standard_index:i})
   //_onMapStandard = (s) => this._setHash({root:s})
