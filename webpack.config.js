@@ -12,16 +12,11 @@ module.exports = {
   output: {
     filename: 'browser-bundle.js',
     path: path.join(__dirname, "build"),
+    publicPath: "/build/"
   },
   devServer: {
     historyApiFallback: {
       index: '/index.html'
-    },
-    proxy: {
-      '/coherence-map': {
-        target: 'http://localhost:8080',
-        pathRewrite: { '^/coherence-map': '' }
-      }
     }
   },
   externals: {

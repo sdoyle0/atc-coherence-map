@@ -880,7 +880,7 @@ polyline.arrow.highlighted {
 }
 
 .landing > .landing-hero {
-    background: url(intro/map_hd.png);
+    background: url(images/map_hd.png);
     height: 380px;
     background-size: cover;
     max-width: none;

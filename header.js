@@ -37,21 +37,21 @@ export default class Header extends Component {
     return (
     <div className={classNames('header', {'has-standard':!!this.props.standard})}>
       <h1>
-        <a href='/coherence-map/'>
+        <a href='/'>
         {
           (false && grade === 'KY.HS' && (root || domain) ) ? 
             (!root && domain ? 
               (
                 <span>
-                  <img src="/coherence-map/coherencemap_logo.svg" alt="Coherence Map" width="240" className='logo-top'/>
-                  <img src="/coherence-map/images/icon/coherencemap_logo_no_text.svg" 
+                  <img src="coherencemap_logo.svg" alt="Coherence Map" width="240" className='logo-top'/>
+                  <img src="images/icon/coherencemap_logo_no_text.svg" 
                     alt="Coherence Map" width="30" height="28" className='logo-top-mobile'/>
                 </span>
               )
-              : (<img src="/coherence-map/images/icon/coherencemap_logo_no_text.svg" alt="Coherence Map" width="30" height="28" />)
+              : (<img src="images/icon/coherencemap_logo_no_text.svg" alt="Coherence Map" width="30" height="28" />)
             )
           
-          : (<img src="/coherence-map/coherencemap_logo.svg" alt="Coherence Map" width="240" />)
+          : (<img src="images/coherencemap_logo.svg" alt="Coherence Map" width="240" />)
         }
         </a>
       </h1>
