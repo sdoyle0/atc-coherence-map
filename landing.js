@@ -36,11 +36,11 @@ export default class Landing extends Component {
       <div className='landing-mod-3 landing-box'>
         <h2>Mathematics standards are not isolated concepts.</h2>
         <p>Standards relate to one another, both within and across grades. The Coherence Map illustrates the coherent structure that is fundamental to college- and career-ready standards.</p>
-        <img src='images/map2.png' />
+        <img src='/images/map2.png' />
       </div>
       <div className='landing-mod-5 landing-box'>
-        <img src='images/map5.png' />
-        <img src='images/map6.png' />
+        <img src='/images/map5.png' />
+        <img src='/images/map6.png' />
         <h2>Standards are illustrated with tasks, lessons, and assessments, as well as excerpts from the Progressions documents.</h2>
       </div>
       <div className='landing-mod-6'>

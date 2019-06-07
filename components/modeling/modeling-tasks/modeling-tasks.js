@@ -102,11 +102,11 @@ class ModelingTasks extends Component {
                     <button 
                       className={ classNames('list', {'active': this.state.type === 'list'}) } 
                       onClick={() => this.switchView('list')}>
-                      <img src="images/icon/list.svg" />
+                      <img src="/images/icon/list.svg" />
                     </button>
                     <button className={ classNames('grid', {'active': this.state.type === 'grid'}) } 
                       onClick={ () => this.switchView('grid') }>
-                      <img src="images/icon/grid.svg" />
+                      <img src="/images/icon/grid.svg" />
                     </button>
                   </div>
                 </div>

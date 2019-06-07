@@ -129,7 +129,7 @@ class MoreAboutModeling extends Component {
                     One of the insights provided by mathematical modeling is that essentially the same mathematical or statistical structure can sometimes model seemingly different situations. Models can also shed light on the mathematical structures themselves, for example, as when a model of bacterial growth makes more vivid the explosive growth of the exponential function.
                   </p>
 
-                  <img src='images/icon/modeling-cycle.svg' title="" alt=""/>
+                  <img src='/images/icon/modeling-cycle.svg' title="" alt=""/>
 
                   <p>The basic modeling cycle is summarized in the diagram. It involves (1) identifying variables in the situation and selecting those that represent essential features, (2) formulating a model by creating and selecting geometric, graphical, tabular, algebraic, or statistical representations that describe relationships between the variables, (3) analyzing and performing operations on these relationships to draw conclusions, (4) interpreting the results of the mathematics in terms of the original situation, (5) validating the conclusions by comparing them with the situation, and then either improving the model or, if it is acceptable, (6) reporting on the conclusions and the reasoning behind them.</p>
 
@@ -145,8 +145,8 @@ class MoreAboutModeling extends Component {
                   </p>
                   {/* <div className="iframe-video">
                       { !this.state.isPlaying ?
-                        (<img src="images/icon/play-icon.png" className="play-btn" onClick={ this._playerPlay } />)
-                        : (<img src="images/icon/pause-icon.png" className="play-btn" onClick={ this._playerPlay } />)
+                        (<img src="/images/icon/play-icon.png" className="play-btn" onClick={ this._playerPlay } />)
+                        : (<img src="/images/icon/pause-icon.png" className="play-btn" onClick={ this._playerPlay } />)
                       }
                       <div className="overlay"></div>
                       <div id='iframe-video'>
@@ -228,10 +228,10 @@ class MoreAboutModeling extends Component {
               <div className="rows">
                 <div className="col-2 col-left">
                   <div className="list-images">
-                    <img src="images/modeling/paper-back-1.png" className="index-2"/>
-                    <img src="images/modeling/paper-back-2.png" className="index-3"/>
-                    <img src="images/modeling/paper-back-3.png" className="index-4"/>
-                    <img src="images/modeling/paper-front.png" className="index-1"/>
+                    <img src="/images/modeling/paper-back-1.png" className="index-2"/>
+                    <img src="/images/modeling/paper-back-2.png" className="index-3"/>
+                    <img src="/images/modeling/paper-back-3.png" className="index-4"/>
+                    <img src="/images/modeling/paper-front.png" className="index-1"/>
                   </div>
                 </div>
                 <div className="col-2 col-right">

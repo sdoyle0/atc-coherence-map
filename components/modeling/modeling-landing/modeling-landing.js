@@ -29,7 +29,7 @@ class ModelingLanding extends Component {
                   <p className="modeling-cycle">
                     The modeling cycle as represented on page 72 of the <a href="http://www.corestandards.org/wp-content/uploads/Math_Standards1.pdf" target="_blank">CCSS</a>:
                   </p>
-                  <img src='images/icon/modeling-cycle.svg' title="" alt=""/>
+                  <img src='/images/icon/modeling-cycle.svg' title="" alt=""/>
                 </div>
                 <div className="node">
                   <button className="button" onClick={() => this.props.onSelectStep('more-about')}>Learn More About Modeling</button>

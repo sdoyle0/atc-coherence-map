@@ -279,7 +279,7 @@ class App extends React.Component {
       spotlight: false,
       modal: true,
       modalBG: true,
-      modalIMG: <img src='images/map3.png'/>,
+      modalIMG: <img src='/images/map3.png'/>,
       modalTitle: 'Arrows',
       modalCTA: 'Next (2 of 3)',
       modalClose: false,
@@ -299,7 +299,7 @@ class App extends React.Component {
       spotlight: false,
       modal: true,
       modalBG: true,
-      modalIMG: <img src='images/map4.png'/>,
+      modalIMG: <img src='/images/map4.png'/>,
       modalTitle: 'Dashed Lines',
       modalCTA: 'Finish (3 of 3)',
       modalClose: false,
@@ -324,7 +324,7 @@ class App extends React.Component {
       spotlight: false,
       modal: true,
       modalBG: true,
-      modalIMG: <img src='images/zoom.png'/>,
+      modalIMG: <img src='/images/zoom.png'/>,
       modalTitle: 'Explore the Map',
       modalCTA: 'Next (1 of 3)',
       modalClose: false,
@@ -343,7 +343,7 @@ class App extends React.Component {
       modalClose: true,
       modalClass: 'term',
       modalChildren: [<h4 key='p1'>{!data.desc.replace?data.desc:data.desc.replace('[3]', 'The properties of operations. Here a, b and c stand for arbitrary numbers in a given number system. The properties of operations apply to the rational number system, the real number system, and the complex number.') }</h4>,
-      (data.desc.indexOf('[3]')>-1) ? <img src='images/table3.png'/> : null
+      (data.desc.indexOf('[3]')>-1) ? <img src='/images/table3.png'/> : null
       ]
     });
   });
@@ -358,7 +358,7 @@ class App extends React.Component {
       modalClose: true,
       modalClass: 'term',
       modalChildren: [<h4 key='p1'>{!data.desc.replace?data.desc:data.desc.replace('[3]', 'The properties of operations. Here a, b and c stand for arbitrary numbers in a given number system. The properties of operations apply to the rational number system, the real number system, and the complex number.') }</h4>,
-      (data.desc.indexOf('[3]')>-1) ? <img src='images/table3.png'/> : null
+      (data.desc.indexOf('[3]')>-1) ? <img src='/images/table3.png'/> : null
       ]
     });
   });
@@ -374,7 +374,7 @@ class App extends React.Component {
       modalClose: true,
       modalClass: 'term',
       modalChildren: [<h4 key='p1'>{!data.desc.replace?data.desc:data.desc.replace('[3]', 'The properties of operations. Here a, b and c stand for arbitrary numbers in a given number system. The properties of operations apply to the rational number system, the real number system, and the complex number.') }</h4>,
-      (data.desc.indexOf('[3]')>-1) ? <img src='images/table3.png'/> : null
+      (data.desc.indexOf('[3]')>-1) ? <img src='/images/table3.png'/> : null
       ]
     });
   });
@@ -391,7 +391,7 @@ class App extends React.Component {
       modalClose: true,
       modalClass: 'term',
       modalChildren: [<h4 key='p1'>{!data.desc.replace?data.desc:data.desc.replace('[3]', 'The properties of operations. Here a, b and c stand for arbitrary numbers in a given number system. The properties of operations apply to the rational number system, the real number system, and the complex number.') }</h4>,
-      (data.desc.indexOf('[3]')>-1) ? <img src='images/table3.png'/> : null
+      (data.desc.indexOf('[3]')>-1) ? <img src='/images/table3.png'/> : null
       ]
     });
   });

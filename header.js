@@ -45,14 +45,14 @@ export default class Header extends Component {
               (
                 <span>
                   <img src="coherencemap_logo.svg" alt="Coherence Map" width="240" className='logo-top'/>
-                  <img src="images/icon/coherencemap_logo_no_text.svg" 
+                  <img src="/images/icon/coherencemap_logo_no_text.svg" 
                     alt="Coherence Map" width="30" height="28" className='logo-top-mobile'/>
                 </span>
               )
-              : (<img src="images/icon/coherencemap_logo_no_text.svg" alt="Coherence Map" width="30" height="28" />)
+              : (<img src="/images/icon/coherencemap_logo_no_text.svg" alt="Coherence Map" width="30" height="28" />)
             )
           
-          : (<img src="images/coherencemap_logo.svg" alt="Coherence Map" width="240" />)
+          : (<img src="/images/coherencemap_logo.svg" alt="Coherence Map" width="240" />)
         }
         </a>
       </h1>
