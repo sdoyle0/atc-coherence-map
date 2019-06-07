@@ -6,7 +6,7 @@ var standardCode = require('./standards-utils').standardCode;
 var formatHTML = require('./standards-utils').formatHTML;
 var Icons = require('./icons');
 
-var Collapse = require('./collapse');
+var Collapse = require('./collapse').default;
 
 var ClusterDesc = require('./clusterdesc').ClusterDesc;
 var ClusterName = require('./clusterdesc').ClusterName;

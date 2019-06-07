@@ -8,11 +8,14 @@ var LayoutStyle = require('./style').LayoutStyle;
 
 var classNames = require('classnames');
 
-var Landing = require('./landing');
+var Landing = require('./landing').default;
 
 var Deck = require('./cards').Deck;
 
 var Domain = require('./domain').Domain;
+
+var Graph = require('./graph').default;
+import Header from './header';
 
 import CourseInfoModal from './components/modals/course-info-modal';
 import ModalLink from './components/modals/modal-link';
@@ -184,10 +187,6 @@ window.cc.modeling_tasks = {};
 window.cc.modeling_tasks.tasks = _.clone(window.cc.task);
 window.cc.modeling_tasks.ela_course = _.clone(window.cc.ela_course);
 window.cc.modeling_tasks.ela_subject = _.clone(window.cc.ela_subject);
-
-var Graph = require('./graph');
-
-var Header = require('./header');
 
 class App extends React.Component {
   state = { panX:0, panY:0, dragging: false, grade: null, category: null, domain_cat: null, domain: null, standard: null, standard_index: null, root: null,

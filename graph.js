@@ -3,7 +3,7 @@ var LayoutStyle = require('./style').LayoutStyle;
 var classNames = require('classnames');
 var shallowEqual = require('react/lib/shallowEqual');
 
-var GraphNode = require('./graphnode');
+var GraphNode = require('./graphnode').default;
 
 const arrowPadding = 0.01;
 

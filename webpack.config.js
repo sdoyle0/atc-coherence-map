@@ -16,15 +16,15 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: {
-      index: '/index.html'
+      disableDotRule: true
     }
   },
   externals: {
     jquery: '$'
   },
   module: {
-    loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional[]=es7.classProperties'},
+    rules: [
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},//?optional[]=es7.classProperties'},
       {
         test: /\.css$/,
         loader:[ 'style-loader', 'css-loader' ]
