@@ -1,7 +1,7 @@
-var Component = require('react').Component;
-var shallowEqual = require('react/lib/shallowEqual');
+import { Component, PropTypes }  from 'react';
+import shallowEqual from 'react/lib/shallowEqual';
 
-export default class Landing extends Component {
+export class Landing extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       !shallowEqual(this.props, nextProps) ||
@@ -10,7 +10,7 @@ export default class Landing extends Component {
   }
 
   static propTypes = {
-    onGetStarted: React.PropTypes.func.isRequired
+    onGetStarted: PropTypes.func.isRequired
   }
 
   componentDidMount() {

@@ -1,11 +1,10 @@
-var React = require('react');
-var Component = require('react').Component;
-var shallowEqual = require('react/lib/shallowEqual');
-var classNames = require('classnames');
-var standardCode = require('./standards-utils').standardCode;
-var Icons = require('./icons');
+import { Component, PropTypes } from 'react';
+import { standardCode } from './standards-utils';
+import { Share } from './icons';
+import classNames from 'classnames';
+import shallowEqual from 'react/lib/shallowEqual';
 
-export default class Header extends Component {
+export class Header extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       !shallowEqual(this.props, nextProps) ||
@@ -14,12 +13,12 @@ export default class Header extends Component {
   }
 
   static propTypes = {
-    grade: React.PropTypes.string,
-    domain: React.PropTypes.string,
-    standard: React.PropTypes.string,
-    onClearGrade: React.PropTypes.func,
-    onClearDomain: React.PropTypes.func,
-    onClearStandard: React.PropTypes.func,
+    grade: PropTypes.string,
+    domain: PropTypes.string,
+    standard: PropTypes.string,
+    onClearGrade: PropTypes.func,
+    onClearDomain: PropTypes.func,
+    onClearStandard: PropTypes.func,
   }
 
   render() {
@@ -114,7 +113,7 @@ export default class Header extends Component {
               }
             </span>]})
             }>
-            Share <Icons.Share />
+            Share <Share />
           </div>)
         : null
       }

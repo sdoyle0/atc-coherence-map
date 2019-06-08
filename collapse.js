@@ -1,19 +1,20 @@
-var Component = require('react').Component;
-var shallowEqual = require('react/lib/shallowEqual');
-var classNames = require('classnames');
+import { Component, PropTypes }  from 'react';
+import shallowEqual from 'react/lib/shallowEqual';
 
-export default class Collapse extends Component {
+import classNames from 'classnames';
+
+export class Collapse extends Component {
   static propTypes = {
-    children: React.PropTypes.oneOfType([
-            React.PropTypes.element,
-            React.PropTypes.arrayOf(React.PropTypes.element)
+    children: PropTypes.oneOfType([
+            PropTypes.element,
+            PropTypes.arrayOf(PropTypes.element)
         ]),
-    title: React.PropTypes.string.isRequired,
-    onAdjustParentHeight: React.PropTypes.func,
-    onExpand: React.PropTypes.func,
-    onCollapse: React.PropTypes.func,
-    minHeight: React.PropTypes.number,
-    disabled: React.PropTypes.bool
+    title: PropTypes.string.isRequired,
+    onAdjustParentHeight: PropTypes.func,
+    onExpand: PropTypes.func,
+    onCollapse: PropTypes.func,
+    minHeight: PropTypes.number,
+    disabled: PropTypes.bool
   };
 
   shouldComponentUpdate(nextProps, nextState) {

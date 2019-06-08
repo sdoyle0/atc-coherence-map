@@ -1,10 +1,10 @@
-var Component = require('react').Component;
+import { Component, PropTypes }  from 'react';
 
 export class ReactMeta extends Component {
 
   static propTypes = {
-    title: React.PropTypes.string,
-    desc: React.PropTypes.string
+    title: PropTypes.string,
+    desc: PropTypes.string
   }
 
   componentWillMount() {

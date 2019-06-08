@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-var classNames = require('classnames');
+import React, { Component } from 'react';
+import classNames from 'classnames';
 
 import BreadcrumdModeling from '../breadcrumb-modeling/breadcrumd-modeling';
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-var ReactCSSTransitionGroup = require('timeout-transition-group');
+import { ReactCSSTransitionGroup } from 'timeout-transition-group';
 import BreadcrumdModeling from '../modeling/breadcrumb-modeling/breadcrumd-modeling';
 import ModelingLanding from '../modeling/modeling-landing/modeling-landing';
 import MoreAboutModeling from '../modeling/more-about-modeling/more-about-modeling';

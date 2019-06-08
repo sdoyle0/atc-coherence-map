@@ -1,26 +1,20 @@
-var Component = require('react').Component;
-var shallowEqual = require('react/lib/shallowEqual');
-var LayoutStyle = require('./style').LayoutStyle;
-var classNames = require('classnames');
-var standardCode = require('./standards-utils').standardCode;
-var formatHTML = require('./standards-utils').formatHTML;
-var Icons = require('./icons');
+import { Component, PropTypes }  from 'react';
+import { ReactMeta } from './reactmeta';
+import { LayoutStyle } from './style';
+import { standardCode, formatHTML } from './standards-utils';
+import { Pin, Boxes, ZoomOut, ArrowDL, ArrowExt } from './icons';
+import { Collapse } from './collapse';
+import { ClusterName, ClusterDesc } from './clusterdesc'
 
-var Collapse = require('./collapse').default;
-
-var ClusterDesc = require('./clusterdesc').ClusterDesc;
-var ClusterName = require('./clusterdesc').ClusterName;
-
-var ReactMeta = require('./reactmeta').ReactMeta;
-
-var Course = require('./components/course/course');
+import shallowEqual from 'react/lib/shallowEqual';
+import classNames from 'classnames';
 
 // Styles
 import './scss/graphnode.scss';
 
 class StandardsDesc extends Component {
     static propTypes = {
-        desc: React.PropTypes.string.isRequired
+        desc: PropTypes.string.isRequired
     };
     shouldComponentUpdate(nextProps, nextState) {
       return (
@@ -38,18 +32,18 @@ class StandardsDesc extends Component {
     }
 }
 
-export default class Node extends Component {
+export class Node extends Component {
   static propTypes = {
-    viewing: React.PropTypes.bool.isRequired,
-    isRoot: React.PropTypes.bool.isRequired,
-    x: React.PropTypes.number.isRequired,
-    y: React.PropTypes.number.isRequired,
-    index: React.PropTypes.number.isRequired,
-    id: React.PropTypes.string.isRequired,
-    onAdjustParentHeight: React.PropTypes.func.isRequired,
-    onViewStandard: React.PropTypes.func.isRequired,
-    onMapStandard: React.PropTypes.func.isRequired,
-    onHighlightChild: React.PropTypes.func.isRequired,
+    viewing: PropTypes.bool.isRequired,
+    isRoot: PropTypes.bool.isRequired,
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+    index: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
+    onAdjustParentHeight: PropTypes.func.isRequired,
+    onViewStandard: PropTypes.func.isRequired,
+    onMapStandard: PropTypes.func.isRequired,
+    onHighlightChild: PropTypes.func.isRequired,
   };
 
   activeChild = null;
@@ -241,16 +235,16 @@ export default class Node extends Component {
           <StandardsDesc desc={standard.desc} domain={domain} />
           {this.props.isRoot ? 
             <div className='root-icon' key='rooticon'>
-              <Icons.Pin/>
+              <Pin/>
             </div> : 
             // domain.grade !== 'KY.HS' && 
               <button key='mapstandard'
                 className={classNames({'btn-mapstandard' : this.props.onViewStandardId !== standard.id})}
                 onClick={(e) => {e.stopPropagation(); this.props.onMapStandard(this.props.id);}}>
-                Map Standard <Icons.Boxes/>
+                Map Standard <Boxes/>
               </button>
           }
-          {this.props.viewing ? <button className='close' onClick={(e) => {e.stopPropagation(); this.props.onAdjustParentHeight(null); this.props.onViewStandard(null);} }><Icons.ZoomOut /><span className='zoomtip'>Click to zoom out</span></button> : null}
+          {this.props.viewing ? <button className='close' onClick={(e) => {e.stopPropagation(); this.props.onAdjustParentHeight(null); this.props.onViewStandard(null);} }><ZoomOut /><span className='zoomtip'>Click to zoom out</span></button> : null}
           {this.props.viewing ?
             <div className="detail-content">
               { standard.example_problem && domain.grade === 'KY.HS' ? <hr className="mt-35"/> : '' }
@@ -262,7 +256,7 @@ export default class Node extends Component {
               { false && standard.example_problem ?
                 <Collapse minHeight={180} title='Example Task' onAdjustParentHeight={this._fixHeight}>
                   <div className='example-problem' dangerouslySetInnerHTML={{__html:this.formatProblem(standard.example_problem, standard)}} />
-                  <a href={standard.example_problem_url} target='_blank' className='example-download button'>Download Example Task <Icons.ArrowDL /></a>
+                  <a href={standard.example_problem_url} target='_blank' className='example-download button'>Download Example Task <ArrowDL /></a>
                 </Collapse> : null }
              
               {/* { child_standards.length < 1 && domain.grade === 'KY.HS' ? <hr className="mt-35"/> : '' } */}
@@ -283,7 +277,7 @@ export default class Node extends Component {
               {/*{ standard.example_problem ?
               <div className="example-problem" dangerouslySetInnerHTML={{__html:this.formatProblem(standard.example_problem, standard)}} /> : null}*/}
               { standard.example_problem_url ?
-              <a href={standard.example_problem_url} target='_blank' className="example-download button">Download Example Task <Icons.ArrowDL /></a> : null}
+              <a href={standard.example_problem_url} target='_blank' className="example-download button">Download Example Task <ArrowDL /></a> : null}
               
               { standard.clarifications ?
               <Collapse title="Clarifications" onAdjustParentHeight={this._fixHeight}>
@@ -297,9 +291,9 @@ export default class Node extends Component {
                 <div className="progressions example-problem example-problem-mathjax" 
                   dangerouslySetInnerHTML={{__html:standard.progressions}} 
                 />
-                <a href={progressions} target='_blank' className="example-download button">Download Progressions PDF <Icons.ArrowDL /></a>
+                <a href={progressions} target='_blank' className="example-download button">Download Progressions PDF <ArrowDL /></a>
               </Collapse> : null}
-              {standard.links && standard.links.map((l) => <Collapse title={l.name} onAdjustParentHeight={this._fixHeight} key={l.name}>{l.links.map((l)=><a className='button linkout' key={l.url} href={l.url} target='_blank'>{l.name} <Icons.ArrowExt /></a>)}</Collapse>)}
+              {standard.links && standard.links.map((l) => <Collapse title={l.name} onAdjustParentHeight={this._fixHeight} key={l.name}>{l.links.map((l)=><a className='button linkout' key={l.url} href={l.url} target='_blank'>{l.name} <ArrowExt /></a>)}</Collapse>)}
               
             </div>
           : null

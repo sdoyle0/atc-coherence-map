@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-var ReactCSSTransitionGroup = require('timeout-transition-group');
+import { ReactCSSTransitionGroup } from 'timeout-transition-group';
 
 // Components
 import BreadcrumdCourse from '../breadcrumb-course/breadcrumd-course';

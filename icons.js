@@ -1,5 +1,5 @@
-var shallowEqual = require('react/lib/shallowEqual');
-var Component = require('react').Component;
+import { Component } from 'react';
+import shallowEqual from 'react/lib/shallowEqual';
 
 export class Pin extends Component {
   shouldComponentUpdate(nextProps, nextState) {

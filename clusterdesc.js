@@ -1,8 +1,6 @@
-var Component = require('react').Component;
-var shallowEqual = require('react/lib/shallowEqual');
-var classNames = require('classnames');
-
-var formatHTML = require('./standards-utils').formatHTML;
+import { Component, PropTypes }  from 'react';
+import { formatHTML } from './standards-utils';
+import shallowEqual from 'react/lib/shallowEqual';
 
 export class ClusterName extends Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -13,7 +11,7 @@ export class ClusterName extends Component {
   }
 
   static propTypes = {
-    name: React.PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
   }
 
   render() {
@@ -30,13 +28,12 @@ export class ClusterDesc extends Component {
   }
 
   static propTypes = {
-    msa: React.PropTypes.string.isRequired,
-    grade: React.PropTypes.string.isRequired,
-    wap: React.PropTypes.string,
+    msa: PropTypes.string.isRequired,
+    grade: PropTypes.string.isRequired,
+    wap: PropTypes.string,
   }
 
   render() {
-
     return null;
   }
 }

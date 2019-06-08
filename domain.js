@@ -1,25 +1,16 @@
-
-var shallowEqual = require('react/lib/shallowEqual');
-
-var ClusterDesc = require('./clusterdesc').ClusterDesc;
-var ClusterName = require('./clusterdesc').ClusterName;
-
-var Collapse = require('./collapse');
-
-var Icons = require('./icons');
-
-var standardCode = require('./standards-utils').standardCode;
-
-var formatHTML = require('./standards-utils').formatHTML;
-
-var ReactMeta = require('./reactmeta').ReactMeta;
-var classNames = require('classnames');
-
+import { Component, PropTypes }  from 'react';
+import { standardCode, formatHTML } from './standards-utils';
 import { layoutSubGraph, collapseHeight } from './helpers/utils';
+import { Collapse } from './collapse';
+import { Boxes } from './icons';
+import { ReactMeta } from './reactmeta';
+
+import shallowEqual from 'react/lib/shallowEqual';
+
 // Styles
 import './scss/domain.scss';
 
-export class ChildStandardHasSubGraph extends React.Component {
+export class ChildStandardHasSubGraph extends Component {
   render() {
     const { s } = this.props;
     return (
@@ -28,7 +19,7 @@ export class ChildStandardHasSubGraph extends React.Component {
           <div key={cs.id} className='standard node child-standard-has-subgraph' >
             <h3>{standardCode(cs.id)}</h3>
             <StandardsDesc desc={cs.desc} domain={this.props.domain} />
-            <button onClick={() => this.props.onSelectStandard(cs.id)}>Map Standard <Icons.Boxes /></button>
+            <button onClick={() => this.props.onSelectStandard(cs.id)}>Map Standard <Boxes /></button>
           </div>
           ).value()}
       </div>
@@ -36,7 +27,7 @@ export class ChildStandardHasSubGraph extends React.Component {
   }
 }
 
-export class ChildStandardHasNoSubGraph extends React.Component {
+export class ChildStandardHasNoSubGraph extends Component {
   
   render() {
     
@@ -48,7 +39,7 @@ export class ChildStandardHasNoSubGraph extends React.Component {
           ( _childStandards && _childStandards.length > 0 ?
             <div>
               <p className='standard-desc' dangerouslySetInnerHTML={{__html:formatHTML(window.cc.standards[s].desc)}}></p>
-              <button onClick={() => this.props.onSelectStandard(s)} className='button-hs-has-childs'>Map Standard <Icons.Boxes /></button>
+              <button onClick={() => this.props.onSelectStandard(s)} className='button-hs-has-childs'>Map Standard <Boxes /></button>
               <Collapse title='' minHeight={collapseHeight(window.cc.standards[s])}>
                 <div className="child-standards">
                 { _(window.cc.standards).pick((x) => x.ccmathcluster_id===window.cc.standards[s].ccmathcluster_id && x.ordinal.indexOf(window.cc.standards[s].ordinal+'.')===0).values().map((cs) => 
@@ -62,7 +53,7 @@ export class ChildStandardHasNoSubGraph extends React.Component {
             : (
               <div>
                 <StandardsDesc desc={window.cc.standards[s].desc} domain={this.props.domain} />
-                <button onClick={() => this.props.onSelectStandard(s)}>Map Standard <Icons.Boxes /></button>
+                <button onClick={() => this.props.onSelectStandard(s)}>Map Standard <Boxes /></button>
               </div>
             )
             
@@ -70,7 +61,7 @@ export class ChildStandardHasNoSubGraph extends React.Component {
           : (
             <div>
               <StandardsDesc desc={window.cc.standards[s].desc} domain={this.props.domain} />
-              <button onClick={() => this.props.onSelectStandard(s)}>Map Standard <Icons.Boxes /></button>
+              <button onClick={() => this.props.onSelectStandard(s)}>Map Standard <Boxes /></button>
             </div>
           )
           }
@@ -80,9 +71,9 @@ export class ChildStandardHasNoSubGraph extends React.Component {
   }
 }
 
-class StandardsDesc extends React.Component {
+class StandardsDesc extends Component {
   static propTypes = {
-    desc: React.PropTypes.string.isRequired
+    desc: PropTypes.string.isRequired
   };
   shouldComponentUpdate(nextProps, nextState) {
     return (
@@ -100,7 +91,7 @@ class StandardsDesc extends React.Component {
   }
 }
 
-export class Cluster extends React.Component {
+export class Cluster extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       !shallowEqual(this.props, nextProps) ||
@@ -109,9 +100,9 @@ export class Cluster extends React.Component {
   }
 
   static propTypes = {
-    domain: React.PropTypes.object,
-    cluster: React.PropTypes.object,
-    onSelectStandard: React.PropTypes.func,
+    domain: PropTypes.object,
+    cluster: PropTypes.object,
+    onSelectStandard: PropTypes.func,
   };
 
   render() {
@@ -163,7 +154,7 @@ export class Cluster extends React.Component {
               <div key={s.id} className='standard node' >
                 <h1>{standardCode(window.cc.standards[s.id].id)}</h1>
                 {<StandardsDesc desc={window.cc.standards[s.id].desc} domain={this.props.domain} />}
-                <button onClick={() => this.props.onSelectStandard(s.id)} tabIndex={window.cc.standards[s.id].ordinal} >Map Standard <Icons.Boxes /></button>
+                <button onClick={() => this.props.onSelectStandard(s.id)} tabIndex={window.cc.standards[s.id].ordinal} >Map Standard <Boxes /></button>
               </div>
             )
           }</div>
@@ -174,7 +165,7 @@ export class Cluster extends React.Component {
   }
 }
 
-export class Domain extends React.Component {
+export class Domain extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       !shallowEqual(this.props, nextProps) ||
@@ -183,8 +174,8 @@ export class Domain extends React.Component {
   }
 
   static propTypes = {
-    domain: React.PropTypes.string,
-    onSelectStandard: React.PropTypes.func,
+    domain: PropTypes.string,
+    onSelectStandard: PropTypes.func,
   };
 
   //state = {selectedGrade: null};
@@ -208,15 +199,3 @@ export class Domain extends React.Component {
     </div>);
   }
 }
-
-
-/*
-Domain
-  <div topleft=expanded ? z*2 : z>
-
-
-
-<Cards />
-  <Grade name=K />
-    <Domain name=K.NBT />
-      */

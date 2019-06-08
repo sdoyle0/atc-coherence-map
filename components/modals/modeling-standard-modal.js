@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-var classNames = require('classnames');
+import classNames from 'classnames';
 
 class ModelingStandardModal extends Component {
   constructor(props) {

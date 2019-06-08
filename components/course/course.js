@@ -1,5 +1,5 @@
-var Component = require('react').Component;
-var classNames = require('classnames');
+import { Component } from 'react';
+import classNames from 'classnames';
 
 import { displayCourseResultsMethodology } from './../../helpers/utils';
 

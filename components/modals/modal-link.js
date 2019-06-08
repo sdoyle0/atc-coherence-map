@@ -1,5 +1,5 @@
-var Component = require('react').Component;
-var classNames = require('classnames');
+import { Component } from 'react';
+import classNames from 'classnames';
 
 export default class ModalLink extends Component {
   constructor(props) {

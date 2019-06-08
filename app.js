@@ -4,18 +4,14 @@ var ReactCSSTransitionGroup = require('timeout-transition-group');
 window._ = require('lodash');
 React.initializeTouchEvents(true);
 
-var LayoutStyle = require('./style').LayoutStyle;
+import classNames from 'classnames';
 
-var classNames = require('classnames');
-
-var Landing = require('./landing').default;
-
-var Deck = require('./cards').Deck;
-
-var Domain = require('./domain').Domain;
-
-var Graph = require('./graph').default;
-import Header from './header';
+import { Landing } from './landing';
+import { Deck } from './cards';
+import { Domain } from './domain';
+import { Header } from './header';
+import { Graph } from './graph';
+import { LayoutStyle } from './style';
 
 import CourseInfoModal from './components/modals/course-info-modal';
 import ModalLink from './components/modals/modal-link';

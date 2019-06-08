@@ -1,9 +1,8 @@
-var Component = require('react').Component;
-var LayoutStyle = require('./style').LayoutStyle;
-var classNames = require('classnames');
-var shallowEqual = require('react/lib/shallowEqual');
-
-var GraphNode = require('./graphnode').default;
+import { Component, PropTypes }  from 'react';
+import { LayoutStyle } from './style';
+import { Node } from './graphnode';
+import shallowEqual from 'react/lib/shallowEqual';
+import classNames from 'classnames';
 
 const arrowPadding = 0.01;
 
@@ -120,7 +119,6 @@ function calculateWidths(subgraph, detailLayout = false) {
     if (detailLayout && (edge_count < 20 || edge_count === 30 || edge_count === 24)) edge_count = 1;
     widths[i] = Math.min(1.75,Math.max(1, 1.0/8.0 * edge_count));
     widths[i] *= Math.floor(292 * widths[i]/10)*10 / (292 * widths[i]);
-    console.log(edge_count);
   }
   return widths;
 }
@@ -238,16 +236,16 @@ var layoutSubGraph = function(_root, degrees, _overrideStandard) {
 };
 
 
-export default class Graph extends Component {
+export class Graph extends Component {
   static propTypes = {
-    detailLayout: React.PropTypes.bool.isRequired,
-    root: React.PropTypes.string.isRequired,
-    standard: React.PropTypes.string,
-    standard_index: React.PropTypes.number,
-    onAdjustParentHeight: React.PropTypes.func.isRequired,
-    onViewStandard: React.PropTypes.func.isRequired,
-    onMapStandard: React.PropTypes.func.isRequired,
-    panTo: React.PropTypes.func.isRequired,
+    detailLayout: PropTypes.bool.isRequired,
+    root: PropTypes.string.isRequired,
+    standard: PropTypes.string,
+    standard_index: PropTypes.number,
+    onAdjustParentHeight: PropTypes.func.isRequired,
+    onViewStandard: PropTypes.func.isRequired,
+    onMapStandard: PropTypes.func.isRequired,
+    panTo: PropTypes.func.isRequired,
   };
 
   state = {highlight: null}
@@ -485,7 +483,6 @@ export default class Graph extends Component {
 
     var widths = calculateWidths(subgraph, this.props.detailLayout);
     //for(var i=1;i<widths.length;i++) { widths[i] += widths[i-1]; }
-    console.log(widths);
     var expandColumns = function(x) {
         var width_i = Math.floor(x + (subgraph.length-1)/2);
         //console.log(x);
@@ -545,7 +542,7 @@ export default class Graph extends Component {
         if(!node.map) node = [node];
         // console.log('node => ', node);
 
-         return node.map((node, nd_idx) => Math.abs(i - focusedNode_i) > 1 ? null : <GraphNode
+         return node.map((node, nd_idx) => Math.abs(i - focusedNode_i) > 1 ? null : <Node
           checkOverlap={_checkOverlap}
           onHighlightChild={this._onHighlight}
           onTrace={this._onTrace}

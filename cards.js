@@ -1,7 +1,6 @@
-var classNames = require('classnames');
-var shallowEqual = require('react/lib/shallowEqual');
-
-var ReactMeta = require('./reactmeta').ReactMeta;
+import React from 'react';
+import classNames from 'classnames';
+import shallowEqual from 'react/lib/shallowEqual';
 
 import './scss/card.scss';
 
