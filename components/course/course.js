@@ -3,9 +3,6 @@ import classNames from 'classnames';
 
 import { displayCourseResultsMethodology } from './../../helpers/utils';
 
-/* Config */
-import { Config } from './../../config/app.config';
-
 // Styles
 import './course.scss';
 

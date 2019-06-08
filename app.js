@@ -24,7 +24,7 @@ import MoreAboutModeling from './components/modeling/more-about-modeling/more-ab
 import ModelingTasks from './components/modeling/modeling-tasks/modeling-tasks';
 
 /* Config */
-import { Config } from './config/app.config';
+import { Config } from './config/base.config';
 
 // Styles
 import './scss/app.scss';

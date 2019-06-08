@@ -1,5 +1,5 @@
 /* Config */
-import { Config } from './../config/app.config';
+import { Config } from './../config/base.config';
 
 export function augmentColumnWithNDNodes(col, seenNodes, _overrideStandard, parentNodes) {
   //if(col.length === 0 || col.length > 5) return;

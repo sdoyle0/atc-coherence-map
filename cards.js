@@ -4,9 +4,6 @@ import shallowEqual from 'react/lib/shallowEqual';
 
 import './scss/card.scss';
 
-/* Config */
-import { Config } from './config/app.config';
-
 function domainCode(d) {
   return d.grade + '.' + d.ordinal;
 }
